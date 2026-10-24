@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My American Journey (Part 1) — English Trial</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:20px auto;padding:0 16px;color:#111;line-height:1.6}
+h1{font-size:19px;line-height:1.4;margin:0 0 12px}
+button{font-size:18px;padding:8px 12px;margin:0;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
+.controls{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+.controls select{flex-shrink:0}
+button.primary{background:#111;color:#fff;border-color:#111}
+select{font-size:16px;padding:8px 6px;margin:0}
+input[type=range]{width:100%;margin:12px 0}
+.time{font-variant-numeric:tabular-nums;color:#444;white-space:nowrap}
+.controls .time{margin-right:auto;margin-left:0}
+#transcript{border:1px solid #ddd;border-radius:12px;padding:8px 12px;height:340px;overflow-y:auto;background:#fafafa;scroll-behavior:smooth}
+.line{padding:8px 10px;border-radius:8px;opacity:.45;font-size:19px;line-height:1.55;cursor:pointer}
+.line.active{opacity:1;font-weight:700;background:#111;color:#fff}
+.line.near{opacity:.75}
+#zh{border:1px solid #e6d9a8;border-radius:12px;padding:10px 12px;margin-top:12px;margin-bottom:14px;background:#fffbe6;line-height:1.6;min-height:52px}
+</style>
+</head>
+<body>
+<h1>My American Journey (Part 1) — English Trial</h1>
+<p style="color:#666;margin:0 0 12px">From the YouTube livestream 《我的美国路（一）：踏足异乡》. Trial excerpt, about 1 minute. Female and male voices alternate by sentence.</p>
+<audio id="player" preload="metadata" src="trial_en.mp3"></audio>
+<div id="transcript"></div>
+<div id="zh"></div>
+<div class="controls">
+<span class="time"><span id="cur">0:00</span> / <span id="dur">1:04</span></span>
+<select id="speed" aria-label="Playback speed">
+<option value="0.75">0.75×</option>
+<option value="1" selected>1×</option>
+<option value="1.25">1.25×</option>
+<option value="1.5">1.5×</option>
+<option value="2">2×</option>
+</select>
+<button id="fwd5Btn" aria-label="Forward 5 seconds" title="Forward 5 seconds">⏩</button>
+<button id="back5Btn" aria-label="Back 5 seconds" title="Back 5 seconds">⏪</button>
+<button class="primary" id="playBtn" aria-label="Play or pause" title="Play">▶</button></div>
+<input type="range" id="seek" value="0" min="0" max="100" step="0.1">
+
+<script>
+const LINES=[{"start": 0, "end": 9, "text": "Last time, during my previous livestream, I told you all this. If you are interested, I will talk about my experience coming to America, about that era.", "zh": "上一次直播的时候，我就告诉大家了，如果大家有兴趣，我就谈一谈我到美国的经历，就是那个时代。"}, {"start": 9, "end": 16, "text": "Some people wanted to know, and later a lot of people left comments saying they wanted to know, so I decided to do it as a livestream.", "zh": "因为有些人想知道，后来好多人留言都想知道，那么我就做直播吧。"}, {"start": 16, "end": 25, "text": "A livestream makes sense for this kind of thing. A video would not quite work, and writing an article on YouTube would not quite work either, so let us just chat casually.", "zh": "这种东西，做视频也不合适，在 YouTube 上面写文章也不是太合适，那么就随便聊聊。"}, {"start": 25, "end": 33, "text": "And if, as I am talking, you have any questions, or if anything I say is not clear to you, feel free to interrupt me. Just treat this as a casual chat.", "zh": "如果我说当中，大家觉得有什么疑问，或者觉得我说的东西不太明白，也可以打断我，就当大家闲聊吧。"}, {"start": 33, "end": 41, "text": "One thing is certain, though. One episode will definitely not be enough. It will probably take many episodes, so I will try to share a little bit every week.", "zh": "肯定的是，一期绝对说不完，估计要做好多期，我今天争取每个星期说一点。"}, {"start": 41, "end": 50, "text": "That way you can get a sense of this period of history, and of what it is like for someone who has just arrived in America, and also get some background on the work I do.", "zh": "让大家对这段历史，或者对于刚刚到美国来的人，有一个了解，同时也对我做的一些科普的东西，有些了解。"}, {"start": 50, "end": 64.3, "text": "Because a lot of people say, at your level, you do not understand poor people, you do not understand the middle class. So let me tell you. My experience after coming to America is similar to many people's, and also different from many people's.", "zh": "因为很多人说，到你这个阶层，你对于贫穷的人不了解，对于中产阶层不了解，那么我就告诉你一下，因为我到美国之后的经历，应该和很多人相似，也有很多人不一样。"}];
+const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speed=document.getElementById('speed'),box=document.getElementById('transcript'),zhBox=document.getElementById('zh');
+LINES.forEach((l,i)=>{const d=document.createElement('div');d.className='line';d.textContent=l.text;d.onclick=()=>{a.currentTime=l.start;a.play();playBtn.textContent='⏸';};box.appendChild(d);});
+const els=[...box.children];
+let curIdx=-1;
+function fmt(t){if(!isFinite(t))return '0:00';t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0');}
+function setActive(i){if(i===curIdx)return;curIdx=i;els.forEach((el,j)=>{el.className='line'+(j===i?' active':(j<i&&i-j<=2?' near':''));});if(i>=0){const el=els[i];zhBox.textContent=LINES[i].zh||'';box.scrollTop+=el.getBoundingClientRect().bottom-box.getBoundingClientRect().bottom;}}
+playBtn.onclick=()=>{if(a.paused){a.play();playBtn.textContent='⏸';}else{a.pause();playBtn.textContent='▶';}};
+document.getElementById('back5Btn').onclick=()=>{a.currentTime=Math.max(0,a.currentTime-5);};
+document.getElementById('fwd5Btn').onclick=()=>{a.currentTime=Math.min(a.duration||0,a.currentTime+5);};
+speed.onchange=()=>{a.playbackRate=parseFloat(speed.value);};
+a.onloadedmetadata=()=>{dur.textContent=fmt(a.duration);seek.max=a.duration;};
+a.ontimeupdate=()=>{cur.textContent=fmt(a.currentTime);if(document.activeElement!==seek)seek.value=a.currentTime;let idx=-1;for(let i=0;i<LINES.length;i++){if(a.currentTime>=LINES[i].start)idx=i;else break;}setActive(idx);};
+seek.oninput=()=>{a.currentTime=parseFloat(seek.value);cur.textContent=fmt(a.currentTime);};
+a.onended=()=>{playBtn.textContent='▶';};
+</script>
+</body>
+</html>
