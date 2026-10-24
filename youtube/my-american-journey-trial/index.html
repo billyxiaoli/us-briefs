@@ -20,6 +20,13 @@ input[type=range]{width:100%;margin:12px 0}
 .line.active{opacity:1;font-weight:700;background:#111;color:#fff}
 .line.near{opacity:.75}
 #zh{border:1px solid #e6d9a8;border-radius:12px;padding:10px 12px;margin-top:12px;margin-bottom:14px;background:#fffbe6;line-height:1.6;min-height:52px}
+
+.controls #speedBtn{font-size:16px;padding:8px 10px}
+.speed-menu{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.35);z-index:10;display:flex;align-items:center;justify-content:center}
+.speed-menu[hidden]{display:none}
+.speed-list{background:#fff;border-radius:16px;width:min(320px,86vw);max-height:70vh;overflow-y:auto;padding:8px}
+.speed-opt{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:19px;padding:14px 16px;border:none;border-bottom:1px solid #eee;background:#fff;color:#111}
+.speed-opt.sel{font-weight:700;color:#0b5fff}
 </style>
 </head>
 <body>
@@ -30,32 +37,16 @@ input[type=range]{width:100%;margin:12px 0}
 <div id="zh"></div>
 <div class="controls">
 <span class="time"><span id="cur">0:00</span> / <span id="dur">1:04</span></span>
-<select id="speed" aria-label="Playback speed">
-<option value="0.75">0.75×</option>
-<option value="0.8">0.8×</option>
-<option value="0.85">0.85×</option>
-<option value="0.9">0.9×</option>
-<option value="0.95">0.95×</option>
-<option value="1" selected>1×</option>
-<option value="1.1">1.1×</option>
-<option value="1.2">1.2×</option>
-<option value="1.3">1.3×</option>
-<option value="1.4">1.4×</option>
-<option value="1.5">1.5×</option>
-<option value="1.6">1.6×</option>
-<option value="1.7">1.7×</option>
-<option value="1.8">1.8×</option>
-<option value="1.9">1.9×</option>
-<option value="2">2×</option>
-</select>
+<button id="speedBtn" aria-label="Playback speed" title="Speed">1×</button>
 <button id="back5Btn" aria-label="Back 5 seconds" title="Back 5 seconds">⏪</button>
 <button id="fwd5Btn" aria-label="Forward 5 seconds" title="Forward 5 seconds">⏩</button>
 <button class="primary" id="playBtn" aria-label="Play or pause" title="Play">▶</button></div>
+<div id="speedMenu" class="speed-menu" hidden><div class="speed-list"><button class="speed-opt" data-rate="0.75">0.75×<span>○</span></button><button class="speed-opt" data-rate="0.8">0.8×<span>○</span></button><button class="speed-opt" data-rate="0.85">0.85×<span>○</span></button><button class="speed-opt" data-rate="0.9">0.9×<span>○</span></button><button class="speed-opt" data-rate="0.95">0.95×<span>○</span></button><button class="speed-opt sel" data-rate="1">1×<span>●</span></button><button class="speed-opt" data-rate="1.1">1.1×<span>○</span></button><button class="speed-opt" data-rate="1.2">1.2×<span>○</span></button><button class="speed-opt" data-rate="1.3">1.3×<span>○</span></button><button class="speed-opt" data-rate="1.4">1.4×<span>○</span></button><button class="speed-opt" data-rate="1.5">1.5×<span>○</span></button><button class="speed-opt" data-rate="1.6">1.6×<span>○</span></button><button class="speed-opt" data-rate="1.7">1.7×<span>○</span></button><button class="speed-opt" data-rate="1.8">1.8×<span>○</span></button><button class="speed-opt" data-rate="1.9">1.9×<span>○</span></button><button class="speed-opt" data-rate="2">2×<span>○</span></button></div></div>
 <input type="range" id="seek" value="0" min="0" max="100" step="0.1">
 
 <script>
 const LINES=[{"start": 0, "end": 9, "text": "Last time, during my previous livestream, I told you all this. If you are interested, I will talk about my experience coming to America, about that era.", "zh": "上一次直播的时候，我就告诉大家了，如果大家有兴趣，我就谈一谈我到美国的经历，就是那个时代。"}, {"start": 9, "end": 16, "text": "Some people wanted to know, and later a lot of people left comments saying they wanted to know, so I decided to do it as a livestream.", "zh": "因为有些人想知道，后来好多人留言都想知道，那么我就做直播吧。"}, {"start": 16, "end": 25, "text": "A livestream makes sense for this kind of thing. A video would not quite work, and writing an article on YouTube would not quite work either, so let us just chat casually.", "zh": "这种东西，做视频也不合适，在 YouTube 上面写文章也不是太合适，那么就随便聊聊。"}, {"start": 25, "end": 33, "text": "And if, as I am talking, you have any questions, or if anything I say is not clear to you, feel free to interrupt me. Just treat this as a casual chat.", "zh": "如果我说当中，大家觉得有什么疑问，或者觉得我说的东西不太明白，也可以打断我，就当大家闲聊吧。"}, {"start": 33, "end": 41, "text": "One thing is certain, though. One episode will definitely not be enough. It will probably take many episodes, so I will try to share a little bit every week.", "zh": "肯定的是，一期绝对说不完，估计要做好多期，我今天争取每个星期说一点。"}, {"start": 41, "end": 50, "text": "That way you can get a sense of this period of history, and of what it is like for someone who has just arrived in America, and also get some background on the work I do.", "zh": "让大家对这段历史，或者对于刚刚到美国来的人，有一个了解，同时也对我做的一些科普的东西，有些了解。"}, {"start": 50, "end": 64.3, "text": "Because a lot of people say, at your level, you do not understand poor people, you do not understand the middle class. So let me tell you. My experience after coming to America is similar to many people's, and also different from many people's.", "zh": "因为很多人说，到你这个阶层，你对于贫穷的人不了解，对于中产阶层不了解，那么我就告诉你一下，因为我到美国之后的经历，应该和很多人相似，也有很多人不一样。"}];
-const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speed=document.getElementById('speed'),box=document.getElementById('transcript'),zhBox=document.getElementById('zh');
+const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speedBtn=document.getElementById('speedBtn'),speedMenu=document.getElementById('speedMenu'),box=document.getElementById('transcript'),zhBox=document.getElementById('zh');
 LINES.forEach((l,i)=>{const d=document.createElement('div');d.className='line';d.textContent=l.text;d.onclick=()=>{a.currentTime=l.start;a.play();playBtn.textContent='⏸';};box.appendChild(d);});
 const els=[...box.children];
 let curIdx=-1;
@@ -64,7 +55,9 @@ function setActive(i){if(i===curIdx)return;curIdx=i;els.forEach((el,j)=>{el.clas
 playBtn.onclick=()=>{if(a.paused){a.play();playBtn.textContent='⏸';}else{a.pause();playBtn.textContent='▶';}};
 document.getElementById('back5Btn').onclick=()=>{a.currentTime=Math.max(0,a.currentTime-5);};
 document.getElementById('fwd5Btn').onclick=()=>{a.currentTime=Math.min(a.duration||0,a.currentTime+5);};
-speed.onchange=()=>{a.playbackRate=parseFloat(speed.value);};
+speedBtn.onclick=()=>{if(speedMenu.hidden){speedMenu.hidden=false;const sel=speedMenu.querySelector('.speed-opt.sel');if(sel)sel.scrollIntoView({block:'center'});}else{speedMenu.hidden=true;}};
+speedMenu.onclick=(e)=>{if(e.target===speedMenu)speedMenu.hidden=true;};
+speedMenu.querySelectorAll('.speed-opt').forEach(b=>{b.onclick=()=>{a.playbackRate=parseFloat(b.dataset.rate);speedBtn.textContent=b.textContent.replace(/[●○]/,'').trim();speedMenu.querySelectorAll('.speed-opt').forEach(x=>{x.classList.remove('sel');x.querySelector('span').textContent='○';});b.classList.add('sel');b.querySelector('span').textContent='●';speedMenu.hidden=true;};});
 a.onloadedmetadata=()=>{dur.textContent=fmt(a.duration);seek.max=a.duration;};
 a.ontimeupdate=()=>{cur.textContent=fmt(a.currentTime);if(document.activeElement!==seek)seek.value=a.currentTime;let idx=-1;for(let i=0;i<LINES.length;i++){if(a.currentTime>=LINES[i].start)idx=i;else break;}setActive(idx);};
 seek.oninput=()=>{a.currentTime=parseFloat(seek.value);cur.textContent=fmt(a.currentTime);};
