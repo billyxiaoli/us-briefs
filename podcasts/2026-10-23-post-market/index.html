@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U.S. Stocks Post-Market Brief — October 23, 2026</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:40px auto;padding:0 20px;color:#111;line-height:1.6}
+h1{font-size:22px;line-height:1.4}
+p{color:#444}
+button{font-size:16px;padding:10px 16px;margin:4px 4px 4px 0;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
+button.primary{background:#111;color:#fff;border-color:#111}
+select{font-size:16px;padding:9px;margin:4px 0}
+input[type=range]{width:100%;margin:16px 0}
+.time{font-variant-numeric:tabular-nums;color:#444}
+.note{font-size:14px;color:#666;border-top:1px solid #ddd;margin-top:28px;padding-top:12px}
+</style>
+</head>
+<body>
+<h1>U.S. Stocks Post-Market Brief — October 23, 2026</h1>
+<p>Hosts: Alex and Jordan &middot; Duration: about 5 min 56 sec &middot; Read-only market research, not trading advice.</p>
+<p>Session recap: rotation, hot PMIs, memory rebound, Bloom Energy fall, and the FOMC and big-tech earnings week ahead.</p>
+<audio id="player" preload="metadata" src="2026-10-23-post-market.mp3"></audio>
+<div>
+<button class="primary" id="playBtn">▶ Play</button>
+<button id="backBtn">⏪ −15 sec</button>
+<button id="fwdBtn">+15 sec ⏩</button>
+<label>Speed:
+<select id="speed">
+<option value="0.75">0.75×</option>
+<option value="1" selected>1×</option>
+<option value="1.25">1.25×</option>
+<option value="1.5">1.5×</option>
+<option value="2">2×</option>
+</select>
+</label>
+</div>
+<input type="range" id="seek" value="0" min="0" max="100" step="0.1">
+<div class="time"><span id="cur">0:00</span> / <span id="dur">5:56</span></div>
+<p><a href="2026-10-23-post-market.mp3" download>Download MP3</a></p>
+<p class="note">If the audio does not start, tap Play once — browsers require a tap before playback. This page is a test supplement to the WhatsApp attachment.</p>
+<script>
+const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speed=document.getElementById('speed');
+function fmt(t){if(!isFinite(t))return '0:00';t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0');}
+playBtn.onclick=()=>{if(a.paused){a.play();playBtn.textContent='⏸ Pause';}else{a.pause();playBtn.textContent='▶ Play';}};
+document.getElementById('backBtn').onclick=()=>{a.currentTime=Math.max(0,a.currentTime-15);};
+document.getElementById('fwdBtn').onclick=()=>{a.currentTime=Math.min(a.duration||0,a.currentTime+15);};
+speed.onchange=()=>{a.playbackRate=parseFloat(speed.value);};
+a.onloadedmetadata=()=>{dur.textContent=fmt(a.duration);seek.max=a.duration;};
+a.ontimeupdate=()=>{cur.textContent=fmt(a.currentTime);if(document.activeElement!==seek)seek.value=a.currentTime;};
+seek.oninput=()=>{a.currentTime=parseFloat(seek.value);cur.textContent=fmt(a.currentTime);};
+a.onended=()=>{playBtn.textContent='▶ Play';};
+</script>
+</body>
+</html>
