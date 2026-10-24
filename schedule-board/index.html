@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>日程全局概览 — Schedule Overview Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f3ef; --surface:#ffffff; --surface2:#eceae4; --ink:#1b2430; --muted:#6a7280; --line:#ddd9cf;
+  --accent:#b45309; --accent-ink:#92400e; --teal:#0f766e; --today-bg:#fef3c7; --today-ring:#d97706;
+  --pill:#eef2f1; --pill-ink:#23403c; --chip-bg:#1b2430; --chip-ink:#f4f3ef;
+  --shadow:0 1px 2px rgba(27,36,48,.06),0 8px 24px rgba(27,36,48,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121417; --surface:#1b1e23; --surface2:#23262c; --ink:#e9ebef; --muted:#9aa1ad; --line:#2e3238;
+    --accent:#f59e0b; --accent-ink:#fbbf24; --teal:#2dd4bf; --today-bg:#2a2416; --today-ring:#f59e0b;
+    --pill:#22302e; --pill-ink:#a7d8d2; --chip-bg:#e9ebef; --chip-ink:#121417;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:20px 16px 56px}
+.top{padding:8px 0 4px}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+h1{font-family:"Noto Serif SC",serif;font-weight:900;font-size:34px;line-height:1.15;margin:6px 0 8px;letter-spacing:.01em}
+.lede{color:var(--muted);font-size:15px;max-width:68ch;margin:0}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow);min-width:132px}
+.stat b{display:block;font-size:20px;line-height:1.1;font-family:"IBM Plex Mono",monospace}
+.stat span{font-size:12px;color:var(--muted)}
+.snapshot{margin-top:12px;font-size:13px;color:var(--muted);background:var(--surface2);border-radius:8px;padding:10px 12px}
+.snapshot strong{color:var(--ink)}
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:12px 0 8px;display:flex;gap:8px;flex-wrap:wrap}
+nav.tabs a{text-decoration:none;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+nav.tabs a:hover{border-color:var(--accent)}
+section{margin-top:28px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+h2{font-family:"Noto Serif SC",serif;font-size:24px;font-weight:700;margin:0}
+.sec-sub{color:var(--muted);font-size:13px;margin:2px 0 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+/* month */
+.month-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.month-title{font-family:"Noto Serif SC",serif;font-weight:700;font-size:20px}
+.btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 14px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
+.btn:hover{border-color:var(--accent)}
+.btn:disabled{opacity:.35;cursor:default}
+.btn.primary{background:var(--chip-bg);color:var(--chip-ink);border-color:transparent}
+.week-head,.month-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}
+.week-head div{text-align:center;font-size:12px;color:var(--muted);font-weight:700;padding:10px 0 6px}
+.week-head div.weekend{color:var(--accent-ink)}
+.day-cell{min-height:104px;min-width:0;overflow:hidden;border-top:1px solid var(--line);border-left:1px solid var(--line);padding:7px 7px 8px;cursor:pointer;vertical-align:top}
+.day-cell:nth-child(7n+1){border-left:none}
+.day-cell:hover{background:var(--surface2)}
+.day-cell.dim{opacity:.38;cursor:default}
+.day-cell.today{background:var(--today-bg)}
+.day-cell.selected{outline:2px solid var(--today-ring);outline-offset:-2px}
+.day-num{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.today-dot{font-size:10px;background:var(--today-ring);color:#fff;border-radius:999px;padding:1px 6px;font-family:"Noto Sans SC",sans-serif;font-weight:700}
+.ev{font-size:11px;line-height:1.35;border-radius:6px;padding:3px 5px;margin-top:4px;background:var(--pill);color:var(--pill-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.ev.timed{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.ev .t{font-family:"IBM Plex Mono",monospace;font-weight:600;margin-right:4px}
+.more{font-size:11px;color:var(--muted);margin-top:3px}
+.day-detail{border-top:1px solid var(--line);padding:14px 16px}
+.day-detail h3{margin:0 0 8px;font-size:16px}
+.detail-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.detail-list li{display:flex;gap:10px;align-items:flex-start;min-width:0}
+.detail-list li span:last-child,.up-list li span.title{overflow-wrap:anywhere;min-width:0}
+.badge{flex:0 0 auto;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;background:var(--surface2);border-radius:6px;padding:2px 7px;margin-top:1px}
+.badge.allday{background:var(--chip-bg);color:var(--chip-ink)}
+.repeat-tag{font-size:11px;color:var(--teal);border:1px solid currentColor;border-radius:999px;padding:0 6px;margin-left:6px;white-space:nowrap}
+.empty{color:var(--muted);font-size:14px}
+/* agenda mobile for month */
+.month-agenda{display:none}
+/* upcoming */
+.search-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.search-row input{flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:14px;font-family:inherit}
+.up-group{padding:14px 16px;border-bottom:1px solid var(--line)}
+.up-group:last-child{border-bottom:none}
+.up-group.today{background:var(--today-bg)}
+.up-date{display:flex;gap:10px;align-items:baseline;margin-bottom:6px}
+.up-date b{font-size:15px}
+.up-date span{color:var(--muted);font-size:13px;font-family:"IBM Plex Mono",monospace}
+.up-list{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+/* weekly */
+.day-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.day-tabs button{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 13px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit}
+.day-tabs button.active{background:var(--chip-bg);color:var(--chip-ink);border-color:transparent}
+.day-tabs button .cnt{font-weight:400;font-size:12px;opacity:.75;margin-left:4px}
+.week-columns{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.wcol{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:var(--shadow);cursor:pointer;min-height:120px;min-width:0;overflow:hidden}
+.wcol.active{outline:2px solid var(--today-ring)}
+.wcol h4{margin:0 0 8px;font-size:14px;display:flex;justify-content:space-between}
+.wcol h4 span{color:var(--muted);font-weight:400;font-size:12px}
+.wcol ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.wcol li{font-size:11px;line-height:1.35;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wcol li b{color:var(--ink);font-family:"IBM Plex Mono",monospace;font-weight:600;margin-right:4px;font-size:10px}
+.wcol li.done,.detail-list li.done .title,.up-list li.done .title{text-decoration:line-through;opacity:.65}
+.timeline{padding:6px 16px 14px}
+.tl-row{display:grid;grid-template-columns:118px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.tl-row:last-child{border-bottom:none}
+.tl-time{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;padding-top:1px}
+.tl-title{font-weight:500}
+.tl-title.done{text-decoration:line-through;opacity:.65}
+.subs{list-style:none;margin:5px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:5px}
+.subs li{font-size:12px;background:var(--surface2);border-radius:999px;padding:2px 8px;color:var(--muted)}
+.done-mark{font-size:11px;color:var(--teal);font-weight:700;margin-left:6px}
+footer{margin-top:36px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:860px){ .week-columns{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:720px){
+  h1{font-size:28px}
+  .month-grid,.week-head{display:none}
+  .month-agenda{display:block}
+  .month-agenda .up-group{padding:12px 14px}
+  .tl-row{grid-template-columns:96px 1fr;gap:8px}
+  .week-columns{grid-template-columns:1fr 1fr}
+  .stat{min-width:calc(50% - 4px);flex:1 1 calc(50% - 4px)}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="kicker">Private · Only for you</div>
+    <h1>日程全局概览</h1>
+    <p class="lede">不再只看当天 — 整月日历、未来 30 天、每周固定待办，一页看全。点任意一天看当天明细，点任意星期看那天的完整时间表。</p>
+    <div class="meta-row" id="stats"></div>
+    <div class="snapshot" id="snapshotNote"></div>
+  </header>
+
+  <nav class="tabs" aria-label="页面导航">
+    <a href="#month">月历总览</a>
+    <a href="#upcoming">未来 30 天</a>
+    <a href="#weekly">每周待办</a>
+  </nav>
+
+  <section id="month">
+    <div class="sec-head">
+      <div><h2>月历总览</h2><p class="sec-sub">全天事件是实心小条，带时间的事件是描边小条。点格子看当天完整标题。</p></div>
+    </div>
+    <div class="card">
+      <div class="month-bar">
+        <button class="btn" id="prevMonth" type="button">← 上个月</button>
+        <div class="month-title" id="monthTitle"></div>
+        <button class="btn" id="nextMonth" type="button">下个月 →</button>
+      </div>
+      <div class="week-head" aria-hidden="true"><div>周一</div><div>周二</div><div>周三</div><div>周四</div><div>周五</div><div class="weekend">周六</div><div class="weekend">周日</div></div>
+      <div class="month-grid" id="monthGrid"></div>
+      <div class="month-agenda" id="monthAgenda"></div>
+      <div class="day-detail" id="dayDetail"></div>
+    </div>
+  </section>
+
+  <section id="upcoming">
+    <div class="sec-head">
+      <div><h2>未来 30 天</h2><p class="sec-sub" id="upSub"></p></div>
+    </div>
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="搜一下：比如 信用卡、充值、采购…" aria-label="搜索日历事件" />
+      <button class="btn" id="clearSearch" type="button">清除</button>
+    </div>
+    <div class="card" id="upcomingList"></div>
+    <p class="empty" id="upEmpty" hidden>没有匹配的事件，换个关键词试试。</p>
+  </section>
+
+  <section id="weekly">
+    <div class="sec-head">
+      <div><h2>每周待办 · 固定节奏</h2><p class="sec-sub">每周重复的 7 天时间表。已完成的一项会划掉显示，和 WhatsApp 提醒里的规则一致。</p></div>
+    </div>
+    <div class="day-tabs" id="dayTabs" role="tablist" aria-label="选择星期"></div>
+    <div class="week-columns" id="weekColumns"></div>
+    <div class="card"><div class="timeline" id="timeline"></div></div>
+  </section>
+
+  <footer>
+    数据来源：GitHub <span style="font-family:'IBM Plex Mono',monospace">billyxiaoli/dashboard-data</span> 里的 <span style="font-family:'IBM Plex Mono',monospace">calendar.md</span> 和 <span style="font-family:'IBM Plex Mono',monospace">weekly-todo.md</span>。这是 GitHub Pages 版，每 5 分钟自动检查 GitHub，改动后重新发布。
+  </footer>
+</div>
+
+<script>
+var BOARD = {"snapshotDate":"2026-10-25","calendar":[{"date":"2026-10-22","time":"全天","title":"上海银行信用卡","repeat":false},{"date":"2026-10-23","time":"全天","title":"目标放在哪里？周末度假计划，银行电子账单，126改手机号，k9s 备份，抖音整理，双11宽带+iptv，futuW8，知识点归纳，修16寸自行车，anqi手机使用时间和内容，韩剑吃饭，马尔代夫照片，ktv软件，美国签证，新电瓶车电池，喝酒方案和准备冰块，修移动电源，修电瓶车，自行车车把杆，事故处理&投诉，美股账户备份；cosplay头发建模，整理照片，摆摊设备，借记卡/信用卡交行建行招行借记卡手机，抖音开号， 多语言 - 送小鱼 - 加微信 -推自有IP- autumn fall - 表情包 - 肥皂盒 - 大件变成小鼻嘎装瓶中","repeat":false},{"date":"2026-10-23","time":"全天","title":"佳豪配合工作，重号11月定期群跟踪，deltadallas，猫头鹰付款，数字人验收，营销活动数据ready？","repeat":false},{"date":"2026-10-24","time":"全天","title":"光大信用卡还钱","repeat":true},{"date":"2026-10-25","time":"全天","title":"我很开心","repeat":false},{"date":"2026-10-25","time":"全天","title":"帮安琦找到英文动画片","repeat":false},{"date":"2026-10-25","time":"全天","title":"研究美团浏览器","repeat":false},{"date":"2026-10-25","time":"全天","title":"研究如何把 GitHub 上面的日程改动同步到本机上","repeat":false},{"date":"2026-10-26","time":"全天","title":"把 IBKR 再连进来","repeat":false},{"date":"2026-10-27","time":"全天","title":"京东白条还款27日","repeat":true},{"date":"2026-10-29","time":"全天","title":"煤气费","repeat":true},{"date":"2026-10-31","time":"全天","title":"爸爸妈妈手机充值","repeat":false},{"date":"2026-11-01","time":"全天","title":"微信 优惠","repeat":true},{"date":"2026-11-02","time":"全天","title":"邮储银行还钱 hsbc/boa/icbcasia 动账","repeat":true},{"date":"2026-11-03","time":"全天","title":"xiaoli平安信用卡每月3号还款","repeat":true},{"date":"2026-11-03","time":"全天","title":"xiaoli招行信用卡，商务卡","repeat":true},{"date":"2026-11-03","time":"08:00","title":"浦发信用卡3号还款，14号账单日","repeat":true},{"date":"2026-11-04","time":"08:00","title":"淋浴器","repeat":true},{"date":"2026-11-05","time":"全天","title":"邮储 信用卡活动","repeat":true},{"date":"2026-11-05","time":"全天","title":"生活费","repeat":true},{"date":"2026-11-06","time":"08:00","title":"抖音月付","repeat":true},{"date":"2026-11-07","time":"全天","title":"农行 还款 9.7","repeat":true},{"date":"2026-11-07","time":"08:00","title":"建行信用卡","repeat":true},{"date":"2026-11-09","time":"全天","title":"花呗还钱","repeat":true},{"date":"2026-11-09","time":"08:00","title":"剃头","repeat":true},{"date":"2026-11-10","time":"08:00","title":"采购议案","repeat":true},{"date":"2026-11-13","time":"全天","title":"上海银行信用卡","repeat":true},{"date":"2026-11-16","time":"全天","title":"爸爸妈妈手机充值","repeat":true},{"date":"2026-11-16","time":"全天","title":"工行信用卡","repeat":true},{"date":"2026-11-21","time":"全天","title":"民生/中信还钱","repeat":true},{"date":"2026-11-21","time":"全天","title":"6周 test","repeat":false},{"date":"2026-11-24","time":"全天","title":"光大信用卡还钱","repeat":true},{"date":"2026-11-25","time":"08:00","title":"采购议案","repeat":true},{"date":"2026-11-27","time":"全天","title":"京东白条还款27日","repeat":true},{"date":"2026-12-01","time":"全天","title":"微信 优惠","repeat":true},{"date":"2026-12-02","time":"全天","title":"邮储银行还钱 hsbc/boa/icbcasia 动账","repeat":true},{"date":"2026-12-03","time":"全天","title":"xiaoli平安信用卡每月3号还款","repeat":true},{"date":"2026-12-03","time":"全天","title":"xiaoli招行信用卡，商务卡","repeat":true},{"date":"2026-12-03","time":"08:00","title":"浦发信用卡3号还款，14号账单日","repeat":true},{"date":"2026-12-04","time":"08:00","title":"淋浴器","repeat":true},{"date":"2026-12-05","time":"全天","title":"邮储 信用卡活动","repeat":true},{"date":"2026-12-05","time":"全天","title":"生活费","repeat":true},{"date":"2026-12-06","time":"08:00","title":"抖音月付","repeat":true},{"date":"2026-12-07","time":"全天","title":"农行 还款 9.7","repeat":true},{"date":"2026-12-07","time":"08:00","title":"建行信用卡","repeat":true},{"date":"2026-12-09","time":"全天","title":"花呗还钱","repeat":true},{"date":"2026-12-09","time":"08:00","title":"剃头","repeat":true},{"date":"2026-12-10","time":"08:00","title":"采购议案","repeat":true},{"date":"2026-12-13","time":"全天","title":"上海银行信用卡","repeat":true},{"date":"2026-12-16","time":"全天","title":"爸爸妈妈手机充值","repeat":true},{"date":"2026-12-16","time":"全天","title":"工行信用卡","repeat":true},{"date":"2026-12-21","time":"全天","title":"民生/中信还钱","repeat":true},{"date":"2026-12-24","time":"全天","title":"光大信用卡还钱","repeat":true},{"date":"2026-12-25","time":"08:00","title":"采购议案","repeat":true},{"date":"2026-12-27","time":"全天","title":"京东白条还款27日","repeat":true},{"date":"2026-12-29","time":"全天","title":"煤气费","repeat":true},{"date":"2026-12-31","time":"全天","title":"外婆 蒋yifan 手机","repeat":true},{"date":"2027-01-01","time":"全天","title":"微信 优惠","repeat":true},{"date":"2027-01-01","time":"全天","title":"2024.10 RO (2-3Y) 2026.4 PP(3-6M)，UDF(6-9M)，CTO(6-12M) - 8M 2027.1 replace all above","repeat":false},{"date":"2027-01-02","time":"全天","title":"邮储银行还钱 hsbc/boa/icbcasia 动账","repeat":true},{"date":"2027-01-03","time":"全天","title":"xiaoli平安信用卡每月3号还款","repeat":true},{"date":"2027-01-03","time":"全天","title":"xiaoli招行信用卡，商务卡","repeat":true},{"date":"2027-01-03","time":"08:00","title":"浦发信用卡3号还款，14号账单日","repeat":true},{"date":"2027-01-04","time":"08:00","title":"淋浴器","repeat":true},{"date":"2027-01-05","time":"全天","title":"邮储 信用卡活动","repeat":true},{"date":"2027-01-05","time":"全天","title":"生活费","repeat":true},{"date":"2027-01-06","time":"08:00","title":"抖音月付","repeat":true},{"date":"2027-01-07","time":"全天","title":"农行 还款 9.7","repeat":true},{"date":"2027-01-07","time":"08:00","title":"建行信用卡","repeat":true},{"date":"2027-01-09","time":"全天","title":"花呗还钱","repeat":true},{"date":"2027-01-09","time":"08:00","title":"剃头","repeat":true},{"date":"2027-01-10","time":"08:00","title":"采购议案","repeat":true},{"date":"2027-01-13","time":"全天","title":"上海银行信用卡","repeat":true},{"date":"2027-01-16","time":"全天","title":"爸爸妈妈手机充值","repeat":true},{"date":"2027-01-16","time":"全天","title":"工行信用卡","repeat":true},{"date":"2027-01-21","time":"全天","title":"民生/中信还钱","repeat":true}],"weekly":{"周一":[{"start":"08:30","end":"09:00","span":"08:30–09:00","title":"bike+Jenny+upstairs","subs":[],"head":"bike+Jenny+upstairs","done":false},{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"bread · wash face & hands · apply cream · breakfast · brush teeth · vitamin B · lunch preparation · water","subs":["bread","wash face & hands","apply cream","breakfast","brush teeth","vitamin B","lunch preparation","water"],"head":"","done":false},{"start":"09:30","end":"10:00","span":"09:30–10:00","title":"lemonade · gmail","subs":["lemonade","gmail"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"stretch band · New Con translation · water · ti gang","subs":["stretch band","New Con translation","water","ti gang"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"taobao · water","subs":["taobao","water"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"stretch band · water","subs":["stretch band","water"],"head":"","done":false},{"start":"11:30","end":"12:00","span":"11:30–12:00","title":"lunch","subs":[],"head":"lunch","done":false},{"start":"12:30","end":"13:00","span":"12:30–13:00","title":"nap","subs":[],"head":"nap","done":false},{"start":"13:30","end":"14:00","span":"13:30–14:00","title":"heat lunch · stretch","subs":["heat lunch","stretch"],"head":"","done":false},{"start":"14:00","end":"14:30","span":"14:00–14:30","title":"stretch","subs":[],"head":"stretch","done":false},{"start":"15:00","end":"15:30","span":"15:00–15:30","title":"stretch · stairs","subs":["stretch","stairs"],"head":"","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:30","end":"17:00","span":"16:30–17:00","title":"fruit · refill water · clean bowls · ti gang","subs":["fruit","refill water","clean bowls","ti gang"],"head":"","done":false},{"start":"17:00","end":"17:30","span":"17:00–17:30","title":"sign off · bike + walk +Jenny","subs":["sign off","bike + walk +Jenny"],"head":"","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"Resistance bar 10 min · Kettlebell around-the-world 10 min · Kettlebell lift 10 min · Jump rope 5 min","subs":["Resistance bar 10 min","Kettlebell around-the-world 10 min","Kettlebell lift 10 min","Jump rope 5 min"],"head":"","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"Leg resistance band 10 min · Single-leg touch-down 10 min · Toe-touch stretch 5 min","subs":["Leg resistance band 10 min","Single-leg touch-down 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周二":[{"start":"08:30","end":"09:00","span":"08:30–09:00","title":"bike+Jenny+upstairs","subs":[],"head":"bike+Jenny+upstairs","done":false},{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"bread · wash face & hands · apply cream · breakfast · brush teeth · vitamin B · lunch preparation · water","subs":["bread","wash face & hands","apply cream","breakfast","brush teeth","vitamin B","lunch preparation","water"],"head":"","done":false},{"start":"09:30","end":"10:00","span":"09:30–10:00","title":"lemonade · gmail","subs":["lemonade","gmail"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"stretch band · New Con translation · water · ti gang","subs":["stretch band","New Con translation","water","ti gang"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"taobao · water","subs":["taobao","water"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"stretch band · water","subs":["stretch band","water"],"head":"","done":false},{"start":"11:30","end":"12:00","span":"11:30–12:00","title":"lunch","subs":[],"head":"lunch","done":false},{"start":"12:30","end":"13:00","span":"12:30–13:00","title":"nap","subs":[],"head":"nap","done":false},{"start":"13:30","end":"14:00","span":"13:30–14:00","title":"heat lunch · stretch","subs":["heat lunch","stretch"],"head":"","done":false},{"start":"14:00","end":"14:30","span":"14:00–14:30","title":"stretch","subs":[],"head":"stretch","done":false},{"start":"15:00","end":"15:30","span":"15:00–15:30","title":"stretch · stairs","subs":["stretch","stairs"],"head":"","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:30","end":"17:00","span":"16:30–17:00","title":"fruit · refill water · clean bowls · ti gang","subs":["fruit","refill water","clean bowls","ti gang"],"head":"","done":false},{"start":"17:00","end":"17:30","span":"17:00–17:30","title":"sign off · bike + walk +Jenny","subs":["sign off","bike + walk +Jenny"],"head":"","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"Resistance bar 10 min · Biceps 10 min · Triceps 10 min · Jump rope 10 min","subs":["Resistance bar 10 min","Biceps 10 min","Triceps 10 min","Jump rope 10 min"],"head":"","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"Boxing dumbbells 10 min · Battle ropes 10 min · Toe-touch stretch 5 min","subs":["Boxing dumbbells 10 min","Battle ropes 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周三":[{"start":"08:30","end":"09:00","span":"08:30–09:00","title":"bike+Jenny+upstairs","subs":[],"head":"bike+Jenny+upstairs","done":false},{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"bread · wash face & hands · apply cream · breakfast · brush teeth · vitamin B · lunch preparation · water","subs":["bread","wash face & hands","apply cream","breakfast","brush teeth","vitamin B","lunch preparation","water"],"head":"","done":false},{"start":"09:30","end":"10:00","span":"09:30–10:00","title":"lemonade · gmail","subs":["lemonade","gmail"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"stretch band · New Con translation · water · ti gang","subs":["stretch band","New Con translation","water","ti gang"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"taobao · water","subs":["taobao","water"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"stretch band · water","subs":["stretch band","water"],"head":"","done":false},{"start":"11:30","end":"12:00","span":"11:30–12:00","title":"lunch","subs":[],"head":"lunch","done":false},{"start":"12:30","end":"13:00","span":"12:30–13:00","title":"nap","subs":[],"head":"nap","done":false},{"start":"13:30","end":"14:00","span":"13:30–14:00","title":"heat lunch · stretch","subs":["heat lunch","stretch"],"head":"","done":false},{"start":"14:00","end":"14:30","span":"14:00–14:30","title":"stretch","subs":[],"head":"stretch","done":false},{"start":"15:00","end":"15:30","span":"15:00–15:30","title":"stretch · stairs","subs":["stretch","stairs"],"head":"","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:30","end":"17:00","span":"16:30–17:00","title":"fruit · refill water · clean bowls · ti gang","subs":["fruit","refill water","clean bowls","ti gang"],"head":"","done":false},{"start":"17:00","end":"17:30","span":"17:00–17:30","title":"sign off · bike + walk +Jenny","subs":["sign off","bike + walk +Jenny"],"head":"","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"Resistance bar 10 min · Biceps 10 min · Triceps 10 min · Jump rope 10 min","subs":["Resistance bar 10 min","Biceps 10 min","Triceps 10 min","Jump rope 10 min"],"head":"","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"20:30","end":"21:00","span":"20:30–21:00","title":"tricycle charge","subs":[],"head":"tricycle charge","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"21:30","end":"22:00","span":"21:30–22:00","title":"tricycle discharge","subs":[],"head":"tricycle discharge","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"Seaweed mud · Leg resistance band 10 min · Single-leg touch-down 10 min · Toe-touch stretch 5 min","subs":["Seaweed mud","Leg resistance band 10 min","Single-leg touch-down 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Running + small dumbbells 20 min + toe-touch stretch 1 min · Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Running + small dumbbells 20 min + toe-touch stretch 1 min","Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周四":[{"start":"08:30","end":"09:00","span":"08:30–09:00","title":"bike+Jenny+upstairs","subs":[],"head":"bike+Jenny+upstairs","done":false},{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"bread · wash face & hands · apply cream · breakfast · brush teeth · vitamin B · lunch preparation · water","subs":["bread","wash face & hands","apply cream","breakfast","brush teeth","vitamin B","lunch preparation","water"],"head":"","done":false},{"start":"09:30","end":"10:00","span":"09:30–10:00","title":"lemonade · gmail","subs":["lemonade","gmail"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"stretch band · New Con translation · water · ti gang","subs":["stretch band","New Con translation","water","ti gang"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"taobao · water","subs":["taobao","water"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"stretch band · water · hema","subs":["stretch band","water","hema"],"head":"","done":false},{"start":"11:30","end":"12:00","span":"11:30–12:00","title":"lunch","subs":[],"head":"lunch","done":false},{"start":"12:30","end":"13:00","span":"12:30–13:00","title":"nap","subs":[],"head":"nap","done":false},{"start":"13:30","end":"14:00","span":"13:30–14:00","title":"heat lunch · stretch","subs":["heat lunch","stretch"],"head":"","done":false},{"start":"14:00","end":"14:30","span":"14:00–14:30","title":"stretch","subs":[],"head":"stretch","done":false},{"start":"15:00","end":"15:30","span":"15:00–15:30","title":"stretch · stairs","subs":["stretch","stairs"],"head":"","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:30","end":"17:00","span":"16:30–17:00","title":"fruit · refill water · clean bowls · ti gang","subs":["fruit","refill water","clean bowls","ti gang"],"head":"","done":false},{"start":"17:00","end":"17:30","span":"17:00–17:30","title":"sign off · bike + walk +Jenny","subs":["sign off","bike + walk +Jenny"],"head":"","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"Resistance bar 10 min · Biceps 10 min · Triceps 10 min · Jump rope 10 min","subs":["Resistance bar 10 min","Biceps 10 min","Triceps 10 min","Jump rope 10 min"],"head":"","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"Boxing dumbbells 10 min · Battle ropes 10 min · Toe-touch stretch 5 min","subs":["Boxing dumbbells 10 min","Battle ropes 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周五":[{"start":"08:30","end":"09:00","span":"08:30–09:00","title":"bike+Jenny+upstairs","subs":[],"head":"bike+Jenny+upstairs","done":false},{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"bread · wash face & hands · apply cream · breakfast · brush teeth · vitamin B · lunch preparation · water · clean nose hairs","subs":["bread","wash face & hands","apply cream","breakfast","brush teeth","vitamin B","lunch preparation","water","clean nose hairs"],"head":"","done":false},{"start":"09:30","end":"10:00","span":"09:30–10:00","title":"lemonade · gmail · govice","subs":["lemonade","gmail","govice"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"stretch band · New Con translation · water · ti gang","subs":["stretch band","New Con translation","water","ti gang"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"taobao · water","subs":["taobao","water"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"stretch band · water","subs":["stretch band","water"],"head":"","done":false},{"start":"11:30","end":"12:00","span":"11:30–12:00","title":"lunch","subs":[],"head":"lunch","done":false},{"start":"12:30","end":"13:00","span":"12:30–13:00","title":"nap","subs":[],"head":"nap","done":false},{"start":"13:30","end":"14:00","span":"13:30–14:00","title":"heat lunch · stretch","subs":["heat lunch","stretch"],"head":"","done":false},{"start":"14:00","end":"14:30","span":"14:00–14:30","title":"stretch","subs":[],"head":"stretch","done":false},{"start":"15:00","end":"15:30","span":"15:00–15:30","title":"stretch · stairs","subs":["stretch","stairs"],"head":"","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:30","end":"17:00","span":"16:30–17:00","title":"fruit · refill water · clean bowls · ti gang","subs":["fruit","refill water","clean bowls","ti gang"],"head":"","done":false},{"start":"17:00","end":"17:30","span":"17:00–17:30","title":"sign off · bike + walk +Jenny","subs":["sign off","bike + walk +Jenny"],"head":"","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"swim 30min","subs":[],"head":"swim 30min","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"Leg resistance band 10 min · Single-leg touch-down 10 min · Toe-touch stretch 5 min","subs":["Leg resistance band 10 min","Single-leg touch-down 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周六":[{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"clean the toilet · wash aquarium · water the flowers · vitamin B · water","subs":["clean the toilet","wash aquarium","water the flowers","vitamin B","water"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"clean robo vacuum · charge handy vacuum","subs":["clean robo vacuum","charge handy vacuum"],"head":"","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"stretch · RV charge","subs":["stretch","RV charge"],"head":"","done":false},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"New Con translation · taobao · water","subs":["New Con translation","taobao","water"],"head":"","done":false},{"start":"13:00","end":"13:30","span":"13:00–13:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"fruit","subs":[],"head":"fruit","done":false},{"start":"17:30","end":"18:00","span":"17:30–18:00","title":"RV stop charge","subs":[],"head":"RV stop charge","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"Resistance bar 10 min · Biceps 10 min · Triceps 10 min · Jump rope 10 min","subs":["Resistance bar 10 min","Biceps 10 min","Triceps 10 min","Jump rope 10 min"],"head":"","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"20:30","end":"21:00","span":"20:30–21:00","title":"tricycle charg","subs":[],"head":"tricycle charg","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"21:30","end":"22:00","span":"21:30–22:00","title":"tricycle discharge","subs":[],"head":"tricycle discharge","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"wash cloth · Boxing · dumbbells 10 min · Battle ropes 10 min · Toe-touch stretch 5 min","subs":["wash cloth","Boxing","dumbbells 10 min","Battle ropes 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Running + small dumbbells 20 min + toe-touch stretch + 1 minPush-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Running + small dumbbells 20 min + toe-touch stretch + 1 minPush-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"dry cloth · Please go to bed!!! · Watch your diet","subs":["dry cloth","Please go to bed!!!","Watch your diet"],"head":"","done":false}],"周日":[{"start":"09:00","end":"09:30","span":"09:00–09:30","title":"Resistance bar 10 min · Biceps 10 min · Triceps 10 min · Jump rope 10 min · vitamin B · water","subs":["Resistance bar 10 min","Biceps 10 min","Triceps 10 min","Jump rope 10 min","vitamin B","water"],"head":"","done":false},{"start":"10:00","end":"10:30","span":"10:00–10:30","title":"preparation robo vacuum","subs":[],"head":"preparation robo vacuum","done":false},{"start":"10:30","end":"11:00","span":"10:30–11:00","title":"stretch","subs":[],"head":"stretch","done":true},{"start":"11:00","end":"11:30","span":"11:00–11:30","title":"New Con translation · taobao · water","subs":["New Con translation","taobao","water"],"head":"","done":false},{"start":"13:00","end":"13:30","span":"13:00–13:30","title":"instgram 20min","subs":[],"head":"instgram 20min","done":false},{"start":"16:00","end":"16:30","span":"16:00–16:30","title":"fruit","subs":[],"head":"fruit","done":false},{"start":"18:00","end":"18:30","span":"18:00–18:30","title":"swim 30min","subs":[],"head":"swim 30min","done":false},{"start":"19:30","end":"20:00","span":"19:30–20:00","title":"SR Deep Sea Fish Oil 1 · Jarrow Bone-Up 3","subs":["SR Deep Sea Fish Oil 1","Jarrow Bone-Up 3"],"head":"","done":false},{"start":"20:00","end":"20:30","span":"20:00–20:30","title":"Training session + shrugs","subs":[],"head":"Training session + shrugs","done":false},{"start":"21:00","end":"21:30","span":"21:00–21:30","title":"Distance vision training · grip strengthener","subs":["Distance vision training","grip strengthener"],"head":"","done":false},{"start":"22:00","end":"22:30","span":"22:00–22:30","title":"wash clothSeaweed mud · Leg resistance band 10 min · Single-leg touch-down 10 min · Toe-touch stretch 5 min","subs":["wash clothSeaweed mud","Leg resistance band 10 min","Single-leg touch-down 10 min","Toe-touch stretch 5 min"],"head":"","done":false},{"start":"23:00","end":"23:30","span":"23:00–23:30","title":"Push-ups 20×3 · Forehead ointment · Magnesium 2 · Wash up · Face cream + hand cream","subs":["Push-ups 20×3","Forehead ointment","Magnesium 2","Wash up","Face cream + hand cream"],"head":"","done":false},{"start":"23:30","end":"24:00","span":"23:30–24:00","title":"Please go to bed!!! · Watch your diet","subs":["Please go to bed!!!","Watch your diet"],"head":"","done":false}]}}
+var SNAPSHOT = BOARD.snapshotDate || "2026-10-25";
+var CAL = BOARD.calendar || [];
+var WEEKLY = BOARD.weekly || {};
+var WEEKDAYS = ["周一","周二","周三","周四","周五","周六","周日"];
+var WEEKDAY_FROM_JS = ["周日","周一","周二","周三","周四","周五","周六"];
+
+function pad(n){return (n<10?"0":"")+n;}
+function parseDate(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+function fmtDate(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
+function weekdayName(dateStr){return WEEKDAY_FROM_JS[parseDate(dateStr).getDay()];}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function eventsOn(dateStr){return CAL.filter(function(e){return e.date===dateStr;});}
+
+var todayStr = fmtDate(new Date());
+// This board is a dated snapshot (system time Asia/Shanghai). "Today" always means the snapshot date, so highlights stay consistent with the data on the page.
+var anchorToday = SNAPSHOT;
+
+var byMonth = {};
+CAL.forEach(function(e){var k=e.date.slice(0,7);byMonth[k]=(byMonth[k]||0)+1;});
+var _upEnd=new Date(parseDate(SNAPSHOT));_upEnd.setDate(_upEnd.getDate()+30);var upcoming = CAL.filter(function(e){return e.date>=SNAPSHOT && e.date<=fmtDate(_upEnd);});
+var totalSlots = 0, doneSlots = 0;
+Object.keys(WEEKLY).forEach(function(k){(WEEKLY[k]||[]).forEach(function(s){totalSlots++;if(s.done)doneSlots++;});});
+
+document.getElementById("stats").innerHTML =
+  '<div class="stat"><b>'+CAL.length+'</b><span>日历事件 · '+(CAL.length?CAL[0].date.slice(5):'')+' – '+(CAL.length?CAL[CAL.length-1].date.slice(5):'')+'</span></div>'+
+  '<div class="stat"><b>'+upcoming.length+'</b><span>未来 30 天事件</span></div>'+
+  '<div class="stat"><b>'+totalSlots+'</b><span>每周待办格子 · 已完成 '+doneSlots+'</span></div>'+
+  '<div class="stat"><b>'+Object.keys(byMonth).length+' 个月</b><span>覆盖 '+Object.keys(byMonth).sort()[0]+' – '+Object.keys(byMonth).sort().slice(-1)[0]+'</span></div>';
+document.getElementById("snapshotNote").innerHTML = '<strong>数据更新：'+SNAPSHOT+'（'+WEEKDAY_FROM_JS[parseDate(SNAPSHOT).getDay()]+'）</strong> — 每 5 分钟自动检查 GitHub，改动后重新发布；刷新页面可看到最新版。';
+document.getElementById("upSub").textContent = SNAPSHOT+" 起的 30 天，按日期排好，全天和定时分开标。";
+
+/* ---------- Month ---------- */
+var _sm=SNAPSHOT.split("-");var curMonth = {y:+_sm[0],m:+_sm[1]-1};
+var selectedDate = anchorToday;
+var MONTHS_AVAILABLE = Object.keys(byMonth).sort();
+function monthKey(y,m){return y+"-"+pad(m+1);}
+function renderMonth(){
+  var y=curMonth.y,m=curMonth.m;
+  document.getElementById("monthTitle").textContent = y+" 年 "+(m+1)+" 月";
+  var key=monthKey(y,m);
+  var idx=MONTHS_AVAILABLE.indexOf(key);
+  document.getElementById("prevMonth").disabled = idx<=0;
+  document.getElementById("nextMonth").disabled = idx>=MONTHS_AVAILABLE.length-1;
+  var first=new Date(y,m,1);
+  // Monday-first offset
+  var offset=(first.getDay()+6)%7;
+  var daysInMonth=new Date(y,m+1,0).getDate();
+  var daysInPrev=new Date(y,m,0).getDate();
+  var html="";
+  var cells=[];
+  for(var i=0;i<42;i++){
+    var dayNum, dateStr, dim=false;
+    if(i<offset){dayNum=daysInPrev-offset+1+i;dim=true;var pd=new Date(y,m-1,dayNum);dateStr=fmtDate(pd);}
+    else if(i>=offset+daysInMonth){dayNum=i-offset-daysInMonth+1;dim=true;var nd=new Date(y,m+1,dayNum);dateStr=fmtDate(nd);}
+    else {dayNum=i-offset+1;dateStr=y+"-"+pad(m+1)+"-"+pad(dayNum);}
+    cells.push({dayNum:dayNum,dateStr:dateStr,dim:dim});
+    if(i>=35 && cells[cells.length-7].dim && dim && i>=offset+daysInMonth+6){/* keep 6 rows consistent */}
+  }
+  // trim trailing full dim week if month ends in week 5
+  var totalNeeded=offset+daysInMonth;
+  var rows=Math.ceil(totalNeeded/7);
+  cells=cells.slice(0,rows*7);
+  cells.forEach(function(c){
+    var evs=c.dim?[]:eventsOn(c.dateStr);
+    var cls="day-cell"+(c.dim?" dim":"")+(c.dateStr===anchorToday?" today":"")+(c.dateStr===selectedDate?" selected":"");
+    html+='<div class="'+cls+'" data-date="'+c.dateStr+'" role="button" tabindex="0" aria-label="'+c.dateStr+'"><div class="day-num"><span>'+c.dayNum+'</span>'+(c.dateStr===anchorToday?'<span class="today-dot">今天</span>':'')+'</div>';
+    evs.slice(0,3).forEach(function(e){
+      if(e.time==="全天") html+='<div class="ev" title="'+esc(e.title)+'">'+esc(e.title)+'</div>';
+      else html+='<div class="ev timed" title="'+esc(e.title)+'"><span class="t">'+esc(e.time)+'</span>'+esc(e.title)+'</div>';
+    });
+    if(evs.length>3) html+='<div class="more">还有 '+(evs.length-3)+' 条…</div>';
+    html+='</div>';
+  });
+  document.getElementById("monthGrid").innerHTML=html;
+  // agenda (mobile): only days in this month with events
+  var ahtml="";
+  for(var d=1;d<=daysInMonth;d++){
+    var ds=y+"-"+pad(m+1)+"-"+pad(d);
+    var list=eventsOn(ds);
+    if(!list.length) continue;
+    ahtml+='<div class="up-group'+(ds===anchorToday?" today":"")+'"><div class="up-date"><b>'+(m+1)+'月'+d+'日</b><span>'+weekdayName(ds)+(ds===anchorToday?" · 今天":"")+'</span></div><ul class="up-list">'+
+      list.map(function(e){return '<li><span class="badge '+(e.time==="全天"?"allday":"")+'">'+esc(e.time)+'</span><span>'+esc(e.title)+(e.repeat?'<span class="repeat-tag">每月重复</span>':'')+'</span></li>';}).join("")+
+      '</ul></div>';
+  }
+  document.getElementById("monthAgenda").innerHTML = ahtml || '<div class="up-group"><p class="empty">这个月没有日历事件。</p></div>';
+  // bind clicks
+  Array.prototype.forEach.call(document.querySelectorAll(".day-cell:not(.dim)"),function(el){
+    el.addEventListener("click",function(){selectedDate=el.getAttribute("data-date");renderMonth();renderDayDetail();});
+    el.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();el.click();}});
+  });
+  renderDayDetail();
+}
+function renderDayDetail(){
+  var list=eventsOn(selectedDate);
+  var html='<h3>'+selectedDate+' · '+weekdayName(selectedDate)+(selectedDate===anchorToday?' · 今天':'')+'</h3>';
+  if(!list.length) html+='<p class="empty">这一天没有日历事件，切到每周待办看看固定安排。</p>';
+  else html+='<ul class="detail-list">'+list.map(function(e){return '<li><span class="badge '+(e.time==="全天"?"allday":"")+'">'+esc(e.time)+'</span><span>'+esc(e.title)+(e.repeat?'<span class="repeat-tag">每月重复</span>':'')+'</span></li>';}).join("")+'</ul>';
+  document.getElementById("dayDetail").innerHTML=html;
+}
+document.getElementById("prevMonth").addEventListener("click",function(){var idx=MONTHS_AVAILABLE.indexOf(monthKey(curMonth.y,curMonth.m));if(idx>0){var p=MONTHS_AVAILABLE[idx-1].split("-");curMonth={y:+p[0],m:+p[1]-1};renderMonth();}});
+document.getElementById("nextMonth").addEventListener("click",function(){var idx=MONTHS_AVAILABLE.indexOf(monthKey(curMonth.y,curMonth.m));if(idx<MONTHS_AVAILABLE.length-1){var p=MONTHS_AVAILABLE[idx+1].split("-");curMonth={y:+p[0],m:+p[1]-1};renderMonth();}});
+
+/* ---------- Upcoming 30 days ---------- */
+function renderUpcoming(filter){
+  filter=(filter||"").trim().toLowerCase();
+  var list=upcoming.filter(function(e){return !filter || e.title.toLowerCase().indexOf(filter)>-1;});
+  var groups={},order=[];
+  list.forEach(function(e){if(!groups[e.date]){groups[e.date]=[];order.push(e.date);}groups[e.date].push(e);});
+  var html=order.map(function(ds){
+    return '<div class="up-group'+(ds===anchorToday?" today":"")+'"><div class="up-date"><b>'+ds.slice(5).replace("-","月")+'日</b><span>'+ds+' · '+weekdayName(ds)+(ds===anchorToday?" · 今天":"")+'</span></div><ul class="up-list">'+
+      groups[ds].map(function(e){return '<li><span class="badge '+(e.time==="全天"?"allday":"")+'">'+esc(e.time)+'</span><span class="title">'+esc(e.title)+'</span>'+(e.repeat?'<span class="repeat-tag">每月重复</span>':'')+'</li>';}).join("")+'</ul></div>';
+  }).join("");
+  document.getElementById("upcomingList").innerHTML=html;
+  document.getElementById("upEmpty").hidden = list.length>0;
+  document.getElementById("upcomingList").style.display = list.length? "" : "none";
+}
+document.getElementById("searchInput").addEventListener("input",function(e){renderUpcoming(e.target.value);});
+document.getElementById("clearSearch").addEventListener("click",function(){document.getElementById("searchInput").value="";renderUpcoming("");});
+
+/* ---------- Weekly ---------- */
+var realWeekday = weekdayName(SNAPSHOT);
+var selectedDay = WEEKDAYS.indexOf(realWeekday)>-1 ? realWeekday : "周日";
+function renderWeeklyTabs(){
+  document.getElementById("dayTabs").innerHTML = WEEKDAYS.map(function(d){
+    var slots=WEEKLY[d]||[];var done=slots.filter(function(s){return s.done;}).length;
+    return '<button type="button" role="tab" aria-selected="'+(d===selectedDay)+'" class="'+(d===selectedDay?"active":"")+'" data-day="'+d+'">'+d+'<span class="cnt">'+slots.length+' 格'+(done?" · 完成 "+done:"")+'</span></button>';
+  }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll("#dayTabs button"),function(b){b.addEventListener("click",function(){selectedDay=b.getAttribute("data-day");renderWeeklyTabs();renderWeekColumns();renderTimeline();});});
+}
+function renderWeekColumns(){
+  document.getElementById("weekColumns").innerHTML = WEEKDAYS.map(function(d){
+    var slots=WEEKLY[d]||[];
+    return '<div class="wcol'+(d===selectedDay?" active":"")+'" data-day="'+d+'" role="button" tabindex="0"><h4>'+d+'<span>'+slots.length+' 格</span></h4><ul>'+
+      slots.slice(0,7).map(function(s){return '<li class="'+(s.done?"done":"")+'"><b>'+esc(s.start)+'</b>'+esc(s.title||"—")+'</li>';}).join("")+
+      (slots.length>7?'<li>还有 '+(slots.length-7)+' 格…</li>':'')+'</ul></div>';
+  }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll(".wcol"),function(el){
+    function go(){selectedDay=el.getAttribute("data-day");renderWeeklyTabs();renderWeekColumns();renderTimeline();}
+    el.addEventListener("click",go);
+    el.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});
+  });
+}
+function renderTimeline(){
+  var slots=WEEKLY[selectedDay]||[];
+  var html='<h3 style="margin:10px 0 4px;font-size:16px">'+selectedDay+' · 共 '+slots.length+' 格</h3>';
+  html+=slots.map(function(s){
+    var title=s.head||s.title;
+    var subsHtml="";
+    var subsToShow = s.head ? s.subs : [];
+    if(subsToShow && subsToShow.length) subsHtml='<ul class="subs">'+subsToShow.map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul>';
+    else if(!s.head && s.subs && s.subs.length) subsHtml='<ul class="subs">'+s.subs.map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul>';
+    return '<div class="tl-row"><div class="tl-time">'+esc(s.span)+'</div><div><span class="tl-title'+(s.done?" done":"")+'">'+esc(title||"—")+'</span>'+(s.done?'<span class="done-mark">已完成</span>':'')+subsHtml+'</div></div>';
+  }).join("");
+  if(!slots.length) html+='<p class="empty">这一天没有固定待办。</p>';
+  document.getElementById("timeline").innerHTML=html;
+}
+
+renderMonth();
+renderUpcoming("");
+renderWeeklyTabs();
+renderWeekColumns();
+renderTimeline();
+</script>
+</body>
+</html>
