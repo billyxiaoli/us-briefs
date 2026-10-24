@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meta Q3 2026 Earnings Call — Part 5 of 5</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:20px auto;padding:0 16px;color:#111;line-height:1.6}
+h1{font-size:19px;line-height:1.4;margin:0 0 12px}
+button{font-size:18px;padding:8px 12px;margin:0;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
+.controls{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+.controls select{flex-shrink:0}
+button.primary{background:#111;color:#fff;border-color:#111}
+select{font-size:16px;padding:8px 6px;margin:0}
+input[type=range]{width:100%;margin:12px 0}
+.time{font-variant-numeric:tabular-nums;color:#444;white-space:nowrap}
+.controls .time{margin-right:auto;margin-left:0}
+#transcript{border:1px solid #ddd;border-radius:12px;padding:8px 12px;height:340px;overflow-y:auto;background:#fafafa;scroll-behavior:smooth}
+.line{padding:8px 10px;border-radius:8px;opacity:.45;font-size:19px;line-height:1.55;cursor:pointer}
+.line.active{opacity:1;font-weight:700;background:#111;color:#fff}
+.line.near{opacity:.75}
+#zh{border:1px solid #e6d9a8;border-radius:12px;padding:10px 12px;margin-top:12px;margin-bottom:14px;background:#fffbe6;line-height:1.6;min-height:52px}
+
+.controls #speedBtn{font-size:16px;padding:8px 10px}
+.speed-menu{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.35);z-index:10;display:flex;align-items:center;justify-content:center}
+.speed-menu[hidden]{display:none}
+.speed-list{background:#fff;border-radius:16px;width:min(320px,86vw);max-height:70vh;overflow-y:auto;padding:8px}
+.speed-opt{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:19px;padding:14px 16px;border:none;border-bottom:1px solid #eee;background:#fff;color:#111}
+.speed-opt.sel{font-weight:700;color:#0b5fff}
+</style>
+</head>
+<body>
+<h1>Meta Q3 2026 Earnings Call — Part 5 of 5</h1>
+<p style="color:#666;margin:0 0 12px">Meta Platforms Q3 2026 earnings call, October 21, 2026. Original audio. Q&A: Mahaney and close. Total call 61:16.</p>
+<p style="color:#666;margin:0 0 12px">From the YouTube livestream 《我的美国路（一）：踏足异乡》. Trial excerpt, about 1 minute. Female and male voices alternate by sentence.</p>
+<audio id="player" preload="metadata" src="section-5.mp3"></audio>
+<div id="transcript"></div>
+<div id="zh"></div>
+<div class="controls">
+<span class="time"><span id="cur">0:00</span> / <span id="dur">4:14</span></span>
+<button id="speedBtn" aria-label="Playback speed" title="Speed">1×</button>
+<button id="fwd5Btn" aria-label="Forward 5 seconds" title="Forward 5 seconds">⏩</button>
+<button id="back5Btn" aria-label="Back 5 seconds" title="Back 5 seconds">⏪</button>
+<button class="primary" id="playBtn" aria-label="Play or pause" title="Play">▶</button></div>
+<div id="speedMenu" class="speed-menu" hidden><div class="speed-list"><button class="speed-opt" data-rate="0.75">0.75×<span>○</span></button><button class="speed-opt" data-rate="0.8">0.8×<span>○</span></button><button class="speed-opt" data-rate="0.85">0.85×<span>○</span></button><button class="speed-opt" data-rate="0.9">0.9×<span>○</span></button><button class="speed-opt" data-rate="0.95">0.95×<span>○</span></button><button class="speed-opt sel" data-rate="1">1×<span>●</span></button><button class="speed-opt" data-rate="1.1">1.1×<span>○</span></button><button class="speed-opt" data-rate="1.2">1.2×<span>○</span></button><button class="speed-opt" data-rate="1.3">1.3×<span>○</span></button><button class="speed-opt" data-rate="1.4">1.4×<span>○</span></button><button class="speed-opt" data-rate="1.5">1.5×<span>○</span></button><button class="speed-opt" data-rate="1.6">1.6×<span>○</span></button><button class="speed-opt" data-rate="1.7">1.7×<span>○</span></button><button class="speed-opt" data-rate="1.8">1.8×<span>○</span></button><button class="speed-opt" data-rate="1.9">1.9×<span>○</span></button><button class="speed-opt" data-rate="2">2×<span>○</span></button></div></div>
+<input type="range" id="seek" value="0" min="0" max="100" step="0.1">
+
+<script>
+const LINES=[{"start": 0, "end": 0.97, "text": "Mark Mahaney: Okay, thanks.", "zh": "Mark Mahaney：好的，谢谢。"}, {"start": 0.97, "end": 2.02, "text": "Two questions.", "zh": "两个问题。"}, {"start": 2.02, "end": 15.23, "text": "There is a bit of a playbook, or there has been at Meta over the years when you surface new surfaces and you build up the user growth engagement, then you layer in monetization.", "zh": "Meta 多年来一直有一个套路：当你们推出新的版块、积累用户增长和互动，然后再叠加变现。"}, {"start": 15.23, "end": 32.1, "text": "Do you think it is sort of a similar playbook here, or does it have to be a little bit faster with Muse, just given that the costs associated with it are materially greater, arguably, than launching those surfaces in the past?", "zh": "你认为这里也是类似的套路吗？还是说，由于 Muse 的相关成本可以说比过去推出这些版块时要大得多，所以必须稍微快一点？"}, {"start": 32.1, "end": 40.98, "text": "Then just a clarification on that commerce data point that you provided about 25% of users and the $200 or greater ASP.", "zh": "然后只是澄清一下你们提供的关于 25% 用户和 200 美元或以上平均售价的商务数据点。"}, {"start": 40.98, "end": 47.25, "text": "Are you including in commerce travel purchases, or is that just a retail data point?", "zh": "你们在商务中是否包括旅行购买，还是说那只是一个零售数据点？"}, {"start": 47.25, "end": 48, "text": "Thank you.", "zh": "谢谢。"}, {"start": 48, "end": 57.18, "text": "Mark Zuckerberg: My guess, I think that we are going to work on monetization somewhat sooner on this than our normal playbook for a couple of reasons.", "zh": "Mark Zuckerberg：我的猜测是，我认为我们将在变现方面比我们通常的套路稍微早一些，原因有几个。"}, {"start": 57.18, "end": 70.5, "text": "One is just the size of the numbers that we are talking about in terms of both the costs and the opportunity, I think make it important to make progress on that in order to be able to scale it.", "zh": "一个原因是，我们谈论的数字规模，无论是成本还是机会，都让我认为取得进展对于扩大规模很重要。"}, {"start": 70.5, "end": 75.88, "text": "The other is just that such a large part of what people are doing is commerce.", "zh": "另一个原因是，人们所做的事情中有很大一部分是商务。"}, {"start": 75.88, "end": 79.13, "text": "To your question, that does include travel too.", "zh": "关于你的问题，那也包括旅行。"}, {"start": 79.13, "end": 97, "text": "I think we might consider travel a different case, but travel is actually one of the other top use cases for Muse, is basically people planning that out and planning different kinds of things that they would get than they might get through our family of apps.", "zh": "我认为我们可能会把旅行看作一个不同的案例，但旅行实际上是 Muse 的另一个主要使用场景，基本上是人们规划行程以及规划通过我们的应用家族可能获得的不同种类的东西。"}, {"start": 97, "end": 105.17, "text": "Mark Zuckerberg: I think that this is going to be an important thing for us to work on to deliver the consumer value that people want.", "zh": "Mark Zuckerberg：我认为，这将是我们为提供人们想要的消费者价值而努力的重要事情。"}, {"start": 105.17, "end": 114.33, "text": "In doing so, I think we will be able to build a model where we get a percent of the value that we are helping to create for people.", "zh": "在这样做的过程中，我认为我们将能够建立一个模式，让我们获得我们帮助人们创造的价值的一部分。"}, {"start": 114.33, "end": 129, "text": "I think that it is going to be very important to get the math on all of this to work out, so that way we can continue the compute build-out that we want to build in order to get this to reach everyone at scale.", "zh": "我认为，让所有这些数学算得通将非常重要，这样我们才能继续我们想要的算力建设，以达到每个人的规模。"}, {"start": 129, "end": 152.43, "text": "Mark Zuckerberg: In addition to everything that Susan said in response to the last answer, I would also just add that we just see this trend that year-over-year, I just expect that we will be able to deliver the same intelligence that we have now in Muse Wonder or frankly, any of the current frontier models at a fraction of the cost in a smaller model a year from today.", "zh": "Mark Zuckerberg：除了 Susan 在回答上一个问题时说的所有内容，我还想补充一点，我们只是看到这样一个趋势：同比来看，我只是预计，我们将能够以今天一小部分的成本，在一年后的更小模型中提供我们现在在 Muse Wonder 或坦率地说任何当前前沿模型中拥有的相同智能。"}, {"start": 152.43, "end": 168, "text": "To the extent that represents some kind of baseline level that people seem to, that is sufficient for product market fit for Muse, I think that we will just continue through continued model development, make progress on that efficiency.", "zh": "就这一点代表了人们似乎认为足以实现 Muse 产品市场契合的某种基线水平而言，我认为我们将通过持续的模型开发，在效率方面继续取得进展。"}, {"start": 168, "end": 179.38, "text": "Mark Zuckerberg: The thing that is, and of course less clear, is that I don't think in a year from now, most people are going to want to use the current model level of intelligence because that's also going to make progress.", "zh": "Mark Zuckerberg：不太清楚的是，我认为一年后，大多数人不会想使用当前的模型智能水平，因为那也将取得进展。"}, {"start": 179.38, "end": 199, "text": "I think we're going to need to work on all of these things, both the revenue pieces of it and scaling the different aspects of that, as well as progressing on the model development and all the efficiency in order to be able to both fund and support the compute build-out and reach billions of people, which again, we want to get to that as soon as possible.", "zh": "我认为我们需要在所有这些事情上努力，包括收入部分和扩大不同方面的规模，以及在模型开发和所有效率方面取得进展，以便既能资助又能支持算力建设，并触达数十亿人，再说一次，我们希望尽快做到这一点。"}, {"start": 199, "end": 215.74, "text": "Mark Zuckerberg: Part of the reason why we're not just charging everyone upfront to use this is we want to establish this Muse network, and we think that it's going to be more valuable for people at scale when there are a lot of people and businesses using Muse, so that way they can collaborate and work together.", "zh": "Mark Zuckerberg：我们之所以不只是向每个人预先收费，部分原因是我们想建立这个 Muse 网络，我们认为当有很多人和企业使用 Muse 时，它在规模上会更有价值，这样他们就可以协作和共同工作。"}, {"start": 215.74, "end": 221.32, "text": "I think that that's really a very important state to get to and one that we're quite excited about.", "zh": "我认为，达到这样一个状态真的非常重要，我们对此非常兴奋。"}, {"start": 221.32, "end": 228.76, "text": "Again, I don't think that there are many companies in the world that are well-situated to be able to do that in the way that we are.", "zh": "再说一次，我不认为世界上有很多公司能够像我们这样很好地做到这一点。"}, {"start": 228.76, "end": 234, "text": "I think we are very well-situated to do that, and we plan to push on that quite aggressively.", "zh": "我认为我们在这一点上位置非常好，我们计划非常积极地推进这一点。"}, {"start": 234, "end": 237.68, "text": "Operator: That does conclude our question-and-answer session.", "zh": "Operator：这就结束了我们的问答环节。"}, {"start": 237.68, "end": 242, "text": "Rob Bevegni, I would like to turn the call back over to you.", "zh": "Rob Bevegni，我想把电话交还给你。"}, {"start": 242, "end": 248, "text": "Rob Bevegni: Thank you for joining us today, and we look forward to speaking with you again soon.", "zh": "Rob Bevegni：感谢大家今天参加，我们期待很快再次与你们交流。"}, {"start": 248, "end": 251.1, "text": "Operator: Ladies and gentlemen, this does conclude today's conference call.", "zh": "Operator：女士们、先生们，今天的电话会议到此结束。"}, {"start": 251.1, "end": 254, "text": "Thank you for your participation, and you may now disconnect.", "zh": "感谢大家的参与，现在可以挂断了。"}];
+const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speedBtn=document.getElementById('speedBtn'),speedMenu=document.getElementById('speedMenu'),box=document.getElementById('transcript'),zhBox=document.getElementById('zh');
+LINES.forEach((l,i)=>{const d=document.createElement('div');d.className='line';d.textContent=l.text;d.onclick=()=>{a.currentTime=l.start;a.play();playBtn.textContent='⏸';};box.appendChild(d);});
+const els=[...box.children];
+let curIdx=-1;
+function fmt(t){if(!isFinite(t))return '0:00';t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0');}
+function setActive(i){if(i===curIdx)return;curIdx=i;els.forEach((el,j)=>{el.className='line'+(j===i?' active':(j<i&&i-j<=2?' near':''));});if(i>=0){const el=els[i];zhBox.textContent=LINES[i].zh||'';box.scrollTop+=el.getBoundingClientRect().bottom-box.getBoundingClientRect().bottom;}}
+playBtn.onclick=()=>{if(a.paused){a.play();playBtn.textContent='⏸';}else{a.pause();playBtn.textContent='▶';}};
+document.getElementById('back5Btn').onclick=()=>{a.currentTime=Math.max(0,a.currentTime-5);};
+document.getElementById('fwd5Btn').onclick=()=>{a.currentTime=Math.min(a.duration||0,a.currentTime+5);};
+speedBtn.onclick=()=>{if(speedMenu.hidden){speedMenu.hidden=false;const sel=speedMenu.querySelector('.speed-opt.sel');if(sel)sel.scrollIntoView({block:'center'});}else{speedMenu.hidden=true;}};
+speedMenu.onclick=(e)=>{if(e.target===speedMenu)speedMenu.hidden=true;};
+speedMenu.querySelectorAll('.speed-opt').forEach(b=>{b.onclick=()=>{a.playbackRate=parseFloat(b.dataset.rate);speedBtn.textContent=b.textContent.replace(/[●○]/,'').trim();speedMenu.querySelectorAll('.speed-opt').forEach(x=>{x.classList.remove('sel');x.querySelector('span').textContent='○';});b.classList.add('sel');b.querySelector('span').textContent='●';speedMenu.hidden=true;};});
+a.onloadedmetadata=()=>{dur.textContent=fmt(a.duration);seek.max=a.duration;};
+a.ontimeupdate=()=>{cur.textContent=fmt(a.currentTime);if(document.activeElement!==seek)seek.value=a.currentTime;let idx=-1;for(let i=0;i<LINES.length;i++){if(a.currentTime>=LINES[i].start)idx=i;else break;}setActive(idx);};
+seek.oninput=()=>{a.currentTime=parseFloat(seek.value);cur.textContent=fmt(a.currentTime);};
+a.onended=()=>{playBtn.textContent='▶';};
+</script>
+</body>
+</html>
