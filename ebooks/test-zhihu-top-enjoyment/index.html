@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:20px auto;padding:0 16px;color:#111;line-height:1.6}
+h1{font-size:19px;line-height:1.4;margin:0 0 12px}
+button{font-size:18px;padding:8px 12px;margin:0;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
+.controls{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+button.primary{background:#111;color:#fff;border-color:#111}
+input[type=range]{width:100%;margin:12px 0}
+.time{font-variant-numeric:tabular-nums;color:#444;white-space:nowrap}
+.controls .time{margin-right:auto;margin-left:0}
+#transcript{border:1px solid #ddd;border-radius:12px;padding:8px 12px;height:340px;overflow-y:auto;background:#fafafa;scroll-behavior:smooth}
+.line{padding:8px 10px;border-radius:8px;opacity:.45;font-size:19px;line-height:1.55;cursor:pointer}
+.line.active{opacity:1;font-weight:700;background:#111;color:#fff}
+.line.near{opacity:.75}
+.controls #speedBtn{font-size:16px;padding:8px 10px}
+.speed-menu{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.35);z-index:10;display:flex;align-items:center;justify-content:center}
+.speed-menu[hidden]{display:none}
+.speed-list{background:#fff;border-radius:16px;width:min(320px,86vw);max-height:70vh;overflow-y:auto;padding:8px}
+.speed-opt{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:19px;padding:14px 16px;border:none;border-bottom:1px solid #eee;background:#fff;color:#111}
+.speed-opt.sel{font-weight:700;color:#0b5fff}
+</style>
+</head>
+<body>
+<h1>什么算是人生的顶级享受？（测试：第 1 楼）</h1>
+<audio id="player" preload="metadata" src="audio.mp3"></audio>
+<div id="transcript"></div>
+<div class="controls">
+<span class="time"><span id="cur">0:00</span> / <span id="dur">3:21</span></span>
+<button id="speedBtn" aria-label="Playback speed" title="Speed">1×</button>
+<button id="fwd5Btn" aria-label="Forward 5 seconds" title="Forward 5 seconds">⏩</button>
+<button id="back5Btn" aria-label="Back 5 seconds" title="Back 5 seconds">⏪</button>
+<button class="primary" id="playBtn" aria-label="Play or pause" title="Play">▶</button></div>
+<div id="speedMenu" class="speed-menu" hidden><div class="speed-list"><button class="speed-opt" data-rate="0.75">0.75×<span>○</span></button><button class="speed-opt" data-rate="0.8">0.8×<span>○</span></button><button class="speed-opt" data-rate="0.85">0.85×<span>○</span></button><button class="speed-opt" data-rate="0.9">0.9×<span>○</span></button><button class="speed-opt" data-rate="0.95">0.95×<span>○</span></button><button class="speed-opt sel" data-rate="1">1×<span>●</span></button><button class="speed-opt" data-rate="1.1">1.1×<span>○</span></button><button class="speed-opt" data-rate="1.2">1.2×<span>○</span></button><button class="speed-opt" data-rate="1.3">1.3×<span>○</span></button><button class="speed-opt" data-rate="1.4">1.4×<span>○</span></button><button class="speed-opt" data-rate="1.5">1.5×<span>○</span></button><button class="speed-opt" data-rate="1.6">1.6×<span>○</span></button><button class="speed-opt" data-rate="1.7">1.7×<span>○</span></button><button class="speed-opt" data-rate="1.8">1.8×<span>○</span></button><button class="speed-opt" data-rate="1.9">1.9×<span>○</span></button><button class="speed-opt" data-rate="2">2×<span>○</span></button></div></div>
+<input type="range" id="seek" value="0" min="0" max="100" step="0.1">
+<script>
+const LINES=[{"start": 0.0, "end": 17.33, "text": "我是个小的不能再小的老板，公司从事农业，所以有一群给我干农活的阿姨，她们都是本地最淳朴的那一波农村人，没有受过什么教育，拿着最低的待遇，面对最毒辣的太阳，无论风吹日晒，都做着最原始的农事。"}, {"start": 17.33, "end": 22.66, "text": "每天准时上班按时下班，没有休息，却也勤勤恳恳。"}, {"start": 22.66, "end": 28.54, "text": "我平时来去匆匆好像和他们交集不多，并没有太多的了解和交情。"}, {"start": 28.54, "end": 37.97, "text": "前几年企业状态不是很好，所以过往三八妇女节公司里都是只考虑到管理层女性的福利，没有想过这些阿姨。"}, {"start": 37.97, "end": 48.65, "text": "今年三八节当天，恰巧我也在公司，因为又有订单，于是让阿姨他们加班到很晚，但和无数个普通的日夜一样，他们依然按时按质的完成所有的工作。"}, {"start": 48.65, "end": 61.18, "text": "看着他们拖着疲劳的身体，在下班后背上自己的锄头和劳动工具，还要在漆黑的乡下夜晚里步行几公里回家，突然我觉得作为老板有一丝过分和愧疚感。"}, {"start": 61.18, "end": 72.86, "text": "于是三八节第二天，我决定改变一下，包了一张大巴车，包了一个温泉山庄，定了几桌饭，给这些阿姨算正常考勤，然后带着他们出游了high了一整天。"}, {"start": 72.86, "end": 86.54, "text": "在这一天里，这些平日素面朝天的阿姨翻遍了衣柜，穿上了自己最漂亮的衣服，甚至涂上了口红，一路吹着口哨唱着歌，那些他们几年都没更新过的朋友圈，一天之内如同直播一般的推送。"}, {"start": 86.54, "end": 93.91, "text": "他们也狠下心，给自己买了最红最艳的泳衣，漂亮的在泳池里用手机留着纪念。"}, {"start": 93.91, "end": 101.18, "text": "我长这么大，该见的也见过了，但老阿姨比基尼派对也是第一次参加，哈哈。"}, {"start": 101.18, "end": 106.99, "text": "活动结束后的几天内，他们见到我，都会情不自禁眉飞色舞的回忆那一天。"}, {"start": 106.99, "end": 115.8, "text": "有的人说这是她第一次泡温泉，有的人说这是她最近几年最快乐的一天，有的人甚至把那天的乡村比基尼自拍换成了微信头像。"}, {"start": 115.8, "end": 121.87, "text": "在交谈中，我甚至发现我竟然叫不全他们的名字，纵使他们已经跟着我做了好几年。"}, {"start": 121.87, "end": 125.35, "text": "但也是这次活动，感觉我和他们距离又拉进了跟多。"}, {"start": 125.35, "end": 154.68, "text": "后来了解了一些他们的故事，有的人在省吃俭用给大城市的儿子还房贷，有的人在节衣缩食照顾一家老小，也有人下班后还要回家干农活补贴家用，曾经她们也风华正茂，美丽动人，只是时间和生活淹没了他们的自我和快乐，也许一年到头他们都不会有属于自己的一天，或是一个节日，但很开心成为了那个让他们拥有节日且给予他们快乐的人，这是一种顶配的人生享受，真的。"}, {"start": 154.68, "end": 163.56, "text": "赚钱让自己花前月下，让自己豪车美女是一种享受方式，当然我相信让老阿姨开心也是。"}, {"start": 163.56, "end": 182.76, "text": "我很享受收到这些最质朴劳动人民的认可，在三八节能用不到一顿商务宴请的费用，却兑现到了十多个美丽女性快乐的一整天，让他们短暂的忘记了自己是员工，是母亲是儿女是妻子，而记起来了自己是自己。"}, {"start": 182.76, "end": 188.33, "text": "我也决定如果我公司没倒闭，往后每一年都坚持这些福利吧。"}, {"start": 188.33, "end": 193.08, "text": "与其花呗会所渡佳丽，不如关心身边自己人。"}, {"start": 193.08, "end": 201.07, "text": "谢谢各位精神股东的支持，老规矩，如有一天有幸我能敲钟 各位点赞合伙人均有干股，一言为定。"}];
+const a=document.getElementById('player'),playBtn=document.getElementById('playBtn'),seek=document.getElementById('seek'),cur=document.getElementById('cur'),dur=document.getElementById('dur'),speedBtn=document.getElementById('speedBtn'),speedMenu=document.getElementById('speedMenu'),box=document.getElementById('transcript');
+LINES.forEach((l,i)=>{const d=document.createElement('div');d.className='line';d.textContent=l.text;d.onclick=()=>{a.currentTime=l.start;a.play();playBtn.textContent='⏸';};box.appendChild(d);});
+const els=[...box.children];
+let curIdx=-1;
+function fmt(t){if(!isFinite(t))return '0:00';t=Math.floor(t);return Math.floor(t/60)+':'+String(t%60).padStart(2,'0');}
+function setActive(i){if(i===curIdx)return;curIdx=i;els.forEach((el,j)=>{el.className='line'+(j===i?' active':(j<i&&i-j<=2?' near':''));});if(i>=0){const el=els[i];box.scrollTop+=el.getBoundingClientRect().bottom-box.getBoundingClientRect().bottom;}}
+playBtn.onclick=()=>{if(a.paused){a.play();playBtn.textContent='⏸';}else{a.pause();playBtn.textContent='▶';}};
+document.getElementById('back5Btn').onclick=()=>{a.currentTime=Math.max(0,a.currentTime-5);};
+document.getElementById('fwd5Btn').onclick=()=>{a.currentTime=Math.min(a.duration||0,a.currentTime+5);};
+speedBtn.onclick=()=>{if(speedMenu.hidden){speedMenu.hidden=false;const sel=speedMenu.querySelector('.speed-opt.sel');if(sel)sel.scrollIntoView({block:'center'});}else{speedMenu.hidden=true;}};
+speedMenu.onclick=(e)=>{if(e.target===speedMenu)speedMenu.hidden=true;};
+speedMenu.querySelectorAll('.speed-opt').forEach(b=>{b.onclick=()=>{a.playbackRate=parseFloat(b.dataset.rate);speedBtn.textContent=b.textContent.replace(/[●○]/,'').trim();speedMenu.querySelectorAll('.speed-opt').forEach(x=>{x.classList.remove('sel');x.querySelector('span').textContent='○';});b.classList.add('sel');b.querySelector('span').textContent='●';speedMenu.hidden=true;};});
+a.onloadedmetadata=()=>{dur.textContent=fmt(a.duration);seek.max=a.duration;};
+a.ontimeupdate=()=>{cur.textContent=fmt(a.currentTime);if(document.activeElement!==seek)seek.value=a.currentTime;let idx=-1;for(let i=0;i<LINES.length;i++){if(a.currentTime>=LINES[i].start)idx=i;else break;}setActive(idx);};
+seek.oninput=()=>{a.currentTime=parseFloat(seek.value);cur.textContent=fmt(a.currentTime);};
+a.onended=()=>{playBtn.textContent='▶';};
+</script>
+</body>
+</html>
