@@ -3,15 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meta Q3 2026 Earnings Call — Part 4 of 5</title>
+<title>Audio</title>
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:20px auto;padding:0 16px;color:#111;line-height:1.6}
-h1{font-size:19px;line-height:1.4;margin:0 0 12px}
 button{font-size:18px;padding:8px 12px;margin:0;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
 .controls{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
-.controls select{flex-shrink:0}
 button.primary{background:#111;color:#fff;border-color:#111}
-select{font-size:16px;padding:8px 6px;margin:0}
 input[type=range]{width:100%;margin:12px 0}
 .time{font-variant-numeric:tabular-nums;color:#444;white-space:nowrap}
 .controls .time{margin-right:auto;margin-left:0}
@@ -20,7 +17,6 @@ input[type=range]{width:100%;margin:12px 0}
 .line.active{opacity:1;font-weight:700;background:#111;color:#fff}
 .line.near{opacity:.75}
 #zh{border:1px solid #e6d9a8;border-radius:12px;padding:10px 12px;margin-top:12px;margin-bottom:14px;background:#fffbe6;line-height:1.6;min-height:52px}
-
 .controls #speedBtn{font-size:16px;padding:8px 10px}
 .speed-menu{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.35);z-index:10;display:flex;align-items:center;justify-content:center}
 .speed-menu[hidden]{display:none}
@@ -30,9 +26,10 @@ input[type=range]{width:100%;margin:12px 0}
 </style>
 </head>
 <body>
-<h1>Meta Q3 2026 Earnings Call — Part 4 of 5</h1>
-<p style="color:#666;margin:0 0 12px">Meta Platforms Q3 2026 earnings call, October 21, 2026. Original audio. Q&A: Anmuth, Post, Shmulik and Sandler. Total call 61:16.</p>
-<p style="color:#666;margin:0 0 12px">From the YouTube livestream 《我的美国路（一）：踏足异乡》. Trial excerpt, about 1 minute. Female and male voices alternate by sentence.</p>
+
+
+
+<div id="secTitle" style="font-weight:700;margin:0 0 12px">Meta Q3 2026 Earnings Call — Part 4 of 5</div>
 <audio id="player" preload="metadata" src="section-4.mp3"></audio>
 <div id="transcript"></div>
 <div id="zh"></div>
@@ -42,7 +39,7 @@ input[type=range]{width:100%;margin:12px 0}
 <button id="fwd5Btn" aria-label="Forward 5 seconds" title="Forward 5 seconds">⏩</button>
 <button id="back5Btn" aria-label="Back 5 seconds" title="Back 5 seconds">⏪</button>
 <button class="primary" id="playBtn" aria-label="Play or pause" title="Play">▶</button></div>
-<div id="speedMenu" class="speed-menu" hidden><div class="speed-list"><button class="speed-opt" data-rate="0.75">0.75×<span>○</span></button><button class="speed-opt" data-rate="0.8">0.8×<span>○</span></button><button class="speed-opt" data-rate="0.85">0.85×<span>○</span></button><button class="speed-opt" data-rate="0.9">0.9×<span>○</span></button><button class="speed-opt" data-rate="0.95">0.95×<span>○</span></button><button class="speed-opt sel" data-rate="1">1×<span>●</span></button><button class="speed-opt" data-rate="1.1">1.1×<span>○</span></button><button class="speed-opt" data-rate="1.2">1.2×<span>○</span></button><button class="speed-opt" data-rate="1.3">1.3×<span>○</span></button><button class="speed-opt" data-rate="1.4">1.4×<span>○</span></button><button class="speed-opt" data-rate="1.5">1.5×<span>○</span></button><button class="speed-opt" data-rate="1.6">1.6×<span>○</span></button><button class="speed-opt" data-rate="1.7">1.7×<span>○</span></button><button class="speed-opt" data-rate="1.8">1.8×<span>○</span></button><button class="speed-opt" data-rate="1.9">1.9×<span>○</span></button><button class="speed-opt" data-rate="2">2×<span>○</span></button></div></div>
+<div id="status" style="color:#888;font-size:13px;margin:6px 0 0;min-height:18px"></div><div id="speedMenu" class="speed-menu" hidden><div class="speed-list"><button class="speed-opt" data-rate="0.75">0.75×<span>○</span></button><button class="speed-opt" data-rate="0.8">0.8×<span>○</span></button><button class="speed-opt" data-rate="0.85">0.85×<span>○</span></button><button class="speed-opt" data-rate="0.9">0.9×<span>○</span></button><button class="speed-opt" data-rate="0.95">0.95×<span>○</span></button><button class="speed-opt sel" data-rate="1">1×<span>●</span></button><button class="speed-opt" data-rate="1.1">1.1×<span>○</span></button><button class="speed-opt" data-rate="1.2">1.2×<span>○</span></button><button class="speed-opt" data-rate="1.3">1.3×<span>○</span></button><button class="speed-opt" data-rate="1.4">1.4×<span>○</span></button><button class="speed-opt" data-rate="1.5">1.5×<span>○</span></button><button class="speed-opt" data-rate="1.6">1.6×<span>○</span></button><button class="speed-opt" data-rate="1.7">1.7×<span>○</span></button><button class="speed-opt" data-rate="1.8">1.8×<span>○</span></button><button class="speed-opt" data-rate="1.9">1.9×<span>○</span></button><button class="speed-opt" data-rate="2">2×<span>○</span></button></div></div>
 <div id="volMenu" class="speed-menu" hidden><div class="speed-list" style="text-align:center;padding:20px"><div id="volLabel">音量 100%</div><input type="range" id="volRange" min="0" max="100" value="100" style="width:100%"></div></div><input type="range" id="seek" value="0" min="0" max="100" step="0.1">
 
 <script>
