@@ -123,5 +123,41 @@ document.addEventListener('keydown', function(e) {
   } catch (e) {}
 })();
 </script>
+<script>
+(function(){
+  var SYNC_URL = 'https://player-sync.billyxiaoli.workers.dev';
+  var sel = document.getElementById('audioSelect');
+  if (!sel) return;
+  var HUB = location.pathname;
+  var ready = false;
+  function postCloud(){
+    if (!ready) return;
+    try {
+      fetch(SYNC_URL + '/', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({hub: HUB, audio: sel.value})}).catch(function(){});
+    } catch (e) {}
+  }
+  sel.addEventListener('change', postCloud);
+  var a = document.getElementById('player');
+  if (a) a.addEventListener('play', postCloud);
+  try {
+    var ctl = null;
+    if (window.AbortController) {
+      ctl = new AbortController();
+      setTimeout(function(){ try { ctl.abort(); } catch (e) {} }, 4000);
+    }
+    var opts = {};
+    if (ctl) opts.signal = ctl.signal;
+    fetch(SYNC_URL + '/?hub=' + encodeURIComponent(HUB), opts).then(function(r){ return r.json(); }).then(function(d){
+      if (d && d.audio) {
+        var ok = false;
+        for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].value === d.audio) { ok = true; break; } }
+        if (ok && sel.value !== d.audio) { sel.value = d.audio; sel.dispatchEvent(new Event('change')); }
+      }
+      ready = true;
+    }).catch(function(){ ready = true; });
+  } catch (e) { ready = true; }
+})();
+</script>
 </body>
 </html>
