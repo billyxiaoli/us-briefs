@@ -73,5 +73,18 @@ const volBtn=document.getElementById('volBtn'),volMenu=document.getElementById('
 function applyVol(v){a.volume=v/100;if(volRange)volRange.value=v;if(volLabel)volLabel.textContent='音量 '+v+'%';if(volBtn)volBtn.textContent=v==0?'🔇':(v<50?'🔈':'🔊');try{localStorage.setItem('audioVol',String(v));}catch(e){}}
 if(volBtn&&volMenu&&volRange){let savedVol=100;try{savedVol=parseInt(localStorage.getItem('audioVol'));if(isNaN(savedVol))savedVol=100;}catch(e){}applyVol(savedVol);volBtn.onclick=()=>{volMenu.hidden=!volMenu.hidden;};volMenu.onclick=(e)=>{if(e.target===volMenu)volMenu.hidden=true;};volRange.oninput=()=>{applyVol(parseInt(volRange.value,10));};}
 </script>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'PageDown') {
+    var t = e.target;
+    if (t && ((t.tagName === 'INPUT' && t.type === 'text') || t.tagName === 'TEXTAREA')) return;
+    var a = document.querySelector('audio');
+    if (a && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      e.preventDefault();
+      a.currentTime = Math.max(0, a.currentTime - 5);
+    }
+  }
+});
+</script>
 </body>
 </html>
