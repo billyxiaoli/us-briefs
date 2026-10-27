@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>PageDown test</title></head>
+<body>
+<h2>PageDown diagnostic (temporary)</h2>
+<audio id="audio" controls preload="auto" src="https://billyxiaoli.github.io/us-briefs/podcasts/2026-10-26-post-market/2026-10-26-post-market.mp3"></audio>
+<div>Time: <span id="t">0:00</span></div>
+<div>Last key pressed: <span id="keylog">(none yet)</span></div>
+<script>
+var a = document.getElementById('audio');
+a.addEventListener('timeupdate', function(){ var m = Math.floor(a.currentTime/60), s = Math.floor(a.currentTime%60); document.getElementById('t').textContent = m + ':' + (s<10?'0':'') + s; });
+document.addEventListener('keydown', function(e) {
+  document.getElementById('keylog').textContent = e.key;
+  if (e.key === 'PageDown') {
+    var t = e.target;
+    if (t && ((t.tagName === 'INPUT' && t.type === 'text') || t.tagName === 'TEXTAREA')) return;
+    if (a && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      e.preventDefault();
+      a.currentTime = Math.max(0, a.currentTime - 5);
+    }
+  }
+});
+</script>
+</body></html>
