@@ -78,13 +78,22 @@ if(volBtn&&volMenu&&volRange){let savedVol=100;try{savedVol=parseInt(localStorag
 </script>
 <script>
 document.addEventListener('keydown', function(e) {
+  var a = document.querySelector('audio');
+  if (!a || e.metaKey || e.ctrlKey || e.altKey) return;
+  var t = e.target;
   if (e.key === 'PageDown') {
-    var t = e.target;
     if (t && ((t.tagName === 'INPUT' && t.type === 'text') || t.tagName === 'TEXTAREA')) return;
-    var a = document.querySelector('audio');
-    if (a && !e.metaKey && !e.ctrlKey && !e.altKey) {
-      e.preventDefault();
+    e.preventDefault();
+    a.currentTime = Math.max(0, a.currentTime - 5);
+  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA')) return;
+    e.preventDefault();
+    if (e.key === 'ArrowLeft') {
       a.currentTime = Math.max(0, a.currentTime - 5);
+    } else if (isFinite(a.duration)) {
+      a.currentTime = Math.min(a.duration, a.currentTime + 5);
+    } else {
+      a.currentTime = a.currentTime + 5;
     }
   }
 });
