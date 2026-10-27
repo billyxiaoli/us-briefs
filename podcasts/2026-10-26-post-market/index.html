@@ -75,5 +75,18 @@ a.addEventListener('pause',savePos);window.addEventListener('pagehide',savePos);
 a.addEventListener('loadedmetadata',restorePos);
 a.addEventListener('ended',()=>{try{localStorage.removeItem(posKey());}catch(e){}});
 </script>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'PageDown') {
+    var t = e.target;
+    if (t && ((t.tagName === 'INPUT' && t.type === 'text') || t.tagName === 'TEXTAREA')) return;
+    var a = document.querySelector('audio');
+    if (a && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      e.preventDefault();
+      a.currentTime = Math.max(0, a.currentTime - 5);
+    }
+  }
+});
+</script>
 </body>
 </html>
