@@ -160,5 +160,34 @@ document.addEventListener('keydown', function(e) {
   } catch (e) { ready = true; }
 })();
 </script>
+<script>
+(function(){
+  var a = document.getElementById('player');
+  var sel = document.getElementById('audioSelect');
+  if (!a || !sel) return;
+  a.addEventListener('ended', function(){
+    var i = sel.selectedIndex;
+    if (i < 0 || i + 1 >= sel.options.length) {
+      var st0 = document.getElementById('status');
+      if (st0) st0.textContent = '本页音频已全部播完';
+      return;
+    }
+    sel.selectedIndex = i + 1;
+    sel.dispatchEvent(new Event('change'));
+    var pb = document.getElementById('playBtn');
+    if (pb) pb.textContent = '⏸';
+    try {
+      var p = a.play();
+      if (p && p.catch) p.catch(function(){
+        if (pb) pb.textContent = '▶';
+        var st = document.getElementById('status');
+        if (st) st.textContent = '下一首已就绪，请点一下播放';
+      });
+    } catch (e) {
+      if (pb) pb.textContent = '▶';
+    }
+  });
+})();
+</script>
 </body>
 </html>
