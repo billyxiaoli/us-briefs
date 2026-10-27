@@ -72,7 +72,14 @@ document.addEventListener('keydown', function(e) {
     if (t && ((t.tagName === 'INPUT' && t.type === 'text') || t.tagName === 'TEXTAREA')) return;
     e.preventDefault();
     document.dispatchEvent(new KeyboardEvent('keydown', {key: 'ArrowLeft', bubbles: true, cancelable: true}));
-  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+  } else if (e.key === 'ArrowUp') {
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA')) return;
+    e.preventDefault();
+    var pb = document.getElementById('playBtn');
+    if (pb) { pb.click(); }
+    else if (a.paused) { var pr = a.play(); if (pr && pr.catch) pr.catch(function(){}); }
+    else { a.pause(); }
+  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'ArrowDown') {
     if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA')) return;
     e.preventDefault();
     if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
