@@ -99,5 +99,24 @@ document.addEventListener('keydown', function(e) {
   }
 });
 </script>
+<script>
+(function(){
+  var sel = document.getElementById('audioSelect');
+  if (!sel) return;
+  var KEY = 'lastAudio:' + location.pathname;
+  function save(){ try { localStorage.setItem(KEY, sel.value); } catch (e) {} }
+  sel.addEventListener('change', save);
+  var a = document.getElementById('player');
+  if (a) a.addEventListener('play', save);
+  try {
+    var saved = localStorage.getItem(KEY);
+    if (saved !== null && saved !== '' && saved !== sel.value) {
+      var ok = false;
+      for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].value === saved) { ok = true; break; } }
+      if (ok) { sel.value = saved; sel.dispatchEvent(new Event('change')); }
+    }
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>
