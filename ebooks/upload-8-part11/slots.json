@@ -1,0 +1,422 @@
+[
+ {
+  "start": 0.0,
+  "end": 10.13,
+  "text": "信息茧房这个概念有一个默认的前提，即一个人只要能够获取更多的信息，就自然不会被茧房所束缚，可以看到更真实的世界。",
+  "en": "The concept of the information cocoon has a default premise: that as long as a person can obtain more information, they will naturally not be bound by the cocoon and can see a more real world."
+ },
+ {
+  "start": 10.13,
+  "end": 11.88,
+  "text": "但这个假设真的成立吗？",
+  "en": "But does this assumption really hold?"
+ },
+ {
+  "start": 11.88,
+  "end": 26.83,
+  "text": "你让一个小学生去听一场当前最高水平的人工智能技术的发布会，他的确接触到了最高质量的信息，但是这对他来说没什么用，因为以他目前的知识水平，他完全听不懂。",
+  "en": "If you let a primary school pupil listen to a launch event for the current highest-level artificial intelligence technology, they will indeed be exposed to the highest-quality information, but it will be of little use to them, because at their current level of knowledge, they cannot understand it at all."
+ },
+ {
+  "start": 26.83,
+  "end": 31.15,
+  "text": "而换成一个这个领域的博士或者教授，他们就可以听懂。",
+  "en": "But swap in a doctor or professor in this field, and they can understand it."
+ },
+ {
+  "start": 31.15,
+  "end": 33.72,
+  "text": "对于他们来说，这就是有用的信息增量。",
+  "en": "For them, this is useful information increment."
+ },
+ {
+  "start": 33.72,
+  "end": 40.25,
+  "text": "显然，信息的价值从来不取决于信息本身的质量，而取决于接收者的认知框架能否承载它。",
+  "en": "Clearly, the value of information never depends on the quality of the information itself, but on whether the receiver's cognitive framework can carry it."
+ },
+ {
+  "start": 40.25,
+  "end": 48.82,
+  "text": "心理学中有“图式“的概念，它就是人脑中预先存在的认知框架，决定了人如何筛选、编码和理解新信息。",
+  "en": "Psychology has the concept of 'schema': the pre-existing cognitive framework in the human brain that determines how people filter, encode and understand new information."
+ },
+ {
+  "start": 48.82,
+  "end": 59.09,
+  "text": "当外部信息进入大脑时，图式就像一个过滤器——符合框架的，被吸收；不符合框架的，要么被忽略，要么被曲解，要么直接等于不存在。",
+  "en": "When external information enters the brain, the schema acts like a filter — what fits the framework is absorbed; what does not fit is either ignored, distorted, or simply treated as non-existent."
+ },
+ {
+  "start": 59.09,
+  "end": 66.6,
+  "text": "所以，当小学生坐在AI发布会现场时，那些技术演讲对他来说，就等于不存在。",
+  "en": "So when the primary school pupil sits at the AI launch event, those technical speeches are, for them, equivalent to non-existent."
+ },
+ {
+  "start": 66.6,
+  "end": 71.16,
+  "text": "因为他的认知框架里没有相应的概念，无法理解、编码这些信息。",
+  "en": "Because there are no corresponding concepts in their cognitive framework, they cannot understand or encode this information."
+ },
+ {
+  "start": 71.16,
+  "end": 79.08,
+  "text": "同样的信息，对博士来说，却是有价值的增量，因为他的图式已经准备好了接收和处理的容器。",
+  "en": "The same information, for the doctor, is a valuable increment, because their schema already has containers prepared to receive and process it."
+ },
+ {
+  "start": 79.08,
+  "end": 81.89,
+  "text": "这个道理放得更远一点，也同样成立。",
+  "en": "This principle holds even further afield."
+ },
+ {
+  "start": 81.89,
+  "end": 92.62,
+  "text": "理论上，一个从未去过美国的中国经济学家对美国经济的了解程度，要远远超过在美国生活了几十年却对经济学知识不甚了解的美国土著。",
+  "en": "In theory, a Chinese economist who has never been to America understands the American economy far better than an American native who has lived in America for decades but knows little about economics."
+ },
+ {
+  "start": 92.62,
+  "end": 103.46,
+  "text": "因为前者有经济学的认知框架，能把零散的现象系统化地理解；后者虽然身处其中，但缺乏框架，看到的只是现象，而非规律。",
+  "en": "Because the former has an economics cognitive framework and can systematically understand scattered phenomena; the latter, though immersed in it, lacks a framework and sees only phenomena, not patterns."
+ },
+ {
+  "start": 103.46,
+  "end": 109.99,
+  "text": "认知框架先于信息接触存在，这才是信息茧房的真正本质。",
+  "en": "That the cognitive framework exists prior to information contact is the true essence of the information cocoon."
+ },
+ {
+  "start": 109.99,
+  "end": 116.35,
+  "text": "现实中信息茧房的普遍性正在于人总是会优先接受那些自己认同的信息。",
+  "en": "The universality of the information cocoon in reality lies precisely in that people always prioritise accepting information they agree with."
+ },
+ {
+  "start": 116.35,
+  "end": 126.98,
+  "text": "比如你是一个明星的铁粉，那么当这个明星的黑料爆出的时候，你可能首先想的不是他是不是隐瞒了什么，而是这肯定是哪个对家挖的坑。",
+  "en": "For example, if you are a die-hard fan of a celebrity, when dirt about this celebrity breaks, your first thought may not be whether they hid something, but that this must be a trap dug by some rival camp."
+ },
+ {
+  "start": 126.98,
+  "end": 131.35,
+  "text": "这是因为你的认知框架已经把你锁在了一个特定的解释系统里。",
+  "en": "This is because your cognitive framework has already locked you into a specific explanatory system."
+ },
+ {
+  "start": 131.35,
+  "end": 135.6,
+  "text": "传播学中还有个名词描述这种现象——回声壁效应。",
+  "en": "Communication studies has another term to describe this phenomenon — the echo chamber effect."
+ },
+ {
+  "start": 135.6,
+  "end": 144.89,
+  "text": "也就是说，人们倾向于接触那些符合自己既有观点的信息，从而在一个封闭的认知环境里不断强化自己的信念。",
+  "en": "That is, people tend to access information that matches their existing views, thereby continuously reinforcing their beliefs in a closed cognitive environment."
+ },
+ {
+  "start": 144.89,
+  "end": 154.25,
+  "text": "算法推荐机制只是放大了这种倾向，但根源在于人本身的选择性——人从来都不是被动的信息接收者，而是主动的信息筛选者。",
+  "en": "Algorithmic recommendation merely amplifies this tendency, but the root lies in human selectivity itself — humans have never been passive information receivers, but active information filters."
+ },
+ {
+  "start": 154.25,
+  "end": 158.74,
+  "text": "这就是为什么单纯获取更多信息无法打破信息茧房的原因。",
+  "en": "This is why simply obtaining more information cannot break the information cocoon."
+ },
+ {
+  "start": 158.74,
+  "end": 163.85,
+  "text": "如果你的框架不变，那么再多信息，也只是在你既有的茧房里打转。",
+  "en": "If your framework does not change, then no matter how much information you have, it only circles within your existing cocoon."
+ },
+ {
+  "start": 163.85,
+  "end": 169.66,
+  "text": "事实上，一个更反直觉的现象是，信息越丰富，人越容易困在茧房里。",
+  "en": "In fact, a more counterintuitive phenomenon is that the richer the information, the easier it is for people to be trapped in the cocoon."
+ },
+ {
+  "start": 169.66,
+  "end": 174.34,
+  "text": "这不是因为信息少了，而是因为认知框架筛选的能力更强了。",
+  "en": "This is not because there is less information, but because the cognitive framework's ability to filter is stronger."
+ },
+ {
+  "start": 174.34,
+  "end": 182.14,
+  "text": "当你可以轻易找到海量支持你观点的内容时，你的认知框架会更自信地排除那些异质信息。",
+  "en": "When you can easily find massive amounts of content supporting your views, your cognitive framework will more confidently exclude heterogeneous information."
+ },
+ {
+  "start": 182.14,
+  "end": 186.98,
+  "text": "你看到的世界，其实是你认知框架筛选后的投影。",
+  "en": "The world you see is actually a projection filtered by your cognitive framework."
+ },
+ {
+  "start": 186.98,
+  "end": 190.22,
+  "text": "破茧的关键在于拓展认知框架本身。",
+  "en": "The key to breaking out of the cocoon lies in expanding the cognitive framework itself."
+ },
+ {
+  "start": 190.22,
+  "end": 191.38,
+  "text": "具体怎么做？",
+  "en": "How, specifically?"
+ },
+ {
+  "start": 191.38,
+  "end": 193.06,
+  "text": "可以从三个层面入手。",
+  "en": "You can start from three levels."
+ },
+ {
+  "start": 193.06,
+  "end": 197.18,
+  "text": "第一个层面：从信息搜寻转向框架审视。",
+  "en": "The first level: shift from information seeking to framework examination."
+ },
+ {
+  "start": 197.18,
+  "end": 207.38,
+  "text": "大多数人打破信息茧房的方式是多看不同观点——看左派媒体，也看右派媒体；看支持者的评论，也看反对者的评论。",
+  "en": "Most people's way of breaking the information cocoon is to look at different views — reading left-wing media as well as right-wing media; reading supporters' comments as well as opponents' comments."
+ },
+ {
+  "start": 207.38,
+  "end": 210.46,
+  "text": "这种方式听起来很合理，但往往效果有限。",
+  "en": "This approach sounds reasonable, but its effect is often limited."
+ },
+ {
+  "start": 210.46,
+  "end": 219.22,
+  "text": "因为如果你的认知框架足够强大，你会发现：你可以从两边都找到支持自己观点的证据，然后更加确信自己是对的。",
+  "en": "Because if your cognitive framework is strong enough, you will find that you can find evidence supporting your own views from both sides, and then become even more convinced that you are right."
+ },
+ {
+  "start": 219.22,
+  "end": 222.98,
+  "text": "更有效的方式是：定期检视自己的底层假设。",
+  "en": "A more effective way is: regularly examine your own underlying assumptions."
+ },
+ {
+  "start": 222.98,
+  "end": 226.99,
+  "text": "问自己一些元认知的问题：我为什么会这样想？",
+  "en": "Ask yourself some metacognitive questions: Why do I think this way?"
+ },
+ {
+  "start": 226.99,
+  "end": 228.84,
+  "text": "这个观点的依据是什么？",
+  "en": "What is the basis for this view?"
+ },
+ {
+  "start": 228.84,
+  "end": 230.93,
+  "text": "如果我错了，可能是因为什么？",
+  "en": "If I am wrong, what might it be because of?"
+ },
+ {
+  "start": 230.93,
+  "end": 238.06,
+  "text": "这不是在让你怀疑一切，而是在让你意识到：自己的认知框架本身是需要被审视的。",
+  "en": "This is not asking you to doubt everything, but to make you realise that your own cognitive framework itself needs to be examined."
+ },
+ {
+  "start": 238.06,
+  "end": 245.5,
+  "text": "当你能把自己的认知框架当作一个对象来观察时，你就已经走出了茧房的第一步。",
+  "en": "When you can treat your own cognitive framework as an object to observe, you have already taken the first step out of the cocoon."
+ },
+ {
+  "start": 245.5,
+  "end": 248.38,
+  "text": "第二个层面：建立认知弹性。",
+  "en": "The second level: build cognitive flexibility."
+ },
+ {
+  "start": 248.38,
+  "end": 252.94,
+  "text": "认知弹性，指的是认知框架容纳异质信息的能力。",
+  "en": "Cognitive flexibility refers to the ability of a cognitive framework to accommodate heterogeneous information."
+ },
+ {
+  "start": 252.94,
+  "end": 258.5,
+  "text": "一个有认知弹性的人，不是没有自己的观点，而是愿意让自己的观点接触挑战。",
+  "en": "A person with cognitive flexibility does not lack their own views, but is willing to let their views encounter challenges."
+ },
+ {
+  "start": 258.5,
+  "end": 265.03,
+  "text": "刻意接触那些让认知不适的信息，不是为了接受它，而是为了测试自己的框架边界。",
+  "en": "Deliberately exposing yourself to information that causes cognitive discomfort is not about accepting it, but about testing the boundaries of your framework."
+ },
+ {
+  "start": 265.03,
+  "end": 269.64,
+  "text": "就像给一根绳子拉一拉，看看它还能承受多大的张力。",
+  "en": "It is like pulling on a rope to see how much tension it can still bear."
+ },
+ {
+  "start": 269.64,
+  "end": 275.04,
+  "text": "如果一碰就断，说明框架太脆弱；如果能承受拉扯，说明框架有一定的弹性。",
+  "en": "If it breaks at a touch, the framework is too fragile; if it can withstand the pulling, the framework has some flexibility."
+ },
+ {
+  "start": 275.04,
+  "end": 279.17,
+  "text": "需要注意的是，这里的关键不是接受，而是接触。",
+  "en": "What needs attention here is that the key is not acceptance, but exposure."
+ },
+ {
+  "start": 279.17,
+  "end": 287.45,
+  "text": "你可以听完一个完全不同立场的观点，然后依然坚持自己的判断，但这个过程中，你的认知框架已经被锻炼了一次。",
+  "en": "You can listen to a view from a completely different position, and still insist on your own judgment, but in this process, your cognitive framework has already been exercised once."
+ },
+ {
+  "start": 287.45,
+  "end": 289.66,
+  "text": "它变得更坚韧，也更开放。",
+  "en": "It becomes more resilient, and also more open."
+ },
+ {
+  "start": 289.66,
+  "end": 293.14,
+  "text": "第三个层面：培养元认知能力。",
+  "en": "The third level: cultivate metacognitive ability."
+ },
+ {
+  "start": 293.14,
+  "end": 296.02,
+  "text": "元认知，简单说就是对思考的思考。",
+  "en": "Metacognition, simply put, is thinking about thinking."
+ },
+ {
+  "start": 296.02,
+  "end": 300.38,
+  "text": "观察自己如何观察世界，识别我为什么会这样想。",
+  "en": "Observing how you observe the world, and identifying why you think the way you do."
+ },
+ {
+  "start": 300.38,
+  "end": 302.35,
+  "text": "这是一个可以训练的能力。",
+  "en": "This is an ability that can be trained."
+ },
+ {
+  "start": 302.35,
+  "end": 308.78,
+  "text": "比如，当你对某条新闻产生强烈反应时，暂停一下，问自己：我为什么这么激动？",
+  "en": "For example, when you have a strong reaction to a piece of news, pause and ask yourself: Why am I so excited?"
+ },
+ {
+  "start": 308.78,
+  "end": 310.9,
+  "text": "这个话题触动了我什么？",
+  "en": "What has this topic touched in me?"
+ },
+ {
+  "start": 310.9,
+  "end": 313.25,
+  "text": "我的情绪是不是在影响我的判断？",
+  "en": "Are my emotions affecting my judgment?"
+ },
+ {
+  "start": 313.25,
+  "end": 319.18,
+  "text": "再比如，当你发现自己总是在回避某种类型的信息时，问自己：我在怕什么？",
+  "en": "For another example, when you find yourself always avoiding a certain type of information, ask yourself: What am I afraid of?"
+ },
+ {
+  "start": 319.18,
+  "end": 321.34,
+  "text": "这些信息会挑战我的什么信念？",
+  "en": "What beliefs of mine would this information challenge?"
+ },
+ {
+  "start": 321.34,
+  "end": 331.18,
+  "text": "元认知能力不是天生的，但一旦你开始有意识地培养这种能力，你会发现自己对自己的认知过程有了更多的掌控感。",
+  "en": "Metacognitive ability is not innate, but once you consciously start cultivating it, you will find you have more sense of control over your own cognitive process."
+ },
+ {
+  "start": 331.18,
+  "end": 336.82,
+  "text": "你不是被情绪和直觉推着走，而是能站在更高处，观察自己的思维活动。",
+  "en": "You are not pushed along by emotions and intuition, but can stand higher and observe your own mental activities."
+ },
+ {
+  "start": 336.82,
+  "end": 343.18,
+  "text": "说到底，真正的自由不是逃离茧房，而是拥有不被单一认知框架囚禁的能力。",
+  "en": "In the end, true freedom is not escaping the cocoon, but possessing the ability not to be imprisoned by a single cognitive framework."
+ },
+ {
+  "start": 343.18,
+  "end": 345.7,
+  "text": "这个世界上不存在没有框架的人。",
+  "en": "There is no person in this world without a framework."
+ },
+ {
+  "start": 345.7,
+  "end": 351.14,
+  "text": "我们每个人，都必须依赖某种认知框架来理解和行动。",
+  "en": "Each of us must rely on some cognitive framework to understand and act."
+ },
+ {
+  "start": 351.14,
+  "end": 358.27,
+  "text": "问题不在于有没有框架，而在于这个框架是封闭的、刚性的，还是开放的、可成长的。",
+  "en": "The question is not whether there is a framework, but whether the framework is closed and rigid, or open and capable of growth."
+ },
+ {
+  "start": 358.27,
+  "end": 363.31,
+  "text": "拓展认知框架的过程，本质上是一个不断与自己对话的过程。",
+  "en": "The process of expanding the cognitive framework is essentially a process of constantly dialoguing with yourself."
+ },
+ {
+  "start": 363.31,
+  "end": 370.75,
+  "text": "你需要承认自己认知的局限，接受自己的框架需要升级，然后在这个过程中，让自己的世界一点点变大。",
+  "en": "You need to acknowledge the limitations of your cognition, accept that your framework needs upgrading, and in this process, let your world grow a little bigger."
+ },
+ {
+  "start": 370.75,
+  "end": 372.55,
+  "text": "这不是一个轻松的过程。",
+  "en": "This is not an easy process."
+ },
+ {
+  "start": 372.55,
+  "end": 377.42,
+  "text": "承认自己的认知可能有偏差，比坚持自己没错要难得多。",
+  "en": "Admitting that your cognition may be biased is much harder than insisting that you are right."
+ },
+ {
+  "start": 377.42,
+  "end": 383.71,
+  "text": "接受一个与自己长期信念不符的观点，比找到支持自己的证据要让人不适得多。",
+  "en": "Accepting a view inconsistent with your long-held beliefs is much more uncomfortable than finding evidence supporting yourself."
+ },
+ {
+  "start": 383.71,
+  "end": 393.55,
+  "text": "只有当你愿意不断拓展这个边界时，才真正活在一个开放的世界里，而不是一个由自己的认知框架精心编织的茧房里。",
+  "en": "Only when you are willing to continuously expand this boundary do you truly live in an open world, rather than in a cocoon carefully woven by your own cognitive framework."
+ }
+]
