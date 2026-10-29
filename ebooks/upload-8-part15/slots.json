@@ -1,0 +1,884 @@
+[
+ {
+  "start": 0.0,
+  "end": 1.27,
+  "text": "「主动地被动」",
+  "en": "'Actively Passive'"
+ },
+ {
+  "start": 1.27,
+  "end": 3.86,
+  "text": "在我看来，信息茧房有两种类型，",
+  "en": "In my view, there are two types of information cocoons."
+ },
+ {
+  "start": 3.86,
+  "end": 8.06,
+  "text": "第一种，也就是题主提到的——「每天推送的都是类似的东西」。",
+  "en": "The first type is what the question asker mentioned — 'being pushed similar things every day'."
+ },
+ {
+  "start": 8.06,
+  "end": 10.15,
+  "text": "这种信息茧房源于推荐算法。",
+  "en": "This kind of information cocoon stems from recommendation algorithms."
+ },
+ {
+  "start": 10.15,
+  "end": 13.99,
+  "text": "算法认为你是某一类人，便死命推荐这类信息。",
+  "en": "The algorithm thinks you are a certain type of person, and then desperately recommends this type of information."
+ },
+ {
+  "start": 13.99,
+  "end": 16.39,
+  "text": "我将这种称为「被动信息茧房」；",
+  "en": "I call this the 'passive information cocoon';"
+ },
+ {
+  "start": 16.39,
+  "end": 20.83,
+  "text": "而第二种则更为可怕：主动的信息茧房。",
+  "en": "And the second type is even more frightening: the active information cocoon."
+ },
+ {
+  "start": 20.83,
+  "end": 24.62,
+  "text": "你喜欢某类信息、观点，便主动去搜索。",
+  "en": "You like a certain type of information or view, so you actively search for it."
+ },
+ {
+  "start": 24.62,
+  "end": 28.87,
+  "text": "同时，又对其他信息、观点充耳不闻，甚至拉黑。",
+  "en": "At the same time, you turn a deaf ear to other information and views, and even block them."
+ },
+ {
+  "start": 28.87,
+  "end": 30.96,
+  "text": "对于第二点，我深有体会。",
+  "en": "I have deep experience of the second point."
+ },
+ {
+  "start": 30.96,
+  "end": 36.12,
+  "text": "从2020年疫情爆发到现在，居家办公的时间较之前增长了很多。",
+  "en": "From the outbreak of the pandemic in 2020 until now, the time I have spent working from home has grown a lot compared with before."
+ },
+ {
+  "start": 36.12,
+  "end": 38.47,
+  "text": "居家办公，时间自由了很多。",
+  "en": "Working from home, time has become much freer."
+ },
+ {
+  "start": 38.47,
+  "end": 41.23,
+  "text": "但我获得的信息却少了太多。",
+  "en": "But the information I obtain has decreased far too much."
+ },
+ {
+  "start": 41.23,
+  "end": 45.62,
+  "text": "细细想来，还是在于外界的随机信息减少了太多。",
+  "en": "Thinking carefully, it is still because random information from the outside world has decreased far too much."
+ },
+ {
+  "start": 45.62,
+  "end": 49.66,
+  "text": "想想之前的一天，到处都是被动的、随机的信息：",
+  "en": "Think about a previous day: everywhere there was passive, random information:"
+ },
+ {
+  "start": 49.66,
+  "end": 51.86,
+  "text": "去学校的路上会看到各种东西；",
+  "en": "On the way to school you would see all kinds of things;"
+ },
+ {
+  "start": 51.86,
+  "end": 54.02,
+  "text": "学校墙上会有随机的海报；",
+  "en": "There would be random posters on the school walls;"
+ },
+ {
+  "start": 54.02,
+  "end": 56.59,
+  "text": "实验室同学聊天的时候也会有各种东西。",
+  "en": "When classmates in the lab chatted, there would also be all kinds of things."
+ },
+ {
+  "start": 56.59,
+  "end": 59.35,
+  "text": "这些信息都是你不会主动去搜寻的。",
+  "en": "This information is all things you would not actively search for."
+ },
+ {
+  "start": 59.35,
+  "end": 63.74,
+  "text": "换句话说，你不光不知道这些信息，你甚至都不知道自己不知道。",
+  "en": "In other words, you not only do not know this information, you do not even know that you do not know."
+ },
+ {
+  "start": 63.74,
+  "end": 70.54,
+  "text": "而随机、被动的获取信息正是信息茧房的一个破口，让你看到茧房之外的东西。",
+  "en": "And randomly and passively obtaining information is precisely a breach in the information cocoon, letting you see things outside the cocoon."
+ },
+ {
+  "start": 70.54,
+  "end": 72.77,
+  "text": "所以，解决方法也非常直接：",
+  "en": "So, the solution is also very direct:"
+ },
+ {
+  "start": 72.77,
+  "end": 75.72,
+  "text": "少居家办公，多面对面接触。",
+  "en": "Work from home less, and have more face-to-face contact."
+ },
+ {
+  "start": 75.72,
+  "end": 78.6,
+  "text": "这样可以增加被动、随机的信息；",
+  "en": "This can increase passive, random information;"
+ },
+ {
+  "start": 78.6,
+  "end": 80.11,
+  "text": "关闭算法推荐。",
+  "en": "Turn off algorithmic recommendations."
+ },
+ {
+  "start": 80.11,
+  "end": 83.47,
+  "text": "像B站除了推荐页面之外，还有分区视频；",
+  "en": "Like Bilibili, besides the recommendation page, there are also section videos;"
+ },
+ {
+  "start": 83.47,
+  "end": 84.48,
+  "text": "多读书。",
+  "en": "Read more books."
+ },
+ {
+  "start": 84.48,
+  "end": 87.55,
+  "text": "相比于知乎的回答，书籍通常更为全面。",
+  "en": "Compared with Zhihu answers, books are usually more comprehensive."
+ },
+ {
+  "start": 87.55,
+  "end": 91.03,
+  "text": "而「全面」恰恰也能破除茧房；",
+  "en": "And 'comprehensive' precisely can also break the cocoon;"
+ },
+ {
+  "start": 91.03,
+  "end": 92.76,
+  "text": "订阅杂志、播客。",
+  "en": "Subscribe to magazines and podcasts."
+ },
+ {
+  "start": 92.76,
+  "end": 97.49,
+  "text": "虽然这也是你的主动选择，但具体的内容则是创作者的选择。",
+  "en": "Although this is also your active choice, the specific content is the creator's choice."
+ },
+ {
+  "start": 97.49,
+  "end": 99.96,
+  "text": "所以只需要在一开始注意一下广度就可以了。",
+  "en": "So you only need to pay attention to breadth at the beginning."
+ },
+ {
+  "start": 99.96,
+  "end": 105.53,
+  "text": "我每个周日都会跟我妈换手机用一天，坚持半年了，现在母慈子孝。",
+  "en": "Every Sunday I swap phones with my mum for a day. I have kept it up for half a year, and now mother is kind and child is filial."
+ },
+ {
+  "start": 105.53,
+  "end": 106.97,
+  "text": "别“刷”手机",
+  "en": "Don't 'scroll' your phone."
+ },
+ {
+  "start": 106.97,
+  "end": 118.54,
+  "text": "以知乎为例，给个人的所有推送都是按照个人爱好和情感来的，几乎给你推送的每个回答你都想骂两句或者夸两句，这样通过限制问题来获得你的反馈",
+  "en": "Take Zhihu as an example: all pushes to individuals are based on personal preferences and emotions; almost every answer pushed to you makes you want to curse a couple of sentences or praise a couple of sentences, in this way obtaining your feedback by restricting the questions."
+ },
+ {
+  "start": 118.54,
+  "end": 123.77,
+  "text": "再比如，目前的个人主页可以简要分为左和右两种。",
+  "en": "For another example, the current personal homepage can be briefly divided into two types: left and right."
+ },
+ {
+  "start": 123.77,
+  "end": 132.12,
+  "text": "有的人刷出来的内容都是爱国，国家很棒，正能量；还有的人刷出来的都是顶真 越南 谷爱凌。",
+  "en": "Some people scroll and all they get is patriotism, the country is great, positive energy; others scroll and all they get is Dingzhen, Vietnam, Eileen Gu."
+ },
+ {
+  "start": 132.12,
+  "end": 135.65,
+  "text": "当然，我是后者，估计刷到我这个回答的人都是后者。",
+  "en": "Of course, I am the latter, and presumably people who scroll to this answer of mine are also the latter."
+ },
+ {
+  "start": 135.65,
+  "end": 143.69,
+  "text": "所以要想摆脱这种影响，拜托这种发泄情绪的无意义重复性动作，不要看主页是个十分不错的办法。",
+  "en": "So to escape this influence, and to get rid of this meaningless repetitive act of venting emotions, not looking at the homepage is quite a good method."
+ },
+ {
+  "start": 143.69,
+  "end": 148.18,
+  "text": "毕竟不是所有人都可以把b站贴吧知乎微博全部删掉还能活下去的",
+  "en": "After all, not everyone can delete Bilibili, Tieba, Zhihu and Weibo entirely and still survive."
+ },
+ {
+  "start": 148.18,
+  "end": 157.06,
+  "text": "同一件事，我一般都是知乎和quora、哔哩哔哩和utube对比着看，那很多事就明了挺多了",
+  "en": "For the same matter, I generally compare Zhihu with Quora, and Bilibili with YouTube; then many things become much clearer."
+ },
+ {
+  "start": 157.06,
+  "end": 162.53,
+  "text": "T_T 我来睡前搞怪一下吧，分享几个我自己喜欢干的事。",
+  "en": "T_T Let me be silly before bed, and share a few things I like to do myself."
+ },
+ {
+  "start": 162.53,
+  "end": 167.45,
+  "text": "(1) 搜搜几年前的热搜，看看当年的大事后来怎么样了。",
+  "en": "(1) Search for hot searches from a few years ago, and see what happened later to the big events of those years."
+ },
+ {
+  "start": 167.45,
+  "end": 172.3,
+  "text": "比如，当年号称能颠覆行业的技术，现在落地了吗？",
+  "en": "For example, technology that was claimed to disrupt the industry back then — has it been implemented now?"
+ },
+ {
+  "start": 172.3,
+  "end": 176.26,
+  "text": "曾经闹得沸沸扬扬的争议，最后有什么调查结果？",
+  "en": "Controversies that caused a huge uproar — what investigation results were there in the end?"
+ },
+ {
+  "start": 176.26,
+  "end": 182.86,
+  "text": "很多新闻只报道事情发生时的情况，后续发展和最终结果反而很少有人关注。",
+  "en": "Many news stories only report the situation when things happen; follow-up developments and final results receive little attention."
+ },
+ {
+  "start": 182.86,
+  "end": 187.42,
+  "text": "(2) 看到很多博主讨论同一件事，可以查查他们的消息来源。",
+  "en": "(2) When you see many bloggers discussing the same matter, you can check their sources of information."
+ },
+ {
+  "start": 187.42,
+  "end": 196.18,
+  "text": "比如，十几个博主都在转发一条新闻，看起来有很多人证实，但追溯来源后，可能发现他们都引用了同一篇报道。",
+  "en": "For example, a dozen or so bloggers are all forwarding a piece of news, and it looks like many people have confirmed it, but after tracing the source, you may find they all cited the same report."
+ },
+ {
+  "start": 196.18,
+  "end": 200.9,
+  "text": "消息被重复传播很多次，并不代表它得到了独立验证。",
+  "en": "A message being repeatedly spread many times does not mean it has been independently verified."
+ },
+ {
+  "start": 200.9,
+  "end": 204.91,
+  "text": "(3) 看到成功案例时，也去看看失败的案例。",
+  "en": "(3) When you see success stories, also look at failure stories."
+ },
+ {
+  "start": 204.91,
+  "end": 210.84,
+  "text": "比如，有人靠 AI 创业赚了几千万，就去看看那些创业失败的人。",
+  "en": "For example, someone made tens of millions starting a business with AI — go and look at those who failed in business."
+ },
+ {
+  "start": 210.84,
+  "end": 216.31,
+  "text": "成功案例更容易传播，只看这些故事，很容易高估成功的概率。",
+  "en": "Success stories spread more easily; only looking at these stories makes it easy to overestimate the probability of success."
+ },
+ {
+  "start": 216.31,
+  "end": 220.46,
+  "text": "(4) 看到热门观点，可以查查提出者以前的判断。",
+  "en": "(4) When you see popular views, you can check the proposer's past judgments."
+ },
+ {
+  "start": 220.46,
+  "end": 226.27,
+  "text": "比如，找出某位专家五年前的预测，看看如今有多少应验了。",
+  "en": "For example, find an expert's predictions from five years ago, and see how many have come true now."
+ },
+ {
+  "start": 226.27,
+  "end": 233.78,
+  "text": "因为很多人更愿意谈论自己预测成功的经历，只听他们现在的说法，很容易高估其判断能力。",
+  "en": "Because many people prefer to talk about their successful predictions; only listening to what they say now makes it easy to overestimate their judgment ability."
+ },
+ {
+  "start": 233.78,
+  "end": 236.66,
+  "text": "(5) 多看看一线从业者的实际经历。",
+  "en": "(5) Look more at the actual experiences of front-line practitioners."
+ },
+ {
+  "start": 236.66,
+  "end": 244.78,
+  "text": "比如，了解新能源汽车，可以看看维修师傅遇到的故障；了解 AI 编程，可以看看工程师遇到的问题。",
+  "en": "For example, to understand new energy vehicles, you can look at the faults repair technicians encounter; to understand AI programming, you can look at the problems engineers encounter."
+ },
+ {
+  "start": 244.78,
+  "end": 249.05,
+  "text": "宣传往往强调优势，实际使用才能暴露问题。",
+  "en": "Publicity often emphasises advantages; actual use is what exposes problems."
+ },
+ {
+  "start": 249.05,
+  "end": 252.7,
+  "text": "(6) 看到惊人的数据，先查清统计背景。",
+  "en": "(6) When you see astonishing data, first check the statistical background."
+ },
+ {
+  "start": 252.7,
+  "end": 261.98,
+  "text": "比如，某种疾病的发病人数增加了多少、某个行业裁员了多少人，都要结合总体规模、统计口径和历史数据来看。",
+  "en": "For example, by how much the number of cases of a certain disease has increased, or how many people an industry has laid off — all must be viewed together with overall scale, statistical calibre and historical data."
+ },
+ {
+  "start": 261.98,
+  "end": 265.54,
+  "text": "单看一个数字，很容易误判事情的严重程度。",
+  "en": "Looking at a single number alone makes it easy to misjudge the severity of things."
+ },
+ {
+  "start": 265.54,
+  "end": 269.81,
+  "text": "(7) 多看看新闻更正声明和学术论文的撤稿记录。",
+  "en": "(7) Look more at news correction statements and retraction records of academic papers."
+ },
+ {
+  "start": 269.81,
+  "end": 277.44,
+  "text": "比如，去 Retraction Watch 看看最近有哪些论文被撤稿，或者查查新闻媒体的更正记录。",
+  "en": "For example, go to Retraction Watch to see which papers have recently been retracted, or check news media correction records."
+ },
+ {
+  "start": 277.44,
+  "end": 284.33,
+  "text": "很多曾经广泛传播的结论后来被纠正了，但看到更正的人往往比看到原消息的人少得多。",
+  "en": "Many conclusions that were once widely spread were later corrected, but far fewer people see the corrections than saw the original news."
+ },
+ {
+  "start": 284.33,
+  "end": 292.61,
+  "text": "Anyway，个人认为，跳出信息茧房，最根本的是学会区分一件事在现实中发生的概率，和它被自己看到的概率。",
+  "en": "Anyway, personally I believe that to jump out of the information cocoon, the most fundamental thing is to learn to distinguish the probability of something happening in reality from the probability of it being seen by yourself."
+ },
+ {
+  "start": 292.61,
+  "end": 306.41,
+  "text": "否则，我们很容易把反复看到的当成普遍存在的，把很少看到的当成无足轻重的，哪怕换了平台、换了算法，也不过是换一种方式误解世界。",
+  "en": "Otherwise, we easily take what we see repeatedly as universally existing, and what we rarely see as insignificant — even if we change platforms and algorithms, it is only misunderstanding the world in a different way."
+ },
+ {
+  "start": 306.41,
+  "end": 308.09,
+  "text": "文 | 佘宗明",
+  "en": "Text | She Zongming"
+ },
+ {
+  "start": 308.09,
+  "end": 315.7,
+  "text": "在当下，有两个舶来的传播学概念近乎被用烂，一个是“娱乐至死”，另一个是“信息茧房”。",
+  "en": "At present, there are two imported communication concepts that have been almost used to death: one is 'amusing ourselves to death', and the other is 'information cocoon'."
+ },
+ {
+  "start": 315.7,
+  "end": 325.82,
+  "text": "这两个词本来有其特定的适用情境，可很多人总是拿着搜索出的词条解释四处对号入座，将其据为大批判的话语武器。",
+  "en": "These two terms originally had their specific applicable contexts, but many people always take dictionary explanations they searched for and apply them everywhere, appropriating them as discursive weapons for grand criticism."
+ },
+ {
+  "start": 325.82,
+  "end": 335.54,
+  "text": "在“深刻癖”的引路下，他们动辄抡起道德皮鞭，以反“娱乐至死”的名义反娱乐，以批“信息茧房”的名义批算法。",
+  "en": "Under the guidance of a 'profundity fetish', they readily wield the moral whip, opposing entertainment in the name of opposing 'amusing ourselves to death', and criticising algorithms in the name of criticising 'information cocoons'."
+ },
+ {
+  "start": 335.54,
+  "end": 342.5,
+  "text": "不得不说，这番景象本就是在娱（消）乐（遣）“娱乐至死”，也表明“认知茧房”真的存在。",
+  "en": "It must be said that this spectacle is itself entertaining (diverting) 'amusing ourselves to death', and also shows that 'cognitive cocoons' really exist."
+ },
+ {
+  "start": 342.5,
+  "end": 356.3,
+  "text": "就拿“信息茧房”来说，这年头，面对民粹、饭圈、打着男权/女权名义的两性对立几股极端势力的肆虐，很多人总是倾向归咎于信息茧房。",
+  "en": "Take 'information cocoon' as an example: nowadays, in the face of the rampage of several extreme forces — populism, fan circles, and gender opposition in the name of men's rights/women's rights — many people always tend to blame the information cocoon."
+ },
+ {
+  "start": 356.3,
+  "end": 368.02,
+  "text": "秦朗巴黎丢作业事件中出现偏听盲信现象，怪信息茧房；胖猫事件中出现“厌女VS仇男”群际撕裂景象，怪信息茧房…",
+  "en": "In the Qin Lang Paris lost-homework incident, there was a phenomenon of listening only to one side and blindly believing — blame the information cocoon; in the Fat Cat incident, there was a scene of 'misogyny vs misandry' inter-group tearing — blame the information cocoon…"
+ },
+ {
+  "start": 368.02,
+  "end": 373.42,
+  "text": "在许多社会事件引发舆论内耗后，“信息茧房”也经常被迫承受了所有。",
+  "en": "After many social events trigger public opinion infighting, 'information cocoon' is also often forced to bear everything."
+ },
+ {
+  "start": 373.42,
+  "end": 385.82,
+  "text": "在某些人看来，是“信息茧房”将人们困在回音室里，让人们看到的都是自己想看到的、听到的都是自己想听到的，才导致人们越来越自以为是、极端偏执。",
+  "en": "In some people's view, it is the 'information cocoon' that traps people in echo chambers, making people see only what they want to see and hear only what they want to hear, which causes people to become increasingly self-righteous and extremely paranoid."
+ },
+ {
+  "start": 385.82,
+  "end": 392.54,
+  "text": "“遇事不决，量子力学；归因无方，信息茧房”，已成时髦的归纳总结法。",
+  "en": "'When in doubt about anything, quantum mechanics; when at a loss for attribution, information cocoon' has become a fashionable summary method."
+ },
+ {
+  "start": 392.54,
+  "end": 403.18,
+  "text": "左一个“信息茧房有多可怕”，右一个“信息茧房是围猎认知的隐秘陷阱”，“信息茧房”正被吊打1008610010遍。",
+  "en": "One 'how terrible is the information cocoon' after another, and one 'information cocoon is a secret trap for hunting cognition' after another — 'information cocoon' is being flogged 1008610010 times."
+ },
+ {
+  "start": 403.18,
+  "end": 418.7,
+  "text": "有意思的是，我上网搜“信息茧房”，发现很多惯于贩卖焦虑的营销号都开始将“信息茧房”跟“高认知”等鸡汤文话术、“毁掉一代人”等毁掉体句式一锅烩，生怕大众的焦虑值还没爆表。",
+  "en": "Interestingly, when I searched 'information cocoon' online, I found that many marketing accounts accustomed to selling anxiety have begun to mix 'information cocoon' with 'high cognition' and other chicken-soup phrases, and 'ruining a generation' and other 'ruining' sentence patterns, in one pot, afraid that the public's anxiety level has not yet exploded."
+ },
+ {
+  "start": 418.7,
+  "end": 426.7,
+  "text": "在“后真相时代”满天飞、“网络巴尔干化”遍地跑的今日，担心人们失去开放的意识和兼听的能力，很正常。",
+  "en": "In today's world where the 'post-truth era' flies everywhere and 'internet Balkanisation' runs rampant, worrying that people will lose open awareness and the ability to listen to all sides is normal."
+ },
+ {
+  "start": 426.7,
+  "end": 433.61,
+  "text": "问题是，所谓的“信息茧房”，到底是真实存在的“赛博囚笼”，还是想象出来的稻草人议题？",
+  "en": "The question is: is the so-called 'information cocoon' a real 'cyber prison', or an imagined straw-man issue?"
+ },
+ {
+  "start": 433.61,
+  "end": 440.4,
+  "text": "当批判“信息茧房”的终点是反技术的卢德主义时，这确定不是困在自己的偏狭里？",
+  "en": "When the endpoint of criticising the 'information cocoon' is anti-technology Luddism, is this certainly not being trapped in one's own narrowness?"
+ },
+ {
+  "start": 440.4,
+  "end": 441.67,
+  "text": "01",
+  "en": "01"
+ },
+ {
+  "start": 441.67,
+  "end": 451.87,
+  "text": "甲跟乙说的是A，乙跟丙说甲说的是A+B，丙于是以为甲说的是B，这是信息传播中常见的谬传场景。",
+  "en": "A tells B that it is A; B tells C that A said A+B; C then thinks A said B. This is a common miscommunication scenario in information transmission."
+ },
+ {
+  "start": 451.87,
+  "end": 455.18,
+  "text": "现在看，“信息茧房”也遭遇了这样的谬传。",
+  "en": "Now, 'information cocoon' has also suffered such miscommunication."
+ },
+ {
+  "start": 455.18,
+  "end": 462.91,
+  "text": "追溯其前世今生会发现，最早被桑斯坦提出的“信息茧房”，在今天已脱离原有语境被人重新定义。",
+  "en": "Tracing its past and present, we find that the 'information cocoon' first proposed by Sunstein has now been redefined out of its original context."
+ },
+ {
+  "start": 462.91,
+  "end": 471.36,
+  "text": "18年前，桑斯坦在《信息乌托邦》中提出“信息茧房”一词时，互联网还处在Web1.0阶段。",
+  "en": "18 years ago, when Sunstein proposed the term 'information cocoon' in Information Utopia, the internet was still in the Web 1.0 stage."
+ },
+ {
+  "start": 471.36,
+  "end": 480.17,
+  "text": "当时包括尼葛洛庞帝在内的不少大神都预言，个性化定制的“我的日报”（The Daily Me）将会出现。",
+  "en": "At that time, many great minds, including Negroponte, predicted that a personalised 'My Daily' (The Daily Me) would appear."
+ },
+ {
+  "start": 480.17,
+  "end": 482.76,
+  "text": "桑斯坦亦在此列。",
+  "en": "Sunstein was also among them."
+ },
+ {
+  "start": 482.76,
+  "end": 497.09,
+  "text": "他认为，互联网的确为公众提供了“资讯汪洋”，但人们接触信息不是全盘接收，而是根据个人喜好选择性吸收，这可能会将自身桎梏于蚕茧般的“茧房”中。",
+  "en": "He believed that although the internet did provide the public with an 'ocean of information', people's contact with information is not wholesale reception, but selective absorption according to personal preference, which might confine them in a silkworm-like 'cocoon'."
+ },
+ {
+  "start": 497.09,
+  "end": 505.56,
+  "text": "桑斯坦确实将“信息茧房”跟互联网时代背景联系在了一起，但他认为“信息茧房”症结在于“信息偏食”。",
+  "en": "Sunstein did indeed link 'information cocoon' with the internet-era background, but he believed the crux of 'information cocoon' lies in 'information picky eating'."
+ },
+ {
+  "start": 505.56,
+  "end": 514.75,
+  "text": "信息偏食跟传播学中的“选择性接触”、心理学中的“确认偏误”有相通之处，本质是依托人脑“过滤罩”的自我保护机制。",
+  "en": "'Information picky eating' has similarities with 'selective exposure' in communication studies and 'confirmation bias' in psychology; its essence is a self-protection mechanism relying on the brain's 'filter'."
+ },
+ {
+  "start": 514.75,
+  "end": 523.58,
+  "text": "信息爆炸跟脑容量有限的矛盾，是人们长期面临的难题，但数字社会的到来让它变得更为显著。",
+  "en": "The contradiction between information explosion and limited brain capacity is a long-standing problem for people, but the arrival of digital society has made it more pronounced."
+ },
+ {
+  "start": 523.58,
+  "end": 533.38,
+  "text": "定位学大师杰克·特劳特在《与众不同》中就讲到：过去30年人类社会产生的信息比之前5000年产生的信息还多。",
+  "en": "Positioning master Jack Trout said in Differentiate or Die: in the past 30 years, human society has produced more information than in the previous 5,000 years."
+ },
+ {
+  "start": 533.38,
+  "end": 541.58,
+  "text": "梁永安老师也说过，现在的年轻人十几岁时获得的知识和信息，可能比一个古人在60岁时知道的还多。",
+  "en": "Teacher Liang Yong'an also said that the knowledge and information young people now obtain in their teens may be more than an ancient person knew at 60."
+ },
+ {
+  "start": 541.58,
+  "end": 548.71,
+  "text": "为了避免信息过载，脑部会基于人的喜同恶异、趋利避害本性自动开启信息筛选。",
+  "en": "To avoid information overload, the brain automatically starts information screening based on people's nature of liking the same and disliking the different, and seeking benefit and avoiding harm."
+ },
+ {
+  "start": 548.71,
+  "end": 554.28,
+  "text": "也因为是本性，信息偏食的情况在任何时候都存在，包括Web1.0时代。",
+  "en": "Also because it is nature, information picky eating exists at all times, including in the Web 1.0 era."
+ },
+ {
+  "start": 554.28,
+  "end": 565.51,
+  "text": "这类不是照单全收而是有所筛选的信息接收模式，正面看，是将人带到认知舒适区里；负面看，是把人带入认知板结化状态。",
+  "en": "This information reception model of not accepting everything but screening is, viewed positively, bringing people into a cognitive comfort zone; viewed negatively, bringing people into a state of cognitive hardening."
+ },
+ {
+  "start": 565.51,
+  "end": 576.36,
+  "text": "这反映了信息偏食的两面性：A面是对信息负荷超标的抵御，能够帮脑部减压；B面是对“异文化视野”的抑制，容易导致思维局限。",
+  "en": "This reflects the two sides of information picky eating: side A is resistance to information overload exceeding the limit, which can help the brain decompress; side B is suppression of 'heterogeneous cultural horizons', which easily leads to limited thinking."
+ },
+ {
+  "start": 576.36,
+  "end": 582.6,
+  "text": "结合信息过载的情境看，A面的正向作用其实要大于B面的负面效应。",
+  "en": "Combined with the context of information overload, the positive effect of side A is actually greater than the negative effect of side B."
+ },
+ {
+  "start": 582.6,
+  "end": 594.24,
+  "text": "而现在网上流行的“信息茧房”，更多的是强调茧房是互联网信息供给模式和传递路径的产物，认为信息技术是因、信息偏食是果。",
+  "en": "And the 'information cocoon' popular online now places more emphasis on the cocoon being a product of the internet information supply model and transmission path, believing information technology is the cause and information picky eating is the effect."
+ },
+ {
+  "start": 594.24,
+  "end": 599.11,
+  "text": "将算法推荐跟信息茧房嵌入因果链中，就是常见的归因。",
+  "en": "Embedding algorithmic recommendation and information cocoon in a causal chain is a common attribution."
+ },
+ {
+  "start": 599.11,
+  "end": 610.92,
+  "text": "这大概是桑斯坦始料未及的：他将“信息茧房”的生成原因归为信息偏食而非信息技术，他提出信息茧房时算法技术也还没大面积应用。",
+  "en": "This is probably beyond what Sunstein expected: he attributed the cause of the information cocoon to information picky eating rather than information technology, and when he proposed the information cocoon, algorithm technology had not yet been widely applied."
+ },
+ {
+  "start": 610.92,
+  "end": 611.95,
+  "text": "02",
+  "en": "02"
+ },
+ {
+  "start": 611.95,
+  "end": 616.56,
+  "text": "那，互联网到底会不会让人们的视野收窄？",
+  "en": "So, will the internet narrow people's horizons?"
+ },
+ {
+  "start": 616.56,
+  "end": 620.64,
+  "text": "信息技术是不是会加剧人们的信息偏食习惯？",
+  "en": "Will information technology aggravate people's information picky eating habits?"
+ },
+ {
+  "start": 620.64,
+  "end": 622.49,
+  "text": "目前看来，争议不小。",
+  "en": "At present, the controversy is considerable."
+ },
+ {
+  "start": 622.49,
+  "end": 626.88,
+  "text": "就连“信息茧房”情况是否存在，学界都不乏争论。",
+  "en": "Even whether the 'information cocoon' situation exists is much debated in academia."
+ },
+ {
+  "start": 626.88,
+  "end": 635.95,
+  "text": "在知乎上的“如何理解【信息茧房】”问题下面，大V答主“苏伦”就说道，我们惯于使用的“信息茧房”只是个伪概念。",
+  "en": "Under the Zhihu question 'How to understand [information cocoon]', big-V answerer 'Su Lun' said that the 'information cocoon' we habitually use is just a pseudo-concept."
+ },
+ {
+  "start": 635.95,
+  "end": 666.62,
+  "text": "他在帖中说出了几个观点：1，信息偏食是人的本性，在传统媒体时代就开始有了，在没有个性化算法的时代，我们看报纸杂志，碰到不感兴趣的也会跳过去；2，网络并非无菌室，而是芜杂交融的信息环境，互联网打破了信息封闭局面；3，信息偏食后果没那么严重，只是人们在信息不对称情况下天生会对新技术带来的改变过分戒备。",
+  "en": "He put forward several views in his post: 1, information picky eating is human nature, which began in the traditional media era; in an era without personalised algorithms, when we read newspapers and magazines, we would skip things we were not interested in; 2, the internet is not a sterile room, but a mixed and blended information environment; the internet has broken the closed information situation; 3, the consequences of information picky eating are not so serious — it is just that people, under information asymmetry, are naturally overly wary of changes brought by new technology."
+ },
+ {
+  "start": 666.62,
+  "end": 675.22,
+  "text": "认为“信息茧房”是个似是而非的伪命题的，在学界不乏其人，如国内传播学界两位知名学者陈昌凤和喻国明。",
+  "en": "Those who consider 'information cocoon' a specious pseudo-proposition are not few in academia, such as two well-known scholars in domestic communication studies, Chen Changfeng and Yu Guoming."
+ },
+ {
+  "start": 675.22,
+  "end": 681.26,
+  "text": "他们都曾表示，“信息茧房”的假说在学术性实证研究中从未被证实过。",
+  "en": "They have both said that the 'information cocoon' hypothesis has never been confirmed in academic empirical research."
+ },
+ {
+  "start": 681.26,
+  "end": 691.63,
+  "text": "在我看来，“信息茧房”确实很容易引发大众共鸣，因为它挠到了很多人的痒点：对“大众传播-分众传播-窄众传播”的信息传",
+  "en": "In my view, 'information cocoon' does indeed easily resonate with the public, because it scratches many people's itch: the information transmission of 'mass communication – segmented communication – narrowcast communication'…"
+ },
+ {
+  "start": 691.63,
+  "end": 709.32,
+  "text": "无论如何，互联网有没有造成“信息茧房”，得多维度而非单向度地考量：互联网时代的信息多元与窄众传播等复杂结构在“造茧/破茧”上的对冲作用，使得互联网导致“信息茧房”的全称命题显得有些武断。",
+  "en": "In any case, whether the internet has caused an 'information cocoon' must be considered in multiple dimensions rather than a single dimension: the hedging effect of the internet era's diverse information and narrowcast communication and other complex structures on 'cocoon-making/cocoon-breaking' makes the blanket proposition that the internet causes an 'information cocoon' seem somewhat arbitrary."
+ },
+ {
+  "start": 709.32,
+  "end": 723.67,
+  "text": "耐人寻味的是，“信息茧房”研究向来是西冷中热：资料显示，截至2020年2月6日，中国学者已在CNKI文献库中发表584篇以“信息茧房”为主题的文章。",
+  "en": "It is worth pondering that 'information cocoon' research has always been cold in the West and hot in China: data shows that as of 6 February 2020, Chinese scholars had published 584 articles on the theme of 'information cocoon' in the CNKI literature database."
+ },
+ {
+  "start": 723.67,
+  "end": 742.51,
+  "text": "同时段内，国内的Web of Science数据库中发表的以“information cocoons（信息茧房）”为主题的文献只有1篇，讨论“echo chamber（信息回音室）”“filter bubble（过滤气泡）”的也微乎其微。",
+  "en": "In the same period, only 1 article on the theme of 'information cocoons' was published in the domestic Web of Science database, and discussions of 'echo chamber' and 'filter bubble' were also minimal."
+ },
+ {
+  "start": 742.51,
+  "end": 749.11,
+  "text": "难不成“信息茧房”也“橘生淮南则为橘，生于淮北则为枳”了？",
+  "en": "Could it be that 'information cocoon' also follows 'oranges grown south of the Huai are oranges, but grown north of the Huai they become trifoliate oranges'?"
+ },
+ {
+  "start": 749.11,
+  "end": 750.36,
+  "text": "03",
+  "en": "03"
+ },
+ {
+  "start": 750.36,
+  "end": 756.72,
+  "text": "颇堪玩味的是，有的人对“信息茧房”的批评经常会通向对算法技术的猎巫。",
+  "en": "What is quite worth pondering is that some people's criticism of the 'information cocoon' often leads to a witch hunt against algorithm technology."
+ },
+ {
+  "start": 756.72,
+  "end": 762.17,
+  "text": "算法原理他们未必懂，但“奶头乐”学说是他们流行的理论武装。",
+  "en": "They may not understand algorithm principles, but the 'tittytainment' doctrine is their popular theoretical weapon."
+ },
+ {
+  "start": 762.17,
+  "end": 768.72,
+  "text": "算法是根据兴趣推荐，会过滤掉不感兴趣的异质内容，可不就是制造“信息茧房”的推手吗？",
+  "en": "Algorithms recommend based on interest and filter out heterogeneous content one is not interested in — isn't that the pusher creating the 'information cocoon'?"
+ },
+ {
+  "start": 768.72,
+  "end": 770.33,
+  "text": "这是他们的惯有认知。",
+  "en": "This is their habitual cognition."
+ },
+ {
+  "start": 770.33,
+  "end": 778.01,
+  "text": "他们以为的算法就是：我喜欢什么观点，算法就拼命给我推什么观点，帮我屏蔽反向观点。",
+  "en": "The algorithm they imagine is: whatever viewpoint I like, the algorithm desperately pushes me that viewpoint, helping me block opposing viewpoints."
+ },
+ {
+  "start": 778.01,
+  "end": 784.44,
+  "text": "算法要是会说话，估计恨不得击鼓鸣冤：我没这么弱智，你没这么无辜。",
+  "en": "If algorithms could speak, they would probably want to beat drums and cry out injustice: I am not that stupid, and you are not that innocent."
+ },
+ {
+  "start": 784.44,
+  "end": 853.13,
+  "text": "做点科普：算法模型包括协同过滤算法、监督学习算法Logistic Regression、深度学习、Factorization Machine、GBDT等，许多人理解的兴趣匹配，不是基于单一维度去分析，什么内容的语义特征（关键词、Topic、实体词）、文本相似性特征、时空特征，什么用户的聚类、性别、年龄、地点等身份特征和过滤噪声、热点惩罚、时间衰减、惩罚展现等，都会成为分析指标。",
+  "en": "Some popular science: algorithm models include collaborative filtering algorithms, supervised learning algorithms Logistic Regression, deep learning, Factorization Machine, GBDT, and so on. What many people understand as interest matching is not analysed based on a single dimension — what content semantic features (keywords, topics, entity words), text similarity features, spatiotemporal features, what user clustering, gender, age, location and other identity features, and filtering noise, hotspot penalties, time decay, impression penalties, etc., all become analysis indicators."
+ },
+ {
+  "start": 853.13,
+  "end": 863.76,
+  "text": "算法不会简单粗暴地认为某个人喜欢1就不给他推2，而是会用多样化信息来覆盖人们多元、善变和阈值持续提升的兴趣点。",
+  "en": "Algorithms do not crudely assume that if a person likes 1, they will not be pushed 2; instead, they use diverse information to cover people's diverse, changeable interests and continuously rising thresholds."
+ },
+ {
+  "start": 863.76,
+  "end": 871.32,
+  "text": "毕竟，不是每个人都知道自己会对哪些事物感兴趣，就算知道人的兴趣也可能因时因地而变。",
+  "en": "After all, not everyone knows what they will be interested in, and even if they know, people's interests may change with time and place."
+ },
+ {
+  "start": 871.32,
+  "end": 885.43,
+  "text": "如果你细看算法推荐内容就会发现，算法不光会推来你喜欢的篮球运动员詹姆斯，还会推荐乔丹库里姚明，推荐C罗李娜林丹，更多文体娱教内容都可能推到你面前。",
+  "en": "If you look closely at algorithm-recommended content, you will find that algorithms not only push you your favourite basketball player James, but also recommend Jordan, Curry and Yao Ming, recommend Cristiano Ronaldo, Li Na and Lin Dan — more cultural, sports, entertainment and education content may be pushed before you."
+ },
+ {
+  "start": 885.43,
+  "end": 894.91,
+  "text": "用户怕接收的信息单一化，平台同样怕供给的信息单一化，那样无益于用户长期留存，所以平台会持续对算法加以优化——",
+  "en": "Users fear receiving homogenised information, and platforms likewise fear supplying homogenised information, which is not conducive to long-term user retention, so platforms continue to optimise algorithms —"
+ },
+ {
+  "start": 894.91,
+  "end": 904.08,
+  "text": "谷歌浏览器推出了“逃离泡沫”的插件，可以根据用户的阅读习惯，反向推荐调性积极、易于接受的内容。",
+  "en": "Google Chrome launched an 'Escape the Bubble' plugin, which can reversely recommend content with a positive tone and easy to accept based on users' reading habits."
+ },
+ {
+  "start": 904.08,
+  "end": 916.85,
+  "text": "新闻类APP“跨越分歧的阅读”(Read Across the Aisle)创立了包含20个新闻品牌的图谱，当用户阅读习惯偏向于一方时，程序会建议受众调整阅读内容。",
+  "en": "The news app 'Read Across the Aisle' created a map containing 20 news brands; when a user's reading habits lean to one side, the programme suggests the audience adjust their reading content."
+ },
+ {
+  "start": 916.85,
+  "end": 953.45,
+  "text": "抖音会努力让知识库、内容池成为百科全书式的存在，凭着算法模型自动学习积累的数以几十亿的“向量特征”，探索算法测量指标的优化，综合运用内容消重、打散和对用户多元兴趣的主动探索等策略，避免信息呈现一元化…",
+  "en": "Douyin strives to make its knowledge base and content pool encyclopaedia-like, relying on the billions of 'vector features' automatically learned and accumulated by its algorithm models, exploring optimisation of algorithm measurement indicators, and comprehensively using content deduplication, scattering, and active exploration of users' diverse interests to avoid monolithic information presentation…"
+ },
+ {
+  "start": 953.45,
+  "end": 973.2,
+  "text": "再说了，算法推荐往往能跟其他分发形式“组合使用”：编辑分发带来的是“你应该知道的”，搜索带来“你想知道的”，推荐带来“你可能感兴趣的”，关注带来“你关心的人的动态”，平台会将这些信息获取途径整合，以解决信息偏食难题。",
+  "en": "Moreover, algorithm recommendations often can be 'combined' with other distribution forms: editorial distribution brings 'what you should know', search brings 'what you want to know', recommendation brings 'what you might be interested in', following brings 'updates from people you care about' — platforms integrate these information acquisition channels to solve the information picky eating problem."
+ },
+ {
+  "start": 973.2,
+  "end": 979.37,
+  "text": "根据“算法+热点+关注+搜索”推荐内容，已是内容平台常见做法。",
+  "en": "Recommending content based on 'algorithm + hot topics + following + search' is already a common practice among content platforms."
+ },
+ {
+  "start": 979.37,
+  "end": 980.52,
+  "text": "04",
+  "en": "04"
+ },
+ {
+  "start": 980.52,
+  "end": 986.47,
+  "text": "在著作《必然》里，著名互联网学者凯文·凯利抛出了“理想的过滤器”一说。",
+  "en": "In his work The Inevitable, the famous internet scholar Kevin Kelly put forward the idea of the 'ideal filter'."
+ },
+ {
+  "start": 986.47,
+  "end": 1000.2,
+  "text": "他认为，理想的过滤器应该推荐那些“我想知道我的朋友喜欢什么，而那又是我现在还不了解的”，以及“它将是一种会向我建议某些我现在不喜欢，但想尝试着喜欢的东西的信息流”。",
+  "en": "He believed that the ideal filter should recommend those things like 'I want to know what my friends like, which I do not yet know', and 'it will be an information flow that suggests to me things I do not like now but want to try to like'."
+ },
+ {
+  "start": 1000.2,
+  "end": 1003.08,
+  "text": "现在的算法，已经实现了这点。",
+  "en": "Today's algorithms have already achieved this."
+ },
+ {
+  "start": 1003.08,
+  "end": 1010.81,
+  "text": "着力实现提高信息筛选效率和避免信息单一呈现的平衡，成了算法加载的“任务进度条”。",
+  "en": "Striving to achieve a balance between improving information screening efficiency and avoiding monolithic information presentation has become the 'task progress bar' loaded onto algorithms."
+ },
+ {
+  "start": 1010.81,
+  "end": 1027.73,
+  "text": "而今，在信息分发平台、短视频平台、电商平台、社交平台及餐饮外卖平台，生成合成类、个性化推送类、排序精选类、检索过滤类、调度决策类等算法技术已得到广泛应用。",
+  "en": "And now, on information distribution platforms, short video platforms, e-commerce platforms, social platforms and food delivery platforms, generative, personalised push, ranking and selection, retrieval and filtering, and scheduling and decision-making algorithm technologies have been widely applied."
+ },
+ {
+  "start": 1027.73,
+  "end": 1040.04,
+  "text": "我们打车，导航会把最短或最快路径推荐给我们；我们点外卖，平台会将评分最高、距离较近的餐馆呈现给我们…",
+  "en": "When we hail a ride, navigation recommends the shortest or fastest route to us; when we order takeaway, the platform presents us with the highest-rated, nearest restaurants…"
+ },
+ {
+  "start": 1040.04,
+  "end": 1050.41,
+  "text": "算法与其说是帮我们提高了信息撮合效率，不如说是帮我们节省了信息筛选成本——在海量信息面前，算法满足了我们的“脑部减负刚需”。",
+  "en": "Rather than saying algorithms help us improve information matching efficiency, it is better to say they help us save information screening costs — in the face of massive information, algorithms satisfy our 'brain decompression rigid demand'."
+ },
+ {
+  "start": 1050.41,
+  "end": 1057.37,
+  "text": "而在信息多样化的当下，算法也在着力将人们信息接收模式调至“多样化”制式。",
+  "en": "And in today's diverse information environment, algorithms are also striving to adjust people's information reception models to a 'diversified' standard."
+ },
+ {
+  "start": 1057.37,
+  "end": 1064.74,
+  "text": "信息平台就如超市，它会更想让顾客消费更多的商品，而不是每次来都只看同类商品。",
+  "en": "An information platform is like a supermarket: it would rather have customers consume more goods than come every time and only look at the same type of goods."
+ },
+ {
+  "start": 1064.74,
+  "end": 1085.38,
+  "text": "喻国明就认为，智能算法推荐具有反信息茧房的本质，“采用多种算法的信息分发平台所具有的社会构造，从信息流动来说，总体上能够有效地避免‘茧房效应’的发生”，且从商业利益初衷看，算法在更新迭代中逐步挖掘出个体尚未被开掘的信息消费潜能是更优解。",
+  "en": "Yu Guoming believes that intelligent algorithm recommendation is essentially anti-information-cocoon: information distribution platforms using multiple algorithms, in terms of their social construction, can overall effectively avoid the occurrence of the 'cocoon effect' in terms of information flow, and from the original intention of commercial interests, it is a better solution for algorithms to gradually tap into individuals' as-yet-undeveloped information consumption potential in iterative updates."
+ },
+ {
+  "start": 1085.38,
+  "end": 1099.82,
+  "text": "传播学教授杨洸也用实证调研给出结论：用户和算法之间始终处于相互响应、相互发展的状态，算法技术创造了很多新闻偶遇的机会，开阔了用户的信息视野。",
+  "en": "Communication professor Yang Guang also gave a conclusion with empirical research: users and algorithms are always in a state of mutual response and mutual development; algorithm technology has created many opportunities for news encounters, broadening users' information horizons."
+ },
+ {
+  "start": 1099.82,
+  "end": 1111.27,
+  "text": "毋庸讳言，算法是放大器，它的放大效应会在“人塑造环境”和“环境塑造人”的双向交互中倍数级还原出人的多面性来。",
+  "en": "There is no denying that algorithms are amplifiers; their amplification effect will multiply people's multifaceted nature in the two-way interaction of 'people shaping the environment' and 'the environment shaping people'."
+ },
+ {
+  "start": 1111.27,
+  "end": 1121.95,
+  "text": "算法会在同频共振中放大向美向善的力量，之前烧烤、冰雪大世界、麻辣烫的热门短视频先后带火淄博、哈尔滨、天水的文旅",
+  "en": "Algorithms amplify the power of moving towards beauty and goodness in same-frequency resonance; previously, popular short videos of barbecue, the Ice and Snow World, and malatang successively boosted the cultural tourism of Zibo, Harbin and Tianshui"
+ }
+]
