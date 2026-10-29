@@ -1,0 +1,674 @@
+[
+ {
+  "start": 0.0,
+  "end": 25.44,
+  "text": "善用客制化 AI 的 RSS 信息汇总，把 OpenClaw (龙虾), Codex, Claude Code 等 Agent 用利索。",
+  "en": "Make good use of customised AI RSS information aggregation, and master Agents like OpenClaw (the Lobster), Codex and Claude Code."
+ },
+ {
+  "start": 25.44,
+  "end": 42.19,
+  "text": "如果没听过RSS (Really Simple Syndication) 的话, 其本质可以理解为一个自动更新的信息收件箱，把原本分散在各个平台上的内容统一汇集起来，不需要逐个打开网站刷新页面，更新会自动送达。",
+  "en": "If you have never heard of RSS (Really Simple Syndication), its essence can be understood as an automatically updating information inbox, gathering content originally scattered across platforms into one place. You do not need to open websites one by one to refresh pages; updates are delivered automatically."
+ },
+ {
+  "start": 42.19,
+  "end": 54.5,
+  "text": "比如微信公众号、知乎、Bilibili、微博、小红书、即刻、抖音、GitHub、路透社、彭博社、华尔街、各国大使馆、各大新闻社、推特、INS -- 你能想到的信息源都可以汇总。",
+  "en": "For example, WeChat official accounts, Zhihu, Bilibili, Weibo, Xiaohongshu, Jike, Douyin, GitHub, Reuters, Bloomberg, Wall Street, embassies of various countries, major news agencies, Twitter, Instagram — any information source you can think of can be aggregated."
+ },
+ {
+  "start": 54.5,
+  "end": 63.1,
+  "text": "不管是按照频道，按照创作者、按照榜单、按照话题、按照标签、按照关键词，能想到的汇总方式都能做到。",
+  "en": "Whether by channel, by creator, by ranking, by topic, by tag, or by keyword — every aggregation method you can think of can be done."
+ },
+ {
+  "start": 63.1,
+  "end": 78.26,
+  "text": "结合小龙虾这样的 Agent，这些内容通过各自的 RSS feed 被聚合进同一个阅读器或接入 AI 工具后，就变成一个持续流动、可被筛选总结甚至自动处理的信息流，本质是把“到处刷内容”变成“内容自动汇总过来”。",
+  "en": "Combined with an Agent like Little Lobster, once this content is aggregated through its own RSS feeds into the same reader or connected to AI tools, it becomes a continuously flowing information stream that can be filtered, summarised and even automatically processed. Its essence is turning 'brushing content everywhere' into 'content automatically aggregated to you'."
+ },
+ {
+  "start": 78.26,
+  "end": 91.94,
+  "text": "现在答主就能做到每天每三个小时，用龙虾在Discord 里（其他微信，Telegram，飞书，邮箱，各种常见聊天软件应该都支持）帮忙汇总一下刚刚三小时内发生的重点事件。",
+  "en": "Now the answerer can, every three hours each day, use Little Lobster in Discord (other WeChat, Telegram, Feishu, email and various common chat software should all be supported) to help summarise the key events that happened in the just-past three hours."
+ },
+ {
+  "start": 91.94,
+  "end": 94.82,
+  "text": "还可以跟它继续对话让它深挖某一个事件。",
+  "en": "You can also continue conversing with it to dig deeper into a particular event."
+ },
+ {
+  "start": 94.82,
+  "end": 97.87,
+  "text": "信息收集和整合效率高到爆炸。",
+  "en": "The efficiency of information collection and integration is explosively high."
+ },
+ {
+  "start": 97.87,
+  "end": 108.02,
+  "text": "以下是一些截止到 2026年 3月底市面上比较有影响力，具有一定规模的现存 RSS 站点，工具，以及已经可以直接接入龙虾的 skills 汇总。",
+  "en": "Below is a summary, as of the end of March 2026, of RSS sites, tools and skills currently on the market that are relatively influential, of a certain scale, and already directly connectable to Little Lobster."
+ },
+ {
+  "start": 108.02,
+  "end": 112.06,
+  "text": "可以自行探索配置，欢迎评论区交流究竟效果如何。",
+  "en": "Feel free to explore and configure them yourself, and welcome to exchange in the comments about how well they actually work."
+ },
+ {
+  "start": 112.06,
+  "end": 116.62,
+  "text": "对古人来说，这种程度的信息收集和整合简直就是魔法。",
+  "en": "For ancient people, this level of information collection and integration would simply be magic."
+ },
+ {
+  "start": 116.62,
+  "end": 124.1,
+  "text": "建议有条件的朋友都搭一下，也呼吁一下知乎的朋友们把知乎上出现的幼稚信息源汇总贴到评论区！",
+  "en": "I suggest friends who are able to set one up, and also call on Zhihu friends to post summaries of naive information sources appearing on Zhihu in the comments!"
+ },
+ {
+  "start": 124.1,
+  "end": 127.34,
+  "text": "可以搞出一个更好的开源 RSS 生态。",
+  "en": "We can build a better open-source RSS ecosystem."
+ },
+ {
+  "start": 127.34,
+  "end": 132.07,
+  "text": "教育系统三番五次取消逻辑课，难道是为了帮助你思考？",
+  "en": "The education system has repeatedly cancelled logic courses. Is that to help you think?"
+ },
+ {
+  "start": 132.07,
+  "end": 133.75,
+  "text": "行为背后目的是什么？",
+  "en": "What is the purpose behind the behaviour?"
+ },
+ {
+  "start": 133.75,
+  "end": 139.63,
+  "text": "某些群体多年来始终成为诈骗分子主要目标，背后原因是什么？",
+  "en": "Why have certain groups consistently been the main targets of fraudsters for years?"
+ },
+ {
+  "start": 139.63,
+  "end": 146.88,
+  "text": "内在思维模式+外在信息管控，导致大部分人很难摆脱信息茧房。",
+  "en": "An inward thinking pattern plus outward information control makes it hard for most people to escape the information cocoon."
+ },
+ {
+  "start": 146.88,
+  "end": 154.32,
+  "text": "缺少逻辑思维、批判性思维，缺少独立思考和质疑精神，长期接受劣质信息。",
+  "en": "Lacking logical thinking and critical thinking, lacking independent thinking and a questioning spirit, and long accepting low-quality information."
+ },
+ {
+  "start": 154.32,
+  "end": 161.88,
+  "text": "走出一个茧房，又会掉进另一个茧房；摆脱一个骗局，又会走进下一个骗局。",
+  "en": "Escaping one cocoon, you fall into another; escaping one scam, you walk into the next scam."
+ },
+ {
+  "start": 161.88,
+  "end": 165.67,
+  "text": "1、这两年发生了很多事情对我的冲击很大。",
+  "en": "1. These past two years, many things have happened that have greatly impacted me."
+ },
+ {
+  "start": 165.67,
+  "end": 175.94,
+  "text": "做自媒体的过程中，我接触到了很多很多优秀的人，我逐渐意识到一个问题就是，认知就是能力的边界。",
+  "en": "In the process of doing self-media, I came into contact with many, many excellent people, and I gradually realised a problem: cognition is the boundary of ability."
+ },
+ {
+  "start": 175.94,
+  "end": 182.26,
+  "text": "不同的圈层带给你的认知是不一样的，突破信息茧房的关键在于“走出去”。",
+  "en": "Different circles bring you different cognition. The key to breaking through the information cocoon is to 'go out'."
+ },
+ {
+  "start": 182.26,
+  "end": 192.05,
+  "text": "去加入一个又一个好的圈子，身处高质量的信息平台，能让我们提高对未知事物的判断，洞察事物真实的发展规律。",
+  "en": "Join one good circle after another; being in high-quality information platforms allows us to improve our judgment of unknown things and perceive the true development patterns of things."
+ },
+ {
+  "start": 192.05,
+  "end": 195.22,
+  "text": "2、看到一个信息时，先问问自己：",
+  "en": "2. When you see a piece of information, first ask yourself:"
+ },
+ {
+  "start": 195.22,
+  "end": 196.66,
+  "text": "对这件事知道什么？",
+  "en": "What do I know about this?"
+ },
+ {
+  "start": 196.66,
+  "end": 197.62,
+  "text": "不知道什么？",
+  "en": "What do I not know?"
+ },
+ {
+  "start": 197.62,
+  "end": 199.3,
+  "text": "这个信息来源可靠吗？",
+  "en": "Is this information source reliable?"
+ },
+ {
+  "start": 199.3,
+  "end": 200.81,
+  "text": "这个观点是谁说的？",
+  "en": "Who said this view?"
+ },
+ {
+  "start": 200.81,
+  "end": 210.6,
+  "text": "3、适当关注一些粉丝不少、但争议很大的博主，偶尔接受一些和自己观念相悖的信息，有助于避免思维困在信息茧房。",
+  "en": "3. Appropriately follow some bloggers with quite a few fans but great controversy, and occasionally accept some information contrary to your own views, which helps prevent your thinking from being trapped in an information cocoon."
+ },
+ {
+  "start": 210.6,
+  "end": 212.04,
+  "text": "远离简中网！",
+  "en": "Stay away from the Simplified-Chinese internet!"
+ },
+ {
+  "start": 212.04,
+  "end": 216.0,
+  "text": "，看几个不同立场偏好的英文主流媒体就OK了！",
+  "en": "Just read a few mainstream English media outlets with different position preferences, and you will be OK!"
+ },
+ {
+  "start": 216.0,
+  "end": 220.97,
+  "text": "钱多，分别去台北，平壤，东京，纽约，耶路撒冷等城市住一个月；",
+  "en": "With more money, live a month each in Taipei, Pyongyang, Tokyo, New York, Jerusalem and other cities;"
+ },
+ {
+  "start": 220.97,
+  "end": 228.7,
+  "text": "钱少，在孔夫子旧书网上淘几本不常见的外国游记及当代史书，或者偶而上知乎；",
+  "en": "With less money, scour the Confucius Old Books Network for a few uncommon foreign travelogues and contemporary history books, or occasionally browse Zhihu;"
+ },
+ {
+  "start": 228.7,
+  "end": 233.69,
+  "text": "钱再少，打开电视，专听各路“专家”论道，反着想。",
+  "en": "With even less money, turn on the television and listen specifically to all kinds of 'experts' expounding, and think in reverse."
+ },
+ {
+  "start": 233.69,
+  "end": 238.49,
+  "text": "避开简中媒体，多看BBC,CNN,ABC,路透社，彭博社。",
+  "en": "Avoid Simplified-Chinese media; read more BBC, CNN, ABC, Reuters and Bloomberg."
+ },
+ {
+  "start": 238.49,
+  "end": 239.64,
+  "text": "联合早报…",
+  "en": "Lianhe Zaobao…"
+ },
+ {
+  "start": 239.64,
+  "end": 244.44,
+  "text": "先承认一个事实：你之所以被困住，是因为你懒，且贪。",
+  "en": "First admit a fact: the reason you are trapped is that you are lazy and greedy."
+ },
+ {
+  "start": 244.44,
+  "end": 247.75,
+  "text": "懒在不愿思考，贪在只求舒适。",
+  "en": "Lazy in unwillingness to think, greedy in only seeking comfort."
+ },
+ {
+  "start": 247.75,
+  "end": 254.06,
+  "text": "很多人把“信息茧房”当成一个技术问题，以为换个算法、多装几个 APP 就能解决。",
+  "en": "Many people treat the 'information cocoon' as a technical problem, thinking that changing the algorithm or installing a few more apps can solve it."
+ },
+ {
+  "start": 254.06,
+  "end": 254.98,
+  "text": "错。",
+  "en": "Wrong."
+ },
+ {
+  "start": 254.98,
+  "end": 257.93,
+  "text": "这是个人性问题，还是个利益问题。",
+  "en": "This is a human-nature problem, and also an interest problem."
+ },
+ {
+  "start": 257.93,
+  "end": 261.0,
+  "text": "要想不被茧房困死，你得做到以下四点。",
+  "en": "To avoid being trapped to death by the cocoon, you must do the following four things."
+ },
+ {
+  "start": 261.0,
+  "end": 262.97,
+  "text": "这不是建议，是规则。",
+  "en": "This is not advice; it is rules."
+ },
+ {
+  "start": 262.97,
+  "end": 265.92,
+  "text": "第一，戒掉“情绪共鸣”，那是毒药。",
+  "en": "First, quit 'emotional resonance' — that is poison."
+ },
+ {
+  "start": 265.92,
+  "end": 271.87,
+  "text": "你要明白，互联网上 95% 的内容，都是为了迎合你的情绪而生产的。",
+  "en": "You must understand that 95% of content on the internet is produced to cater to your emotions."
+ },
+ {
+  "start": 271.87,
+  "end": 279.24,
+  "text": "当你看到一篇文章，觉得“说得太对了”、“简直就是在说我”、\"热血沸腾”的时候，警惕了。",
+  "en": "When you read an article and feel 'so true', 'this is exactly about me', 'my blood is boiling', be alert."
+ },
+ {
+  "start": 279.24,
+  "end": 282.65,
+  "text": "这不是知音，这是猎手在撒网。",
+  "en": "This is not a kindred spirit; this is a hunter casting a net."
+ },
+ {
+  "start": 282.65,
+  "end": 286.25,
+  "text": "信息茧房的本质，是共鸣成瘾。",
+  "en": "The essence of the information cocoon is resonance addiction."
+ },
+ {
+  "start": 286.25,
+  "end": 289.61,
+  "text": "大脑喜欢熟悉的东西，因为处理起来不耗能。",
+  "en": "The brain likes familiar things, because they cost no energy to process."
+ },
+ {
+  "start": 289.61,
+  "end": 299.64,
+  "text": "那些带着褒义词、符合你超我想象、能让你产生多巴胺的信息，都是精心包装的糖衣炮弹。",
+  "en": "Those messages carrying positive words, matching your superego imagination, and giving you dopamine are carefully packaged sugar-coated cannonballs."
+ },
+ {
+  "start": 299.64,
+  "end": 301.08,
+  "text": "我怎么看信息？",
+  "en": "How do I view information?"
+ },
+ {
+  "start": 301.08,
+  "end": 303.05,
+  "text": "我先把里面的形容词全删了。",
+  "en": "I first delete all the adjectives inside."
+ },
+ {
+  "start": 303.05,
+  "end": 308.09,
+  "text": "把“感人”、“愤怒”、“震惊”这些词去掉，只剩下主谓宾。",
+  "en": "Remove words like 'touching', 'angry' and 'shocking', leaving only subject, verb and object."
+ },
+ {
+  "start": 308.09,
+  "end": 310.66,
+  "text": "这时候你再看，逻辑还通吗？",
+  "en": "Then look again: does the logic still hold?"
+ },
+ {
+  "start": 310.66,
+  "end": 311.74,
+  "text": "利益链在哪？",
+  "en": "Where is the interest chain?"
+ },
+ {
+  "start": 311.74,
+  "end": 312.94,
+  "text": "谁在受益？",
+  "en": "Who benefits?"
+ },
+ {
+  "start": 312.94,
+  "end": 315.62,
+  "text": "舒服，是废掉的开始。",
+  "en": "Comfort is the beginning of being ruined."
+ },
+ {
+  "start": 315.62,
+  "end": 320.5,
+  "text": "真正有价值的信息，往往带着刺，甚至让你不爽。",
+  "en": "Truly valuable information often carries thorns, and even makes you uncomfortable."
+ },
+ {
+  "start": 320.5,
+  "end": 322.78,
+  "text": "因为它在挑战你的认知边界。",
+  "en": "Because it challenges your cognitive boundaries."
+ },
+ {
+  "start": 322.78,
+  "end": 328.66,
+  "text": "如果你每天刷手机都很开心，那你不是在获取信息，你是在被喂养。",
+  "en": "If you are happy scrolling on your phone every day, you are not acquiring information; you are being fed."
+ },
+ {
+  "start": 328.66,
+  "end": 332.14,
+  "text": "第二，为信息付费，不要总想白嫖。",
+  "en": "Second, pay for information; do not always want it for free."
+ },
+ {
+  "start": 332.14,
+  "end": 333.94,
+  "text": "这话很世俗，但很真实。",
+  "en": "This sounds worldly, but it is true."
+ },
+ {
+  "start": 333.94,
+  "end": 336.1,
+  "text": "免费的信息，你就是产品。",
+  "en": "For free information, you are the product."
+ },
+ {
+  "start": 336.1,
+  "end": 337.58,
+  "text": "算法为什么懂你？",
+  "en": "Why does the algorithm understand you?"
+ },
+ {
+  "start": 337.58,
+  "end": 342.34,
+  "text": "因为它不需要对你负责，它只需要留住你的时间，把你卖给广告商。",
+  "en": "Because it does not need to be responsible to you; it only needs to keep your time and sell you to advertisers."
+ },
+ {
+  "start": 342.34,
+  "end": 345.82,
+  "text": "它推给你的，永远是你想看到的，而不是你需要看到的。",
+  "en": "What it pushes to you is always what you want to see, not what you need to see."
+ },
+ {
+  "start": 345.82,
+  "end": 349.94,
+  "text": "要想破局，你得建立自己的“信息护城河”。",
+  "en": "To break through, you must build your own 'information moat'."
+ },
+ {
+  "start": 349.94,
+  "end": 357.22,
+  "text": "我手机里没几个娱乐软件，但我订了几份昂贵的研报，付费订阅了几家权威媒体的数字刊。",
+  "en": "I do not have many entertainment apps on my phone, but I subscribe to several expensive research reports and paid digital editions of authoritative media."
+ },
+ {
+  "start": 357.22,
+  "end": 358.18,
+  "text": "为什么？",
+  "en": "Why?"
+ },
+ {
+  "start": 358.18,
+  "end": 360.62,
+  "text": "因为高质量的信息是有成本的。",
+  "en": "Because high-quality information has a cost."
+ },
+ {
+  "start": 360.62,
+  "end": 369.82,
+  "text": "那些经过严肃调查、有数据支撑、有逻辑推演的内容，往往藏在付费墙后面，或者藏在那些枯燥的纸质刊物里。",
+  "en": "Content that has undergone serious investigation, is supported by data, and has logical deduction often hides behind paywalls, or in those boring paper publications."
+ },
+ {
+  "start": 369.82,
+  "end": 375.05,
+  "text": "你不想花钱，不想花精力去筛选，那就只能吃别人嚼过的二手粮。",
+  "en": "If you do not want to spend money or energy on filtering, you can only eat second-hand grain chewed by others."
+ },
+ {
+  "start": 375.05,
+  "end": 380.02,
+  "text": "别怪大数据困住你，大数据是服务于你的“消费能力”的。",
+  "en": "Do not blame big data for trapping you; big data serves your 'spending power'."
+ },
+ {
+  "start": 380.02,
+  "end": 382.94,
+  "text": "你不愿为知识买单，就只能用认知买单。",
+  "en": "If you are unwilling to pay for knowledge, you can only pay with cognition."
+ },
+ {
+  "start": 382.94,
+  "end": 386.71,
+  "text": "第三，主动找“不舒服”，去现实里碰壁。",
+  "en": "Third, actively seek 'discomfort' and bump into walls in reality."
+ },
+ {
+  "start": 386.71,
+  "end": 391.75,
+  "text": "网上看再多“社会分析”，不如去菜市场、去工地，去餐厅…",
+  "en": "No matter how much 'social analysis' you read online, it is not as good as going to wet markets, construction sites, restaurants…"
+ },
+ {
+  "start": 391.75,
+  "end": 393.62,
+  "text": "跟不同圈子的人聊聊天。",
+  "en": "And chatting with people from different circles."
+ },
+ {
+  "start": 393.62,
+  "end": 400.03,
+  "text": "信息茧房最大的敌人，不是资本，是你自己不敢面对真实的世界。",
+  "en": "The greatest enemy of the information cocoon is not capital; it is your own fear of facing the real world."
+ },
+ {
+  "start": 400.03,
+  "end": 402.74,
+  "text": "我有个习惯，专门去听反对我的声音。",
+  "en": "I have a habit of specifically listening to voices opposing me."
+ },
+ {
+  "start": 402.74,
+  "end": 410.26,
+  "text": "当我做一个决策时，我会强制自己找几个持相反观点的人喝酒，听他们骂我，听他们挑刺。",
+  "en": "When I make a decision, I force myself to find several people with opposing views to drink with, listen to them scold me, listen to them pick faults."
+ },
+ {
+  "start": 410.26,
+  "end": 413.26,
+  "text": "这不是为了纠结，是为了压力测试。",
+  "en": "This is not about being torn; it is for stress testing."
+ },
+ {
+  "start": 413.26,
+  "end": 417.86,
+  "text": "如果你只跟认可你的人在一起，你听到的全是回音。",
+  "en": "If you only stay with people who agree with you, all you hear are echoes."
+ },
+ {
+  "start": 417.86,
+  "end": 421.7,
+  "text": "你得去主动接触那些跟你阶层不同、三观不同的人。",
+  "en": "You must actively contact people of different class and different values from you."
+ },
+ {
+  "start": 421.7,
+  "end": 423.91,
+  "text": "哪怕被拒绝，哪怕掉面子。",
+  "en": "Even if rejected, even if you lose face."
+ },
+ {
+  "start": 423.91,
+  "end": 426.5,
+  "text": "面子不值钱，但视野值钱。",
+  "en": "Face is worthless, but vision is valuable."
+ },
+ {
+  "start": 426.5,
+  "end": 432.02,
+  "text": "当年教员写《社会各阶级的分析》，是坐在窑洞里空想出来的吗？",
+  "en": "Back then, when the Teacher wrote 'Analysis of the Classes in Chinese Society', was it dreamed up sitting in a cave dwelling?"
+ },
+ {
+  "start": 432.02,
+  "end": 433.82,
+  "text": "那是走访调查出来的。",
+  "en": "That came from visiting and investigating."
+ },
+ {
+  "start": 433.82,
+  "end": 439.39,
+  "text": "你躲在屏幕后面键政，永远不知道真实的底层逻辑是什么。",
+  "en": "Hiding behind a screen doing keyboard politics, you will never know what the real underlying logic is."
+ },
+ {
+  "start": 439.39,
+  "end": 443.35,
+  "text": "肉身在场，是打破茧房的最强物理手段。",
+  "en": "Physical presence is the strongest physical means to break the cocoon."
+ },
+ {
+  "start": 443.35,
+  "end": 448.34,
+  "text": "去现场，去一线，去闻一闻那里的味道，看一看那里的眼神。",
+  "en": "Go to the scene, go to the front line, smell the smells there, look at the eyes there."
+ },
+ {
+  "start": 448.34,
+  "end": 451.03,
+  "text": "大数据骗得了你，但现实骗不了你。",
+  "en": "Big data can deceive you, but reality cannot."
+ },
+ {
+  "start": 451.03,
+  "end": 453.84,
+  "text": "第四，接受“无解”，拥抱复杂。",
+  "en": "Fourth, accept 'no solution' and embrace complexity."
+ },
+ {
+  "start": 453.84,
+  "end": 457.87,
+  "text": "人脑经过几万年进化，天生喜欢简单的答案。",
+  "en": "After tens of thousands of years of evolution, the human brain naturally likes simple answers."
+ },
+ {
+  "start": 457.87,
+  "end": 461.16,
+  "text": "是非分明，善恶立判，这样大脑才省力。",
+  "en": "Clear right and wrong, good and evil sharply distinguished — that saves the brain energy."
+ },
+ {
+  "start": 461.16,
+  "end": 465.48,
+  "text": "但真实世界是灰色的，是复杂的，往往是没有简单答案的。",
+  "en": "But the real world is grey and complex, and often has no simple answers."
+ },
+ {
+  "start": 465.48,
+  "end": 474.79,
+  "text": "当你通过“对冲阅读”，脑子里同时存在两个相反的观点，并且感到矛盾、困扰、不爽的时候，恭喜你，你摸到真相的边了。",
+  "en": "When, through 'hedged reading', two opposite views exist in your mind at the same time, and you feel contradiction, distress and discomfort, congratulations — you have touched the edge of truth."
+ },
+ {
+  "start": 474.79,
+  "end": 477.31,
+  "text": "这种不爽，值得承受。",
+  "en": "This discomfort is worth enduring."
+ },
+ {
+  "start": 477.31,
+  "end": 484.03,
+  "text": "很多人为了逃避这种不爽，宁愿回到茧房里，找一个简单的替罪羊，信一个极端的观点。",
+  "en": "Many people, to escape this discomfort, would rather return to the cocoon, find a simple scapegoat, and believe an extreme view."
+ },
+ {
+  "start": 484.03,
+  "end": 489.55,
+  "text": "这就是为什么有些人越活越偏激，最后成了春蚕，自己吐丝把自己裹死。",
+  "en": "This is why some people become more and more extreme as they live, finally becoming silkworms, spinning silk to wrap themselves to death."
+ },
+ {
+  "start": 489.55,
+  "end": 492.14,
+  "text": "真正的强者，能容纳矛盾。",
+  "en": "Truly strong people can accommodate contradiction."
+ },
+ {
+  "start": 492.14,
+  "end": 496.7,
+  "text": "他知道世界不是非黑即白，他知道任何观点都有适用范围。",
+  "en": "They know the world is not black and white; they know any view has its scope of application."
+ },
+ {
+  "start": 496.7,
+  "end": 500.5,
+  "text": "他不追求绝对的“正确”，他追求的是“概率”。",
+  "en": "They do not pursue absolute 'correctness'; they pursue 'probability'."
+ },
+ {
+  "start": 500.5,
+  "end": 502.34,
+  "text": "最后，记住这句话：",
+  "en": "Finally, remember this sentence:"
+ },
+ {
+  "start": 502.34,
+  "end": 506.18,
+  "text": "你的认知边界，就是你世界的边界。",
+  "en": "Your cognitive boundary is the boundary of your world."
+ },
+ {
+  "start": 506.18,
+  "end": 511.99,
+  "text": "如果你看到的观点都与你一致，不是因为你聪明，是因为你被圈养得很好。",
+  "en": "If the views you see all agree with yours, it is not because you are smart, but because you have been fed very well."
+ },
+ {
+  "start": 511.99,
+  "end": 514.2,
+  "text": "自由意志是有门槛的。",
+  "en": "Free will has a threshold."
+ },
+ {
+  "start": 514.2,
+  "end": 519.65,
+  "text": "在不了解事实的情况下，人其实并没有自由意志，只有被操控的条件反射。",
+  "en": "Without understanding the facts, a person actually has no free will, only conditioned reflexes of being manipulated."
+ },
+ {
+  "start": 519.65,
+  "end": 527.04,
+  "text": "只有当你打破了茧房，知道了世界的参差、人性的复杂，你才会真正掌握自己的命运。",
+  "en": "Only when you break the cocoon and know the unevenness of the world and the complexity of human nature will you truly control your own destiny."
+ },
+ {
+  "start": 527.04,
+  "end": 530.64,
+  "text": "命运会区别对待认知水平不同的人。",
+  "en": "Fate treats people of different cognitive levels differently."
+ },
+ {
+  "start": 530.64,
+  "end": 539.83,
+  "text": "你是想继续活在温暖的茧房里做一只快乐的蚕，还是想咬破口子面对风雨交加的真实世界？",
+  "en": "Do you want to continue living in the warm cocoon as a happy silkworm, or bite open a hole and face the stormy real world?"
+ },
+ {
+  "start": 539.83,
+  "end": 541.27,
+  "text": "选择权在你。",
+  "en": "The choice is yours."
+ },
+ {
+  "start": 541.27,
+  "end": 544.99,
+  "text": "但记住，茧房不破，成长无从谈起。",
+  "en": "But remember: if the cocoon does not break, growth has nowhere to start."
+ }
+]
