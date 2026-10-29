@@ -1,0 +1,548 @@
+[
+ {
+  "start": 0.0,
+  "end": 5.35,
+  "text": "从小我妈就告诉我，所有信息源都可以看，多看多读永远没错。",
+  "en": "Since I was a child, my mum told me: all information sources can be read; reading more is never wrong."
+ },
+ {
+  "start": 5.35,
+  "end": 16.82,
+  "text": "多看《环球时报》、《参考消息》，多看《南华早报》、《联合早报》、《中时新闻》，多看BBC、CNN、路透、彭博。",
+  "en": "Read more Global Times and Reference News; read more South China Morning Post, Lianhe Zaobao and China Times News; read more BBC, CNN, Reuters and Bloomberg."
+ },
+ {
+  "start": 16.82,
+  "end": 20.11,
+  "text": "多看多读，互相比较，才能有全面的认识。",
+  "en": "Only by reading more and comparing with each other can you have a comprehensive understanding."
+ },
+ {
+  "start": 20.11,
+  "end": 23.35,
+  "text": "实际上，任何媒体、任何个人都有立场。",
+  "en": "In fact, any media and any individual has a position."
+ },
+ {
+  "start": 23.35,
+  "end": 25.27,
+  "text": "客观中立也是立场。",
+  "en": "Objectivity and neutrality are also positions."
+ },
+ {
+  "start": 25.27,
+  "end": 32.42,
+  "text": "避免活在信息茧房中，首先是一个“敢不敢”的问题，其次才是一个“如何”的问题。",
+  "en": "Avoiding life in an information cocoon is first a question of 'dare or not dare', and only secondarily a question of 'how'."
+ },
+ {
+  "start": 32.42,
+  "end": 40.63,
+  "text": "很多答案说，题主意识到自己活在信息茧房之中，已经迈出重要一步了，接下来只要拓宽视野，敞开自己…",
+  "en": "Many answers say that the questioner realising they live in an information cocoon has already taken an important step, and next they only need to broaden their horizons, open themselves up…"
+ },
+ {
+  "start": 40.63,
+  "end": 41.52,
+  "text": "blabla",
+  "en": "Blah blah."
+ },
+ {
+  "start": 41.52,
+  "end": 44.11,
+  "text": "我认为这样的答案是无效的。",
+  "en": "I think such answers are ineffective."
+ },
+ {
+  "start": 44.11,
+  "end": 51.98,
+  "text": "这样的回答显然缺少了一个自我反思的维度：我如何证明我所叙述的东西不是信息茧房里的内容？",
+  "en": "Such answers clearly lack a dimension of self-reflection: how do I prove that what I narrate is not content inside an information cocoon?"
+ },
+ {
+  "start": 51.98,
+  "end": 58.87,
+  "text": "换言之，这样的答案的问题是：我在怀疑，但是我没有怀疑我的怀疑，我怎么保证我的怀疑的有效性？",
+  "en": "In other words, the problem with such answers is: I am doubting, but I am not doubting my doubt. How do I guarantee the validity of my doubt?"
+ },
+ {
+  "start": 58.87,
+  "end": 72.67,
+  "text": "而所谓的“信息茧房”（我愿意将它替换为意识形态）之所以能够成为“信息茧房”，恰恰建立在自我不敢进行第二阶怀疑的基础上。",
+  "en": "And the reason the so-called 'information cocoon' (which I would like to replace with 'ideology') can become an 'information cocoon' is precisely built on the self's refusal to engage in second-order doubt."
+ },
+ {
+  "start": 72.67,
+  "end": 73.63,
+  "text": "为什么不敢？",
+  "en": "Why dare not?"
+ },
+ {
+  "start": 73.63,
+  "end": 83.4,
+  "text": "用精神分析笼统的术语来说，在这里正是心理防御机制在起作用；用拉康的术语来说，这里就是幻象。",
+  "en": "In the general terms of psychoanalysis, it is precisely the psychological defence mechanism at work here; in Lacan's terms, this is the fantasy."
+ },
+ {
+  "start": 83.4,
+  "end": 85.97,
+  "text": "我们不敢突破自己的心理防御机制。",
+  "en": "We dare not break through our own psychological defence mechanisms."
+ },
+ {
+  "start": 85.97,
+  "end": 89.69,
+  "text": "回过头来，我们审视信息茧房本身的定义。",
+  "en": "Looking back, we examine the definition of the information cocoon itself."
+ },
+ {
+  "start": 89.69,
+  "end": 102.05,
+  "text": "信息茧房，就是信息平台利用算法主动向用户推送ta偏好的信息所造成的这么一种现象：用户所把握到的现实其实是被他自己的偏好所建构出的伪现实。",
+  "en": "The information cocoon is a phenomenon caused by information platforms using algorithms to actively push users information they prefer: the reality users grasp is actually a pseudo-reality constructed by their own preferences."
+ },
+ {
+  "start": 102.05,
+  "end": 105.65,
+  "text": "为什么我认为信息茧房可以替换成意识形态？",
+  "en": "Why do I think the information cocoon can be replaced by ideology?"
+ },
+ {
+  "start": 105.65,
+  "end": 125.04,
+  "text": "因为即使没有信息平台，没有算法，我们把握的现实依然是被自己的偏好所建构出来的伪现实，也就是被意识形态捕获了。",
+  "en": "Because even without information platforms and algorithms, the reality we grasp is still a pseudo-reality constructed by our own preferences — that is, captured by ideology."
+ },
+ {
+  "start": 125.04,
+  "end": 135.43,
+  "text": "比如一名中国男性极端厌女（换成女拳厌男也可以），我们可以说他走到这个地步是因为他在信息茧房里看了够多的煽动性文章。",
+  "en": "For example, a Chinese man who is extremely misogynistic (or swap in a feminist man-hater) — we can say he reached this point because he read enough inflammatory articles in the information cocoon."
+ },
+ {
+  "start": 135.43,
+  "end": 145.8,
+  "text": "但是我们总是可以追溯到算法还没有学习到他信息偏好的时间点，在此时，我们依然无法认为他在性别议题上是中立的，即使他自己也这样认为。",
+  "en": "But we can always trace back to the point before the algorithm had learned his information preferences. At that point, we still cannot consider him neutral on gender issues, even if he himself thinks so."
+ },
+ {
+  "start": 145.8,
+  "end": 154.87,
+  "text": "因为逻辑上讲，他必然首先被第一篇厌女文章而不是其他什么文章打动了，算法才会在后续继续给他推送类似的文章。",
+  "en": "Because logically, he must first have been moved by the first misogynistic article rather than some other article, and only then did the algorithm continue pushing similar articles to him afterwards."
+ },
+ {
+  "start": 154.87,
+  "end": 164.4,
+  "text": "只有他具有个人差异性的心理防御机制才能解释他被第一篇厌女文章打动了（而不是没被打动，甚至反感）。",
+  "en": "Only his individually differentiated psychological defence mechanism can explain why he was moved by the first misogynistic article (rather than not being moved, or even feeling disgusted)."
+ },
+ {
+  "start": 164.4,
+  "end": 169.27,
+  "text": "所以问题不仅仅出在“服务器”，也出在了“客户端”，也就是个人精神结构。",
+  "en": "So the problem lies not only in the 'server', but also in the 'client' — that is, the individual psychic structure."
+ },
+ {
+  "start": 169.27,
+  "end": 181.56,
+  "text": "信息资本并没有凭空创造了一个信息茧房出来；他们只是给人们已有的心理防御机制打了补丁，让曾经就已经有的藩篱更加难以逾越。",
+  "en": "Information capital did not create an information cocoon out of thin air; they merely patched people's existing psychological defence mechanisms, making the fences that already existed even harder to cross."
+ },
+ {
+  "start": 181.56,
+  "end": 185.69,
+  "text": "把内容推送关了，固然可以让我们接收更多元化的信息。",
+  "en": "Turning off content recommendations can certainly let us receive more diverse information."
+ },
+ {
+  "start": 185.69,
+  "end": 189.22,
+  "text": "但是想要彻底打破信息茧房，光这么做还不够。",
+  "en": "But to thoroughly break the information cocoon, doing only this is not enough."
+ },
+ {
+  "start": 189.22,
+  "end": 193.06,
+  "text": "我们还要处理我们客户端的问题，也就是我们精神结构的问题。",
+  "en": "We must also deal with our client-side problem — that is, the problem of our psychic structure."
+ },
+ {
+  "start": 193.06,
+  "end": 200.3,
+  "text": "到这里，熟悉拉黑齐的朋友们，应该会想到拉康精神分析最关键的环节：穿越幻象。",
+  "en": "At this point, friends familiar with Lacan should think of the most crucial link in Lacanian psychoanalysis: traversing the fantasy."
+ },
+ {
+  "start": 200.3,
+  "end": 206.62,
+  "text": "理解穿越幻象解决了开头“敢不敢”的问题，坚持穿越幻象的实践解决了“如何”的问题。",
+  "en": "Understanding traversing the fantasy solves the opening 'dare or not dare' problem; persisting in the practice of traversing the fantasy solves the 'how' problem."
+ },
+ {
+  "start": 206.62,
+  "end": 213.17,
+  "text": "这个答案写到这里就结束其实相当不负责任，因为我只是把题目换成了“如何穿越幻象”。",
+  "en": "Ending this answer here would actually be quite irresponsible, because I have only replaced the question with 'how to traverse the fantasy'."
+ },
+ {
+  "start": 213.17,
+  "end": 218.26,
+  "text": "但是关于穿越幻象的回答已经有珠玉在前了，推荐这个答案：",
+  "en": "But answers about traversing the fantasy already have excellent predecessors; I recommend this answer:"
+ },
+ {
+  "start": 218.26,
+  "end": 221.81,
+  "text": "1、在钱有余力的情况下，去国外实地感受一下。",
+  "en": "1. If you have spare money, go abroad and experience it in person."
+ },
+ {
+  "start": 221.81,
+  "end": 224.28,
+  "text": "2、科学上网。",
+  "en": "2. Bypass the firewall scientifically."
+ },
+ {
+  "start": 224.28,
+  "end": 227.81,
+  "text": "3、多看国内一些非主流报道的文章。",
+  "en": "3. Read more non-mainstream domestic reporting."
+ },
+ {
+  "start": 227.81,
+  "end": 230.62,
+  "text": "4、和主流媒体的思路反着来。",
+  "en": "4. Go against the thinking of mainstream media."
+ },
+ {
+  "start": 230.62,
+  "end": 238.22,
+  "text": "我刷短视频时，从来都没刷到过小姐姐的视频，映入我眼帘的都是赚钱、营销、人性相关的。",
+  "en": "When I scroll short videos, I have never scrolled to videos of pretty girls; what meets my eyes is all about making money, marketing and human nature."
+ },
+ {
+  "start": 238.22,
+  "end": 244.3,
+  "text": "即使我搜索“美女”，也都是分析这些美女都是如何利用美色赚钱的，而不是美女视频本身。",
+  "en": "Even when I search 'beautiful women', the results are all analyses of how these beautiful women use their looks to make money, not videos of beautiful women themselves."
+ },
+ {
+  "start": 244.3,
+  "end": 249.65,
+  "text": "换句话说，在短视频平台里，好像我是一个对女色完全不感兴趣的机器人。",
+  "en": "In other words, on short-video platforms, I seem to be a robot completely uninterested in female beauty."
+ },
+ {
+  "start": 249.65,
+  "end": 265.49,
+  "text": "当我卸载软件，重新下载短视频软件、还没有登录账号的时候，我就发现，给我推送的视频除了是美女跳舞，就是那些吸引人眼球的新闻事件（比如淄博烧烤、大熊猫回国、五一景区挤满了游客这些）。",
+  "en": "When I uninstalled the app, re-downloaded the short-video app and had not yet logged into an account, I found that the videos pushed to me were either girls dancing or eye-catching news events (such as Zibo barbecue, the giant pandas returning home, and May Day scenic spots packed with tourists)."
+ },
+ {
+  "start": 265.49,
+  "end": 270.84,
+  "text": "但是当我登录短视频软件之后，就只给我推送特定几类视频内容了。",
+  "en": "But after I logged into the short-video app, it only pushed me a few specific categories of video content."
+ },
+ {
+  "start": 270.84,
+  "end": 280.99,
+  "text": "大家看懂了吗，互联网时代，只要不刻意抵抗，那么我们每个人都会被特定类型的信息包裹、洗脑，而且根本看不到其他类型的信息。",
+  "en": "Do you all understand? In the internet age, as long as you do not deliberately resist, each of us will be wrapped and brainwashed by specific types of information, and cannot see other types of information at all."
+ },
+ {
+  "start": 280.99,
+  "end": 282.74,
+  "text": "信息茧房就形成了。",
+  "en": "The information cocoon has formed."
+ },
+ {
+  "start": 282.74,
+  "end": 289.46,
+  "text": "每个人筛选、处理、吸收信息的能力不同，人就会被分成三六九等。",
+  "en": "People differ in their ability to filter, process and absorb information, and people will be divided into ranks."
+ },
+ {
+  "start": 289.46,
+  "end": 295.63,
+  "text": "长此以往，人与人之间会出现一个可怕的分化，大家的差距会越来越大。",
+  "en": "Over time, a terrible differentiation will appear between people, and everyone's gaps will grow larger and larger."
+ },
+ {
+  "start": 295.63,
+  "end": 306.0,
+  "text": "当然，我并不是说整天在网上研究赚钱、研究营销、研究人性的人就高人一等，而是说，这样的人赚钱可能稍微容易一些。",
+  "en": "Of course, I am not saying that people who spend all day online studying money-making, marketing and human nature are superior; I am saying that such people may find it slightly easier to make money."
+ },
+ {
+  "start": 306.0,
+  "end": 312.17,
+  "text": "而那些整天刷小姐姐跳舞视频的人，他们的审美能力可能会有所提升。",
+  "en": "And those who spend all day scrolling videos of pretty girls dancing may improve their aesthetic ability."
+ },
+ {
+  "start": 312.17,
+  "end": 318.0,
+  "text": "在传统媒体时代，有这样一种说法：你的注意力在哪里，成长就在哪里。",
+  "en": "In the traditional media era, there was a saying: where your attention is, there your growth is."
+ },
+ {
+  "start": 318.0,
+  "end": 330.72,
+  "text": "但是在新媒体时代，这句话得改了：你的注意力在哪里，那么大数据就会持续给你推送什么，长期被这类信息投喂之后，你就会变成这种特定信息的奴隶。",
+  "en": "But in the new media era, this saying must be changed: where your attention is, big data will keep pushing you that; after being fed such information for a long time, you will become a slave to that specific information."
+ },
+ {
+  "start": 330.72,
+  "end": 341.93,
+  "text": "物质层面，有句话叫“人如其食”，精神层面其实也是成立的：我们每天吃什么精神食粮，摄入什么特定的信息，那么我们就会变成什么样的人。",
+  "en": "On the material level, there is a saying 'you are what you eat'; on the spiritual level it also holds: what spiritual food we eat every day, what specific information we take in, is what kind of person we will become."
+ },
+ {
+  "start": 341.93,
+  "end": 348.84,
+  "text": "每天关注赚钱信息的人，会越来越有钱；每天关注不赚钱信息的人，会越来越穷。",
+  "en": "People who focus on money-making information every day will become richer and richer; people who focus on non-money-making information every day will become poorer and poorer."
+ },
+ {
+  "start": 348.84,
+  "end": 350.28,
+  "text": "逻辑非常简单。",
+  "en": "The logic is very simple."
+ },
+ {
+  "start": 350.28,
+  "end": 362.11,
+  "text": "这就是为什么在20年前，每个人谈论的事情都差不多，甚至大家表情都是一样的，每天都是乐呵呵的，因为大家都是看同样的电视节目、听同样的收音机电台。",
+  "en": "This is why 20 years ago, everyone talked about roughly the same things, and even everyone's expressions were the same, cheerful every day, because everyone watched the same TV programmes and listened to the same radio stations."
+ },
+ {
+  "start": 362.11,
+  "end": 365.71,
+  "text": "但是到了互联网时代，人和人之间的分化就越来越大。",
+  "en": "But in the internet age, the differentiation between people has grown larger and larger."
+ },
+ {
+  "start": 365.71,
+  "end": 376.51,
+  "text": "同一间教室里的同学、同一个办公室里的同事，每个人的认知、思考能力、处理信息的能力差异巨大，那么将来大家的成就也是千差万别的。",
+  "en": "Classmates in the same classroom and colleagues in the same office differ hugely in cognition, thinking ability and information-processing ability, so their future achievements will also vary enormously."
+ },
+ {
+  "start": 376.51,
+  "end": 386.23,
+  "text": "有的人数十年蜷缩在一个狭小的信息茧房里不肯出来，委顿不堪；而有的人却畅游在广阔的信息海洋里，非常自在。",
+  "en": "Some people curl up for decades in a narrow information cocoon, unwilling to come out, dejected and worn; while others swim freely in the vast ocean of information, very much at ease."
+ },
+ {
+  "start": 386.23,
+  "end": 396.5,
+  "text": "那么问题来了，我们该如何刺穿信息茧房、让自己的大脑不受特定信息的禁锢，从而让自己的思维更加开阔、收入更加丰厚呢？",
+  "en": "So the question is: how can we pierce the information cocoon, free our brains from the imprisonment of specific information, and thereby make our thinking broader and our income richer?"
+ },
+ {
+  "start": 396.5,
+  "end": 402.7,
+  "text": "我自己有6条经验跟大家分享，前3条免费阅读，后3条比较值钱，需要付费阅读：",
+  "en": "I have 6 pieces of experience to share with you. The first 3 are free to read; the last 3 are more valuable and require paid reading:"
+ },
+ {
+  "start": 402.7,
+  "end": 406.13,
+  "text": "① 尝试从多种渠道获取信息",
+  "en": "① Try to obtain information from multiple channels."
+ },
+ {
+  "start": 406.13,
+  "end": 411.6,
+  "text": "比如我刚才提到的收音机，几乎是这个时代唯一不受大数据操控的平台了。",
+  "en": "For example, the radio I just mentioned is almost the only platform in this era not manipulated by big data."
+ },
+ {
+  "start": 411.6,
+  "end": 418.32,
+  "text": "我每天健身的时候都会听收音机，大家不要以为收音机是上个世纪的产物，早就过时了。",
+  "en": "I listen to the radio every day when I work out. Do not think the radio is a product of the last century and long outdated."
+ },
+ {
+  "start": 418.32,
+  "end": 424.2,
+  "text": "错了，现在收音机的受众是年轻的有车一族，是中产。",
+  "en": "Wrong: today's radio audience is young car owners — the middle class."
+ },
+ {
+  "start": 424.2,
+  "end": 428.71,
+  "text": "他们的品味、购买力都是中等偏上的。",
+  "en": "Their taste and purchasing power are both above average."
+ },
+ {
+  "start": 428.71,
+  "end": 431.78,
+  "text": "你以为现在收音机里除了评书就是卖假药的吗？",
+  "en": "Do you think today's radio has nothing but storytelling and fake-medicine ads?"
+ },
+ {
+  "start": 431.78,
+  "end": 438.07,
+  "text": "收音机节目质量并不低，至少在我看来，比刷短视频有意思多了，还省眼睛。",
+  "en": "Radio programme quality is not low; at least in my view, it is much more interesting than scrolling short videos, and easier on the eyes."
+ },
+ {
+  "start": 438.07,
+  "end": 444.91,
+  "text": "比如昨天我听了一个节目，就是讲马斯克发家史的，今天听了一个节目，是讲新型互联网诈骗的案例。",
+  "en": "For example, yesterday I listened to a programme about Musk's rise to fortune; today I listened to a programme about new internet fraud cases."
+ },
+ {
+  "start": 444.91,
+  "end": 455.71,
+  "text": "上午九点我也会听健康节目，大家不要以为是那种卖假药的砖家，现在的电台都有自己的公众号和抖音，如果他们敢请卖假药的砖家来做节目，会被骂死的。",
+  "en": "At nine in the morning I also listen to health programmes. Do not think they are the kind of fake-medicine 'experts'; today's radio stations all have their own official accounts and Douyin — if they dared to invite fake-medicine 'experts' onto programmes, they would be scolded to death."
+ },
+ {
+  "start": 455.71,
+  "end": 465.38,
+  "text": "现在电台的健康节目，请的都是三甲医院的主任，而且大多数都是有留学背景的博士、博士后，讲的都是现代医学。",
+  "en": "Today's radio health programmes invite directors from top-tier hospitals, most of whom are doctors and postdocs with overseas study backgrounds, talking about modern medicine."
+ },
+ {
+  "start": 465.38,
+  "end": 473.18,
+  "text": "比如，有一期就是讲“幽门螺杆菌”的，医生讲的内容，除了有自己的临床案例，还有柳叶刀杂志的最新报道。",
+  "en": "For example, one episode was about 'Helicobacter pylori'. Besides the doctor's own clinical cases, the content also included the latest reports from The Lancet magazine."
+ },
+ {
+  "start": 473.18,
+  "end": 475.94,
+  "text": "② 没事多去逛图书馆、书店",
+  "en": "② Take time to browse libraries and bookstores."
+ },
+ {
+  "start": 475.94,
+  "end": 482.5,
+  "text": "我每天都需要写东西，但是我的脑子里也没有多少存货，所以我也需要“站在巨人的肩膀上”。",
+  "en": "I need to write every day, but my mind does not have much stock either, so I also need to 'stand on the shoulders of giants'."
+ },
+ {
+  "start": 482.5,
+  "end": 488.09,
+  "text": "所以，我偶尔就会去大型图书馆或者书店乱逛，而且每次都是收获巨大。",
+  "en": "So I occasionally wander around large libraries or bookstores, and each time the harvest is huge."
+ },
+ {
+  "start": 488.09,
+  "end": 493.92,
+  "text": "我之所以用“乱逛”这个词，因为这件事有很大的随机性，不受大数据约束。",
+  "en": "The reason I use the word 'wander' is that this has great randomness and is not constrained by big data."
+ },
+ {
+  "start": 493.92,
+  "end": 503.81,
+  "text": "我撞到一本书就会随手翻翻，而且基本上在5分钟内我就能确定这本书讲的是什么内容，15分钟内我就能把这本书的精华给提取出来了。",
+  "en": "When I bump into a book, I flip through it casually, and basically within 5 minutes I can determine what the book is about, and within 15 minutes I can extract the essence of the book."
+ },
+ {
+  "start": 503.81,
+  "end": 519.96,
+  "text": "更绝的是，我能把这些精华直接转化成钱（至少500元），具体的做法就是：用手机记录下大概内容（100字之内），回家就直接结合自己的经历，写成了一篇付费阅读文章。",
+  "en": "Even better, I can directly convert these essences into money (at least 500 yuan). The specific method is: use my phone to record the general content (within 100 words), go home and directly combine it with my own experience to write a paid-reading article."
+ },
+ {
+  "start": 519.96,
+  "end": 528.05,
+  "text": "所以，每当有人让我推荐书籍是，我都回答说：读书没用，我已经很久不读书了，但是我经常“乱翻书”。",
+  "en": "So whenever someone asks me to recommend books, I answer: reading is useless; I have not read books for a long time, but I often 'randomly flip through books'."
+ },
+ {
+  "start": 528.05,
+  "end": 538.32,
+  "text": "另外，大家不要以为我看点书就直接用来卖钱太庸俗，要知道，知识和思维，如果你不能“为我所用”，那就不算是我的。",
+  "en": "Also, do not think it is vulgar that I read a bit and directly use it to sell money. You should know: knowledge and thinking, if you cannot 'use them for yourself', do not count as yours."
+ },
+ {
+  "start": 538.32,
+  "end": 542.45,
+  "text": "所以，逛书店绝对是刺破信息茧房的利器。",
+  "en": "So browsing bookstores is definitely a sharp tool for piercing the information cocoon."
+ },
+ {
+  "start": 542.45,
+  "end": 544.18,
+  "text": "③ 多旅行",
+  "en": "③ Travel more."
+ },
+ {
+  "start": 544.18,
+  "end": 550.13,
+  "text": "我之前说过一个比较玄的观点：人的地理空间打开了，心理空间才能打开。",
+  "en": "I have previously stated a rather mystical view: only when a person's geographical space opens up can their psychological space open up."
+ },
+ {
+  "start": 550.13,
+  "end": 551.21,
+  "text": "什么意思？",
+  "en": "What does that mean?"
+ },
+ {
+  "start": 551.21,
+  "end": 555.24,
+  "text": "就是说，行万里路比读万卷书还重要。",
+  "en": "It means travelling ten thousand miles is more important than reading ten thousand books."
+ },
+ {
+  "start": 555.24,
+  "end": 566.21,
+  "text": "举个例子，之前很多媒体带节奏黑韩国（区别对待），最近又开始黑泰国（嘎腰子），黑美国动物园（虐待熊猫）。",
+  "en": "For example, previously many media hyped up smearing South Korea (differential treatment), and recently started smearing Thailand (kidney harvesting) and American zoos (abusing pandas)."
+ },
+ {
+  "start": 566.21,
+  "end": 567.46,
+  "text": "真实情况呢？",
+  "en": "What is the real situation?"
+ },
+ {
+  "start": 567.46,
+  "end": 581.42,
+  "text": "我不好在公众号里说，你想要了解真实情况，只有一种办法：去当地出入境管理局申请护照，然后分别申请韩国、泰国、美国的签证，然后买机票飞过去，亲自考察。",
+  "en": "I cannot say it well on my official account. If you want to understand the real situation, there is only one way: go to the local entry-exit administration to apply for a passport, then apply for visas for South Korea, Thailand and the United States respectively, buy plane tickets and fly there to investigate in person."
+ },
+ {
+  "start": 581.42,
+  "end": 588.62,
+  "text": "有人会说，看网上的报道不就行了吗，如果不相信新闻的报道，去关注那些在外国的主播也行啊。",
+  "en": "Some people will say: isn't it enough to read online reports? If you do not believe news reports, you can follow streamers abroad."
+ },
+ {
+  "start": 588.62,
+  "end": 591.38,
+  "text": "我想说，错了，不行。",
+  "en": "I want to say: wrong, no."
+ },
+ {
+  "start": 591.38,
+  "end": 599.86,
+  "text": "任何一个媒体、一个个人，都是有偏向性的，即使是你亲爹在国外生活，他说的话你也不要相信。",
+  "en": "Any media or individual has biases; even if your own father lives abroad, do not believe what he says."
+ },
+ {
+  "start": 599.86,
+  "end": 603.58,
+  "text": "想要了解真实情况，必须你亲自把肉身挪过去。",
+  "en": "To understand the real situation, you must personally move your body there."
+ },
+ {
+  "start": 603.58,
+  "end": 605.26,
+  "text": "没有第二种办法。",
+  "en": "There is no second way."
+ },
+ {
+  "start": 605.26,
+  "end": 608.3,
+  "text": "点此继续阅读剩余部分",
+  "en": "Click here to continue reading the remaining part."
+ }
+]
