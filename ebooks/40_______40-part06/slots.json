@@ -1,0 +1,608 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.96,
+  "text": "这个问题我最有发言权，我去人民公园相亲角就很多次。",
+  "en": "I am most qualified to speak on this matter; I have been to the Renmin Park matchmaking corner many times."
+ },
+ {
+  "start": 3.96,
+  "end": 7.03,
+  "text": "发现一个问题，我希望今天我把我的想法说出来。",
+  "en": "I have realised a problem, and I hope to share my thoughts today."
+ },
+ {
+  "start": 7.03,
+  "end": 16.68,
+  "text": "让那些40岁的大龄剩女和大龄剩女的父母们必须要明白的底层逻辑，他们在征婚的道路上走得更顺畅，少走弯路。",
+  "en": "The underlying logic that those 40-year-old older single women and the parents of older single women must grasp, so that they may proceed more smoothly on the path of seeking a spouse and take fewer wrong turns."
+ },
+ {
+  "start": 16.68,
+  "end": 21.07,
+  "text": "第一个误解:门当户对，并不是所有的年龄段都合适。",
+  "en": "The first misunderstanding: a match between families of equal standing is not suitable for every age group."
+ },
+ {
+  "start": 21.07,
+  "end": 37.03,
+  "text": "门当户对的历史渊源“门当户对”最早来自古代建筑构件，后来演变为婚恋择偶准则，从先秦萌芽，成型于魏晋，普及于宋元明清，一直影响到今天。",
+  "en": "The historical origins of the 'equal-standing match': this 'equal-standing match' first came from ancient architectural components, later evolving into a standard for choosing a spouse. It emerged in the pre-Qin era, took shape during the Wei and Jin, and became widespread through the Song, Yuan, Ming and Qing, its influence lasting to this day."
+ },
+ {
+  "start": 37.03,
+  "end": 48.84,
+  "text": "建筑上的“门当”与“户对”古代大户宅院大门外：门当：大门前左右一对石墩/石鼓，方形代表文官，圆形代表武将，用来镇宅。",
+  "en": "The 'men dang' and 'hu dui' on buildings: in front of the gates of the grand residences of ancient wealthy families — men dang: a pair of stone blocks or drums to the left and right before the gate; square ones represented civil officials, round ones represented military generals, and they served to guard the home."
+ },
+ {
+  "start": 48.84,
+  "end": 56.52,
+  "text": "户对：门楣上方伸出的短圆柱形木雕，数量代表主人品级，官员才有，普通百姓不能装。",
+  "en": "Hu dui: short cylindrical wooden carvings protruding above the lintel; their number indicated the master's rank. Only officials were permitted to have them, and ordinary commoners could not install them."
+ },
+ {
+  "start": 56.52,
+  "end": 62.95,
+  "text": "古时候两家结亲，媒人上门相看，先看大门的门当、户对。",
+  "en": "In ancient times, when two families arranged a marriage, the matchmaker would call to inspect, first looking at the men dang and hu dui of the main gate."
+ },
+ {
+  "start": 62.95,
+  "end": 70.44,
+  "text": "门当大小、户对数量一致，代表两家社会地位、家底匹配，这就是“门当户对”一词的来源。",
+  "en": "When the size of the men dang and the number of hu dui were consistent, it signified that the two families' social status and family wealth matched — this is the origin of the term 'equal-standing match'."
+ },
+ {
+  "start": 70.44,
+  "end": 73.92,
+  "text": "这个说法在元代开始出现，明清广泛流行。",
+  "en": "This saying began to appear in the Yuan dynasty and became widely popular in the Ming and Qing."
+ },
+ {
+  "start": 73.92,
+  "end": 80.69,
+  "text": "现代婚姻的门当户对是指家庭条件相当，工作性质相当，年龄相仿。",
+  "en": "In modern marriage, a match between families of equal standing means similar family circumstances, similar nature of work, and similar age."
+ },
+ {
+  "start": 80.69,
+  "end": 87.96,
+  "text": "比如一个30岁的男生，在银行上班，父母都有退休金，有车有房。",
+  "en": "For example, a 30-year-old man working at a bank, whose parents both draw a pension, and who owns both a car and a house."
+ },
+ {
+  "start": 87.96,
+  "end": 94.13,
+  "text": "一个28岁的女生在医院上班，有车有房，父母也有退休金，这种叫门当户对。",
+  "en": "A 28-year-old woman working at a hospital, owning a car and a house, whose parents also draw a pension — this is what is called a match between families of equal standing."
+ },
+ {
+  "start": 94.13,
+  "end": 101.38,
+  "text": "在古代，男女结婚结婚都比较早，有些女生13-15岁就嫁人了，很少有超过30岁的。",
+  "en": "In ancient times, both men and women married fairly early; some girls were married off at 13 to 15, and very few were over 30."
+ },
+ {
+  "start": 101.38,
+  "end": 104.42,
+  "text": "所以基本你就出现年龄问题而不能门当户对。",
+  "en": "So essentially an age problem arises and one cannot achieve a match between families of equal standing."
+ },
+ {
+  "start": 104.42,
+  "end": 110.47,
+  "text": "然而，现在人结婚比较晚，很多大龄剩女都35岁，40岁了，都还没有结婚。",
+  "en": "However, people now marry later; many older single women are already 35 or 40 and still unmarried."
+ },
+ {
+  "start": 110.47,
+  "end": 114.98,
+  "text": "但是他们执念于门当户对，就把年龄这个条件剔除。",
+  "en": "But they are fixated on a match between families of equal standing, and so they drop the condition of age."
+ },
+ {
+  "start": 114.98,
+  "end": 119.23,
+  "text": "就是说她们误认为所有的年龄段都可以门当户对。",
+  "en": "That is to say, they mistakenly believe an equal-standing match is possible at any age."
+ },
+ {
+  "start": 119.23,
+  "end": 125.47,
+  "text": "也就是说40岁的大龄剩女，找40岁至45岁的大龄光棍是比较合适的。",
+  "en": "In other words, it is fairly fitting for a 40-year-old older single woman to find an older bachelor aged 40 to 45."
+ },
+ {
+  "start": 125.47,
+  "end": 133.27,
+  "text": "然而40岁至45岁的条件好的大龄光棍并不喜欢，也不愿意娶40岁的大龄剩女。",
+  "en": "Yet the better-off older bachelors aged 40 to 45 neither like nor are willing to marry 40-year-old older single women."
+ },
+ {
+  "start": 133.27,
+  "end": 134.28,
+  "text": "为什么呢？",
+  "en": "Why is that?"
+ },
+ {
+  "start": 134.28,
+  "end": 141.17,
+  "text": "因为40-45岁，有车有房有存款的大龄光棍，有条件找30岁左右的女生。",
+  "en": "Because older bachelors aged 40 to 45 who own a car, a house and savings have the means to find a woman of around 30."
+ },
+ {
+  "start": 141.17,
+  "end": 146.86,
+  "text": "所以所谓的门当户对只是男女双方都是25岁左右结婚就可以实现。",
+  "en": "So the so-called match between families of equal standing can only be realised when both man and woman marry at around 25."
+ },
+ {
+  "start": 146.86,
+  "end": 150.29,
+  "text": "比如一个男生二十五岁，可以接受一个24岁的女生。",
+  "en": "For example, a 25-year-old man may accept a 24-year-old woman."
+ },
+ {
+  "start": 150.29,
+  "end": 156.53,
+  "text": "但是如果一个大龄光棍45岁，他就不会再接受一个44岁的大龄剩女。",
+  "en": "But if an older bachelor is 45, he will no longer accept a 44-year-old older single woman."
+ },
+ {
+  "start": 156.53,
+  "end": 162.0,
+  "text": "就是为什么40岁的大龄剩女，她要找跟她年龄相仿的门当户对的男人是找不到的。",
+  "en": "This is why a 40-year-old older single woman cannot find a man of similar age with whom to form an equal-standing match."
+ },
+ {
+  "start": 162.0,
+  "end": 165.96,
+  "text": "但是大龄剩女和她们的父母并没有了解这一点。",
+  "en": "But older single women and their parents have not grasped this point."
+ },
+ {
+  "start": 165.96,
+  "end": 169.03,
+  "text": "在寻找年龄相仿的门当户对的人。",
+  "en": "They are searching for people of a similar age with whom to form an equal-standing match."
+ },
+ {
+  "start": 169.03,
+  "end": 176.11,
+  "text": "我去过很多次南宁人民相亲角，跟阿姨们聊，比如他们的女儿是40岁，又想找40岁左右的条件好的男人。",
+  "en": "I have been to the Nanning Renmin matchmaking corner many times and chatted with the aunties; for instance, their daughters are 40 and they wish to find a well-off man of around 40."
+ },
+ {
+  "start": 176.11,
+  "end": 177.96,
+  "text": "觉得这样子就是门当户对。",
+  "en": "They feel that this is a match between families of equal standing."
+ },
+ {
+  "start": 177.96,
+  "end": 182.83,
+  "text": "但是40岁条件好的男人，他喜欢30岁甚至二十几岁的小女生。",
+  "en": "But a well-off 40-year-old man likes women of 30, or even in their twenties — young girls."
+ },
+ {
+  "start": 182.83,
+  "end": 187.92,
+  "text": "所以阿姨们并不了解，执念找40岁左右的条件好的男人。",
+  "en": "So the aunties do not understand, and fixate on finding a well-off man of around 40."
+ },
+ {
+  "start": 187.92,
+  "end": 189.72,
+  "text": "所以找了几年都没有找到。",
+  "en": "Thus they have searched for several years without finding anyone."
+ },
+ {
+  "start": 189.72,
+  "end": 195.41,
+  "text": "就是为什么门当户对，年龄必须在30岁以下，这样比较合适门当户对。",
+  "en": "This is why, for a match between families of equal standing, the age must be below 30; only then is it relatively suitable for an equal-standing match."
+ },
+ {
+  "start": 195.41,
+  "end": 198.29,
+  "text": "35岁以上就很难门当户对了。",
+  "en": "Once past 35, it becomes very hard to form a match between families of equal standing."
+ },
+ {
+  "start": 198.29,
+  "end": 204.1,
+  "text": "其实古代的门当户对并不是年龄门当户对，是指家庭的地位门当户对。",
+  "en": "In truth, the equal-standing match of ancient times was not about age, but about the standing of the family."
+ },
+ {
+  "start": 204.1,
+  "end": 209.33,
+  "text": "比如古代有些权贵30多，40岁了，还娶13，14岁的女孩子，年龄相差20多岁。",
+  "en": "For example, some ancient dignitaries in their thirties or forties still took girls of 13 or 14 as wives, with an age gap of over 20 years."
+ },
+ {
+  "start": 209.33,
+  "end": 217.85,
+  "text": "第二个误解:她们认为，有车有房有存款的40岁大龄光棍，和40岁有车有房有存款的大龄剩女是绝配",
+  "en": "The second misunderstanding: they believe that a 40-year-old older bachelor with a car, a house and savings, and a 40-year-old older single woman with a car, a house and savings, are a perfect match."
+ },
+ {
+  "start": 217.85,
+  "end": 223.85,
+  "text": "也就是说，如果一个40岁的大龄光棍，他有车有房有存款，那么他都会找到30岁左右的女生。",
+  "en": "In other words, if a 40-year-old older bachelor has a car, a house and savings, then he will find a woman of around 30."
+ },
+ {
+  "start": 223.85,
+  "end": 228.29,
+  "text": "所以他都不会找40岁有车有房，有存款的大龄剩女。",
+  "en": "Therefore he will not seek out a 40-year-old older single woman who has a car, a house and savings."
+ },
+ {
+  "start": 228.29,
+  "end": 232.9,
+  "text": "因为30岁的女生价值比40岁的大龄剩女生育价值要高。",
+  "en": "Because a 30-year-old woman has greater reproductive value than a 40-year-old older single woman."
+ },
+ {
+  "start": 232.9,
+  "end": 238.85,
+  "text": "即使条件差一点的40岁大龄光棍，也不会选择40岁以上的大龄剩女。",
+  "en": "Even a somewhat less well-off 40-year-old older bachelor will not choose an older single woman over 40."
+ },
+ {
+  "start": 238.85,
+  "end": 242.5,
+  "text": "因为40岁以上的大龄剩女很有可能怀不了孕，生不出孩子。",
+  "en": "Because an older single woman over 40 is very likely unable to conceive or bear a child."
+ },
+ {
+  "start": 242.5,
+  "end": 247.78,
+  "text": "一旦生不出孩子，那么这位大龄剩女条件再好也是没有什么意义的。",
+  "en": "Once she cannot bear a child, then no matter how good her conditions are, it is of little consequence."
+ },
+ {
+  "start": 247.78,
+  "end": 251.74,
+  "text": "他们不会冒风险去娶大超过40岁的大龄剩女。",
+  "en": "They will not take the risk of marrying an older single woman well past 40."
+ },
+ {
+  "start": 251.74,
+  "end": 258.17,
+  "text": "女人一旦超过了40岁，甚至超过45岁，那么它很有可能是生不出孩子了。",
+  "en": "Once a woman passes 40, or even 45, it is highly likely she can no longer bear children."
+ },
+ {
+  "start": 258.17,
+  "end": 263.14,
+  "text": "所以，可以这么说，40岁的大龄剩女给她的时间已经不多了。",
+  "en": "So it can be said that a 40-year-old older single woman has little time left."
+ },
+ {
+  "start": 263.14,
+  "end": 264.89,
+  "text": "她在执念找40多岁。",
+  "en": "She is fixated on finding someone in his forties."
+ },
+ {
+  "start": 264.89,
+  "end": 269.74,
+  "text": "条件好的大龄光棍，那么他很有可能就会找不到，会孤独终老。",
+  "en": "A well-off older bachelor — then she will very likely fail to find one and end up alone in her old age."
+ },
+ {
+  "start": 269.74,
+  "end": 273.14,
+  "text": "她唯一的选择就是找40多岁条件不好的男人。",
+  "en": "Her only option is to find a man in his forties who is not well off."
+ },
+ {
+  "start": 273.14,
+  "end": 276.94,
+  "text": "然后跟他结婚，如果能够生孩子已经是万幸中的，万幸了。",
+  "en": "Then marry him; if she can bear a child, that is already the greatest of good fortunes."
+ },
+ {
+  "start": 276.94,
+  "end": 279.62,
+  "text": "找条件好男人，几乎是不可能了。",
+  "en": "Finding a well-off man is almost impossible now."
+ },
+ {
+  "start": 279.62,
+  "end": 286.78,
+  "text": "那有一些大龄剩女在反驳，她们说那找40岁以下的，条件不好的，年轻的小鲜肉，不行吗？",
+  "en": "Then some older single women retort, saying: what about finding a young hunk under 40, not well off — won't that do?"
+ },
+ {
+  "start": 286.78,
+  "end": 290.02,
+  "text": "比如找20多岁的，小鲜肉结婚不好吗？",
+  "en": "For example, isn't marrying a young hunk in his twenties a fine thing?"
+ },
+ {
+  "start": 290.02,
+  "end": 294.02,
+  "text": "在网上也有晒出来，83年的女生嫁03年的男生啊。",
+  "en": "Online there are also posts showing a woman born in '83 marrying a man born in '03."
+ },
+ {
+  "start": 294.02,
+  "end": 296.3,
+  "text": "这是极小概率的事件，是个例。",
+  "en": "This is an event of extremely low probability, an isolated case."
+ },
+ {
+  "start": 296.3,
+  "end": 298.3,
+  "text": "可能1000万个人中只有一对。",
+  "en": "Perhaps only one such couple among ten million people."
+ },
+ {
+  "start": 298.3,
+  "end": 302.62,
+  "text": "有钱的大龄剩女找小鲜肉结婚，这个成功的概率太低了。",
+  "en": "For a wealthy older single woman to marry a young hunk, the chance of success is far too low."
+ },
+ {
+  "start": 302.62,
+  "end": 305.42,
+  "text": "即便这个小鲜肉喜欢上你，肯定先喜欢上你的钱。",
+  "en": "Even if this young hunk comes to like you, he surely liked your money first."
+ },
+ {
+  "start": 305.42,
+  "end": 309.5,
+  "text": "一旦他们花了你的钱，他们就会移情别恋，找年轻的。",
+  "en": "Once they have spent your money, they will transfer their affections and find someone younger."
+ },
+ {
+  "start": 309.5,
+  "end": 314.02,
+  "text": "因为男人对年纪大的女人一点兴趣都没有，这个是生理基因决定的。",
+  "en": "Because men have not the slightest interest in older women; this is determined by physiology and genes."
+ },
+ {
+  "start": 314.02,
+  "end": 316.7,
+  "text": "综上所述，40岁的大龄剩女。",
+  "en": "To summarise, the 40-year-old older single woman."
+ },
+ {
+  "start": 316.7,
+  "end": 320.66,
+  "text": "大概率不会找到未婚，40岁左右的大龄剩男结婚了。",
+  "en": "Will most likely not find an unmarried older bachelor of around 40 to marry."
+ },
+ {
+  "start": 320.66,
+  "end": 327.34,
+  "text": "可能50岁以上才会考虑40岁大龄剩女，但是40岁大龄剩女，可能接受不了50岁的男人。",
+  "en": "He might only consider a 40-year-old older single woman if he is over 50, yet a 40-year-old older single woman may not be able to accept a man of 50."
+ },
+ {
+  "start": 327.34,
+  "end": 330.02,
+  "text": "虽然今天聊这个话题比较残酷。",
+  "en": "Although discussing this topic today is rather brutal."
+ },
+ {
+  "start": 330.02,
+  "end": 335.62,
+  "text": "那是祝愿所有40岁的大龄剩女们，早日找到自己合适的伴侣。",
+  "en": "Still, I wish all 40-year-old older single women may soon find a suitable partner of their own."
+ },
+ {
+  "start": 335.62,
+  "end": 339.26,
+  "text": "在中国是的，因为大部分40岁女人都不再娇了。",
+  "en": "In China, yes, because most women of 40 no longer possess that delicate charm."
+ },
+ {
+  "start": 339.26,
+  "end": 343.7,
+  "text": "女人，最吸引人的其实就是一个字：“娇”",
+  "en": "For a woman, what is most attractive is, in fact, just one word: 'jiao'."
+ },
+ {
+  "start": 343.7,
+  "end": 350.9,
+  "text": "这个“娇” 是 长相+身材+个性+行为 四点组成。",
+  "en": "This 'jiao' is composed of four aspects: looks + figure + personality + behaviour."
+ },
+ {
+  "start": 350.9,
+  "end": 356.98,
+  "text": "其中长相占15%，身材15%，个性30%，行为40%。",
+  "en": "Of these, looks account for 15%, figure 15%, personality 30%, and behaviour 40%."
+ },
+ {
+  "start": 356.98,
+  "end": 366.41,
+  "text": "如果长相不行，后面几个都好，那么也算是女人中的上品，不会因为年过40就不再吸引人了。",
+  "en": "If one's looks are lacking but the remaining aspects are good, she still ranks among the finest of women, and will not cease to be attractive merely because she has passed 40."
+ },
+ {
+  "start": 366.41,
+  "end": 370.97,
+  "text": "长相和身材就不说了，这些是硬件，可以化妆健身。",
+  "en": "As for looks and figure, we need not dwell on them; these are hardware, and can be improved through make-up and exercise."
+ },
+ {
+  "start": 370.97,
+  "end": 372.58,
+  "text": "个性和行为是关健。",
+  "en": "Personality and behaviour are the key."
+ },
+ {
+  "start": 372.58,
+  "end": 383.09,
+  "text": "个性上，要娇，也就是说要看起来贵，不一定是真有钱，但是一定不能真爱钱，至少表面上不能表现出爱钱。",
+  "en": "In personality, one must be delicate and charming — that is, one must seem refined; one need not be truly wealthy, but one must certainly not be truly fond of money, or at least must not show a love of money on the surface."
+ },
+ {
+  "start": 383.09,
+  "end": 389.28,
+  "text": "看什么都要云淡风轻，再喜欢的东西都只能让你快乐一分钟而已。",
+  "en": "One must regard everything with detachment; even what one likes can bring you happiness for but a single minute."
+ },
+ {
+  "start": 389.28,
+  "end": 394.01,
+  "text": "可以喜欢笑，但是只能笑几声，然后就是等待再次被逗笑。",
+  "en": "One may enjoy laughing, but only laugh a few times, then simply wait to be amused again."
+ },
+ {
+  "start": 394.01,
+  "end": 401.4,
+  "text": "要适当的冷，不要对你的爱人太好，当然，对别的男人要更不好。",
+  "en": "One must be appropriately distant; do not be too good to your lover, and of course be even less so to other men."
+ },
+ {
+  "start": 401.4,
+  "end": 409.39,
+  "text": "行为上，要高雅，皮肤，头发要干净，留短发，如果一定要长发，不要黑长直。",
+  "en": "In behaviour, one must be elegant; skin and hair must be clean; keep one's hair short; if long hair is unavoidable, avoid straight black long hair."
+ },
+ {
+  "start": 409.39,
+  "end": 415.08,
+  "text": "身上永远要有香味，牙齿要整洁，白，要吐气如兰。",
+  "en": "One must always carry a fragrance; teeth must be neat and white; one's breath must be as sweet as orchids."
+ },
+ {
+  "start": 415.08,
+  "end": 417.19,
+  "text": "吃饭时要闭口咀嚼。",
+  "en": "When eating, one must chew with the mouth closed."
+ },
+ {
+  "start": 417.19,
+  "end": 423.07,
+  "text": "不要趴在桌上吃东西，要挺起来，要挑食，再喜欢的东西也只吃一点。",
+  "en": "Do not slump over the table while eating; sit up straight; be picky with food, and eat only a little even of what you like most."
+ },
+ {
+  "start": 423.07,
+  "end": 427.68,
+  "text": "走路或者慢，或大步的快，不要小步快。",
+  "en": "When walking, either go slowly or take big brisk strides; do not take rapid little steps."
+ },
+ {
+  "start": 427.68,
+  "end": 433.39,
+  "text": "要迟钝，对别人的招呼，要反应慢，要脸盲。",
+  "en": "One must be slow to react; to others' greetings one must respond sluggishly, and pretend to be face-blind."
+ },
+ {
+  "start": 433.39,
+  "end": 440.76,
+  "text": "微信有人聊天，要慢回，可以一整天再回，聊天最后一句永远不是自已发的。",
+  "en": "When someone messages you on WeChat, reply slowly; you may wait a whole day before replying, and the last line of the conversation must never be one you sent."
+ },
+ {
+  "start": 440.76,
+  "end": 446.23,
+  "text": "有自已痴迷的事物，但是仅此而已，不会因此低三下四的求人。",
+  "en": "Have your own obsessive interests, but only so; never lower yourself to beg others on account of them."
+ },
+ {
+  "start": 446.23,
+  "end": 447.98,
+  "text": "有就有，没有就算了。",
+  "en": "If you have it, so be it; if not, let it go."
+ },
+ {
+  "start": 447.98,
+  "end": 454.06,
+  "text": "要情绪阴情不定，上一秒还开心笑，下一秒站起来道声晚安就离开。",
+  "en": "One must be emotionally unpredictable: laughing happily one second, then standing up the next to say goodnight and leave."
+ },
+ {
+  "start": 454.06,
+  "end": 457.54,
+  "text": "要作，淡淡的作，关健时候识大体。",
+  "en": "One must be a little demanding — but only faintly — and know what truly matters at the critical moment."
+ },
+ {
+  "start": 457.54,
+  "end": 463.58,
+  "text": "永远不让自已狼狈，快要狼狈的时候就抽身而出，把烂滩子留给男人。",
+  "en": "Never let yourself become dishevelled; when you are about to lose composure, withdraw, and leave the mess for the man."
+ },
+ {
+  "start": 463.58,
+  "end": 468.26,
+  "text": "有男人在的时候，永远不开车，不记路，不提东西。",
+  "en": "When a man is present, never drive, never memorise the route, never carry things."
+ },
+ {
+  "start": 468.26,
+  "end": 470.98,
+  "text": "可以对男人撒娇，浅尝辄止。",
+  "en": "You may act coquettishly toward a man, but only in moderation."
+ },
+ {
+  "start": 470.98,
+  "end": 476.3,
+  "text": "男女床上那点事，永远不主动，你想来，要看老娘心情。",
+  "en": "As for what passes between a man and a woman in bed, never take the initiative; if you want it, it depends on my mood."
+ },
+ {
+  "start": 476.3,
+  "end": 482.86,
+  "text": "但是真do起来，要投入，完事后，不要主动缠在一起，马上起来去洗手间洗漱。",
+  "en": "But once you do get down to it, be fully engaged; afterwards, do not cling together of your own accord — get up at once and go to the bathroom to wash."
+ },
+ {
+  "start": 482.86,
+  "end": 492.05,
+  "text": "带孩子要淡然，不要全身心的投入，和小孩说成人话，像朋友一样相处，如果生的儿子，让他学会关心你，让着你。",
+  "en": "In raising children, remain detached; do not throw yourself in wholeheartedly; speak to the child as one adult to another, and get along like friends; if you have a son, teach him to care for you and yield to you."
+ },
+ {
+  "start": 492.05,
+  "end": 499.44,
+  "text": "如果你年过40岁，还能做到娇，那40岁的男的，甚至30岁的男人也一样喜欢你。",
+  "en": "If you are past 40 and can still embody that delicate charm, then even men of 40, or even 30, will like you just the same."
+ },
+ {
+  "start": 499.44,
+  "end": 506.93,
+  "text": "我见过挺多台湾女人，40多岁的，面孔不再年轻了，但是给人的感觉就是小姑娘一样，很怜惜她。",
+  "en": "I have met quite a few Taiwanese women in their forties whose faces are no longer young, yet who give the impression of being little girls, stirring a tender pity."
+ },
+ {
+  "start": 506.93,
+  "end": 510.82,
+  "text": "对了，还有一个活生生的例子，王菲，她就是透出来“娇”。",
+  "en": "Oh, and there is also a living example: Faye Wong — she simply exudes that 'delicate charm'."
+ },
+ {
+  "start": 510.82,
+  "end": 512.26,
+  "text": "当然世上只有一个王菲。",
+  "en": "Of course, there is only one Faye Wong in this world."
+ },
+ {
+  "start": 512.26,
+  "end": 521.74,
+  "text": "个性和行为上，做到以上其实挺难的，因为大部分40岁的女性都是穷着长大(相对于港台，欧美），或许还有一个重男轻女的家庭。",
+  "en": "In personality and behaviour, achieving the above is in fact quite hard, because most women of 40 grew up poor (compared with Hong Kong, Taiwan and the West), and perhaps also in a family that favoured sons over daughters."
+ },
+ {
+  "start": 521.74,
+  "end": 525.7,
+  "text": "所以个性上很难不爱钱，行为上很难高雅。",
+  "en": "Thus it is hard for them not to love money in personality, and hard to be refined in behaviour."
+ },
+ {
+  "start": 525.7,
+  "end": 534.26,
+  "text": "男人么，别看他们说哪个女人能装，难待候，冷冰冰，实际上如果能选，他一定选那个最娇的。",
+  "en": "As for men — never mind that they say which woman can put on airs, is hard to please, and is cold as ice; in truth, if they could choose, they would surely pick the one who is most delicate and charming."
+ }
+]
