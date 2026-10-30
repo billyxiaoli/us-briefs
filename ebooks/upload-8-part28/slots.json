@@ -1,0 +1,614 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.2,
+  "text": "首先我不看国内的任何大媒体，包括央视新闻和地方卫视。",
+  "en": "First, I don't watch any major domestic media, including CCTV News and local satellite TV."
+ },
+ {
+  "start": 4.2,
+  "end": 12.79,
+  "text": "我只看斗音，刷到后觉得有用的，就会点赞，没用的，但事情够大，就会看看别人怎么说的，如果不知道真假，我就会爬出去看看。",
+  "en": "I only watch Douyin. After scrolling to something, if I find it useful, I'll like it; if it's useless but the matter is big enough, I'll look at what others say; if I don't know whether it's true or false, I'll climb out to take a look."
+ },
+ {
+  "start": 12.79,
+  "end": 20.59,
+  "text": "事实上，这个世界绝大多数的事情和自己没关，所以不是特别关心到底发生了什么，大多数都是看个热闹。",
+  "en": "In fact, the vast majority of things in this world have nothing to do with oneself, so I don't particularly care what exactly happened; most of the time I'm just watching the excitement."
+ },
+ {
+  "start": 20.59,
+  "end": 24.67,
+  "text": "但哪怕是这样，也不能被一些宏大叙事的媒体洗脑。",
+  "en": "But even so, one cannot be brainwashed by some grand-narrative media."
+ },
+ {
+  "start": 24.67,
+  "end": 28.51,
+  "text": "你每天看的新闻，有多少是你主动搜索的？",
+  "en": "Of the news you read every day, how much did you actively search for?"
+ },
+ {
+  "start": 28.51,
+  "end": 39.96,
+  "text": "我认真回忆了一下自己的手机使用习惯，发现一个让人不太舒服的事实：过去一周，我在手机上点开的内容，90%以上是平台推给我的。",
+  "en": "I seriously recalled my own phone usage habits and discovered an uncomfortable fact: in the past week, over 90% of the content I clicked on my phone was pushed to me by platforms."
+ },
+ {
+  "start": 39.96,
+  "end": 44.71,
+  "text": "我几乎没有主动打开过任何新闻客户端的”推荐”以外的栏目。",
+  "en": "I almost never actively opened any column other than the 'recommendations' of any news client."
+ },
+ {
+  "start": 44.71,
+  "end": 45.72,
+  "text": "这不是个案。",
+  "en": "This is not an isolated case."
+ },
+ {
+  "start": 45.72,
+  "end": 56.35,
+  "text": "哈佛大学尼曼新闻实验室曾有一项研究指出：超过60%的社交媒体用户，从未主动搜索过与他们政治观点相悖的信息。",
+  "en": "Harvard University's Nieman Journalism Lab once had a study pointing out that over 60% of social media users have never actively searched for information contrary to their political views."
+ },
+ {
+  "start": 56.35,
+  "end": 65.23,
+  "text": "换句话说，大多数人以为自己在”看新闻”，实际上只是在算法的精心安排下，不断地看自己想看的东西。",
+  "en": "In other words, most people think they are 'reading news', but in fact they are only, under the algorithm's careful arrangement, constantly reading things they want to read."
+ },
+ {
+  "start": 65.23,
+  "end": 66.74,
+  "text": "这就是信息茧房。",
+  "en": "This is the information cocoon."
+ },
+ {
+  "start": 66.74,
+  "end": 73.27,
+  "text": "作为一个在大厂做了6年AI开发的工程师，我几乎每天都在和推荐算法打交道。",
+  "en": "As an engineer who has done AI development at a big tech company for 6 years, I deal with recommendation algorithms almost every day."
+ },
+ {
+  "start": 73.27,
+  "end": 78.43,
+  "text": "我既参与过推荐系统的设计，也深刻感受到它对普通人认知的塑造力。",
+  "en": "I have participated in designing recommendation systems, and also deeply feel their power in shaping ordinary people's cognition."
+ },
+ {
+  "start": 78.43,
+  "end": 86.11,
+  "text": "今天不聊技术细节，只想用最直白的话跟你聊聊：信息茧房到底是怎么把我们困住的，以及怎么真的走出去。",
+  "en": "Today I won't discuss technical details; I just want to talk with you in the plainest words: how information cocoons trap us, and how to really walk out."
+ },
+ {
+  "start": 86.11,
+  "end": 89.76,
+  "text": "一、你以为的”视野开阔”，可能只是幻觉",
+  "en": "I. The 'broad horizons' you think you have may just be an illusion."
+ },
+ {
+  "start": 89.76,
+  "end": 97.2,
+  "text": "信息茧房这个概念，最早是哈佛法学院教授凯斯·桑斯坦在2006年提出的。",
+  "en": "The concept of information cocoons was first proposed by Harvard Law School professor Cass Sunstein in 2006."
+ },
+ {
+  "start": 97.2,
+  "end": 103.25,
+  "text": "他在《信息乌托邦》里写道：”人们总是倾向于听他们想听的话，看他们想看的东西。",
+  "en": "He wrote in Information Utopia: 'People always tend to listen to what they want to hear, and watch what they want to watch."
+ },
+ {
+  "start": 103.25,
+  "end": 107.74,
+  "text": "长此以往，就会把自己封闭在一个越来越小的信息气泡里。",
+  "en": "Over time, they enclose themselves in an ever-smaller information bubble."
+ },
+ {
+  "start": 107.74,
+  "end": 112.54,
+  "text": "”",
+  "en": "''"
+ },
+ {
+  "start": 112.54,
+  "end": 121.49,
+  "text": "我在读研究生的时候对此深以为然——那时候我觉得自己每天刷知乎、刷微博，接触各路观点，视野足够开阔。",
+  "en": "When I was in graduate school, I deeply agreed with this — at that time I felt that scrolling Zhihu and Weibo every day, contacting various views, gave me sufficiently broad horizons."
+ },
+ {
+  "start": 121.49,
+  "end": 130.13,
+  "text": "直到有一年，我在知乎上持续关注AI方向的讨论，算法敏锐地捕捉到了我的兴趣，开始疯狂给我推相关内容。",
+  "en": "Until one year, I continuously followed AI discussions on Zhihu, and the algorithm keenly captured my interest and began frantically pushing me related content."
+ },
+ {
+  "start": 130.13,
+  "end": 132.65,
+  "text": "一开始我还挺开心，觉得平台懂我。",
+  "en": "At first I was quite happy, feeling the platform understood me."
+ },
+ {
+  "start": 132.65,
+  "end": 140.21,
+  "text": "但三个月后我突然意识到：我已经很久没有在首页刷到任何与我立场不同、或者我不熟悉领域的观点了。",
+  "en": "But three months later I suddenly realised: I had not scrolled to any views different from my stance, or in fields unfamiliar to me, on my homepage for a long time."
+ },
+ {
+  "start": 140.21,
+  "end": 145.8,
+  "text": "算法不是帮你拓展视野的工具，它是帮你高效获取”熟悉感”的工具。",
+  "en": "Algorithms are not tools to help you expand horizons; they are tools to help you efficiently obtain 'familiarity'."
+ },
+ {
+  "start": 145.8,
+  "end": 148.75,
+  "text": "而熟悉感不等于全面认知。",
+  "en": "And familiarity does not equal comprehensive cognition."
+ },
+ {
+  "start": 148.75,
+  "end": 151.82,
+  "text": "越依赖算法，茧房就越厚。",
+  "en": "The more you rely on algorithms, the thicker the cocoon becomes."
+ },
+ {
+  "start": 151.82,
+  "end": 155.14,
+  "text": "二、茧房是怎么织起来的：三股力量",
+  "en": "II. How cocoons are woven: three forces."
+ },
+ {
+  "start": 155.14,
+  "end": 159.74,
+  "text": "1. 推荐算法：你看什么，算法就喂你什么",
+  "en": "1. Recommendation algorithms: whatever you watch, algorithms feed you."
+ },
+ {
+  "start": 159.74,
+  "end": 168.14,
+  "text": "推荐算法的底层逻辑并不复杂：你点了什么，平台就认为你喜欢什么；你停留时间长，平台就认为你越喜欢。",
+  "en": "The underlying logic of recommendation algorithms is not complicated: whatever you click, the platform thinks you like; the longer you stay, the more the platform thinks you like it."
+ },
+ {
+  "start": 168.14,
+  "end": 175.54,
+  "text": "然后它会把更多同类内容推到你面前，形成一个不断自我强化的循环。",
+  "en": "Then it pushes more similar content before you, forming a continuously self-reinforcing cycle."
+ },
+ {
+  "start": 175.54,
+  "end": 189.14,
+  "text": "很多人以为算法是”中性”的，但实际上，任何推荐系统都有”热门偏差”——它天然倾向于推送已经被大量互动验证过的内容，也就是大多数人都喜欢的内容。",
+  "en": "Many people think algorithms are 'neutral', but in fact, any recommendation system has 'popularity bias' — it naturally tends to push content already validated by massive interaction, i.e., content most people like."
+ },
+ {
+  "start": 189.14,
+  "end": 196.46,
+  "text": "这在商业上是合理的，但代价是：小众的、边缘的、少数派的观点，会被系统性地边缘化。",
+  "en": "This is commercially reasonable, but the cost is: niche, marginal, minority views are systematically marginalised."
+ },
+ {
+  "start": 196.46,
+  "end": 201.58,
+  "text": "久而久之，你以为你在看”全世界在发生什么”，实际上你只是在看”全世界都在讨论什么”。",
+  "en": "Over time, you think you are watching 'what is happening in the whole world', but in fact you are only watching 'what the whole world is discussing'."
+ },
+ {
+  "start": 201.58,
+  "end": 205.42,
+  "text": "2. 社交圈层：你的朋友，决定你的信息边界",
+  "en": "2. Social circles: your friends determine your information boundaries."
+ },
+ {
+  "start": 205.42,
+  "end": 211.94,
+  "text": "有一句话很形象：你以为你是鹤立鸡群，实际上只是鸡圈里的一只低着头的鸡。",
+  "en": "There is a vivid saying: you think you are a crane among chickens, but in fact you are just a head-bowed chicken in the chicken pen."
+ },
+ {
+  "start": 211.94,
+  "end": 218.26,
+  "text": "你的朋友圈、转发的文章、讨论的话题，在很大程度上由你的社交圈层决定。",
+  "en": "Your Moments, forwarded articles, and discussion topics are largely determined by your social circles."
+ },
+ {
+  "start": 218.26,
+  "end": 225.58,
+  "text": "如果你的朋友圈里大多是和你背景相似、观点相近的人，那么你们讨论的信息天然就是同质化的。",
+  "en": "If most people in your Moments have similar backgrounds and similar views to yours, then the information you discuss is naturally homogenised."
+ },
+ {
+  "start": 225.58,
+  "end": 229.61,
+  "text": "不同意见不是不存在，而是根本进不了你的视野。",
+  "en": "Different opinions do not not exist; they simply cannot enter your field of vision at all."
+ },
+ {
+  "start": 229.61,
+  "end": 241.08,
+  "text": "这是人类社交的本能，我们天然倾向于和与自己相似的人交往，这在进化上是合理的，但在信息获取上，它是一个隐形的墙。",
+  "en": "This is human social instinct: we naturally tend to associate with people similar to ourselves. This is reasonable evolutionarily, but in information acquisition, it is an invisible wall."
+ },
+ {
+  "start": 241.08,
+  "end": 246.31,
+  "text": "3. 认知惯性：你自己也在拒绝不同的声音",
+  "en": "3. Cognitive inertia: you yourself are also rejecting different voices."
+ },
+ {
+  "start": 246.31,
+  "end": 254.66,
+  "text": "这是最容易被忽视的一点：茧房不只是算法和社交圈造成的，你自己的认知惯性也在主动维护它。",
+  "en": "This is the most easily overlooked point: cocoons are not only caused by algorithms and social circles; your own cognitive inertia is also actively maintaining them."
+ },
+ {
+  "start": 254.66,
+  "end": 260.95,
+  "text": "你有没有过这样的经历：看到一篇与你观点完全相反的文章，标题还没看完就关了？",
+  "en": "Have you had this experience: seeing an article completely opposite to your view, closing it before even finishing the title?"
+ },
+ {
+  "start": 260.95,
+  "end": 265.22,
+  "text": "或者读了几句就怒火中烧，觉得对方简直不可理喻？",
+  "en": "Or reading a few sentences and becoming furious, feeling the other party is simply unreasonable?"
+ },
+ {
+  "start": 265.22,
+  "end": 267.82,
+  "text": "这就是认知失调带来的本能排斥。",
+  "en": "This is instinctive rejection brought by cognitive dissonance."
+ },
+ {
+  "start": 267.82,
+  "end": 276.65,
+  "text": "当新信息与已有认知产生冲突时，大脑会自动启动防御机制：不是去理解对方，而是去否定对方。",
+  "en": "When new information conflicts with existing cognition, the brain automatically activates defence mechanisms: not to understand the other party, but to deny the other party."
+ },
+ {
+  "start": 276.65,
+  "end": 283.85,
+  "text": "这是人类进化出来的自我保护机制，但在信息时代，它让我们越来越难以接受异见。",
+  "en": "This is a self-protection mechanism evolved by humans, but in the information age, it makes it increasingly difficult for us to accept dissent."
+ },
+ {
+  "start": 283.85,
+  "end": 286.32,
+  "text": "算法没有门，是你自己在关门。",
+  "en": "Algorithms have no doors; you yourself are closing the door."
+ },
+ {
+  "start": 286.32,
+  "end": 288.6,
+  "text": "三、茧房里的局限",
+  "en": "III. Limitations inside cocoons."
+ },
+ {
+  "start": 288.6,
+  "end": 290.76,
+  "text": "说几个我自己的真实经历。",
+  "en": "Let me share a few of my own real experiences."
+ },
+ {
+  "start": 290.76,
+  "end": 293.09,
+  "text": "第一坑：技术优越感。",
+  "en": "First pitfall: technological superiority."
+ },
+ {
+  "start": 293.09,
+  "end": 300.1,
+  "text": "前几年AI领域特别火的时候，我刷到大量关于”AI将改变一切”“传统行业将被颠覆”的文章。",
+  "en": "A few years ago, when the AI field was particularly hot, I scrolled to a large number of articles about 'AI will change everything' and 'traditional industries will be disrupted'."
+ },
+ {
+  "start": 300.1,
+  "end": 309.58,
+  "text": "看多了以后，我开始形成一种强烈的技术决定论思维：一切问题的答案都在技术进步里，传统行业不拥抱AI就是等死。",
+  "en": "After reading a lot, I began forming a strong technological determinism mindset: the answers to all problems lie in technological progress, and traditional industries that don't embrace AI are waiting to die."
+ },
+ {
+  "start": 309.58,
+  "end": 321.98,
+  "text": "直到有一年过年回家，我一个做制造业的亲戚跟我说，他现在工厂里引入了某套AI系统，结果工人不会用、维护成本高、产线效率反而下降了。",
+  "en": "Until one year when I went home for Chinese New Year, a relative of mine in manufacturing told me that his factory had introduced a certain AI system, but workers couldn't use it, maintenance costs were high, and production line efficiency actually decreased."
+ },
+ {
+  "start": 321.98,
+  "end": 325.15,
+  "text": "我当时的第一反应就是：”那是因为你们没用对。",
+  "en": "My first reaction at the time was: 'That's because you didn't use it right."
+ },
+ {
+  "start": 325.15,
+  "end": 329.95,
+  "text": "”",
+  "en": "'"
+ },
+ {
+  "start": 329.95,
+  "end": 337.75,
+  "text": "但其实冷静下来想想，我的判断力已经被算法喂养得很单一了，我甚至没有兴趣去理解他的具体处境。",
+  "en": "But actually, calming down and thinking about it, my judgment had already been fed very one-sidedly by algorithms, and I didn't even have interest in understanding his specific situation."
+ },
+ {
+  "start": 337.75,
+  "end": 341.78,
+  "text": "第二坑：信息偏食导致的视野收窄。",
+  "en": "Second pitfall: narrowed horizons caused by information picky eating."
+ },
+ {
+  "start": 341.78,
+  "end": 346.7,
+  "text": "我有一段时间对某个AI技术特别感兴趣，天天刷相关论坛。",
+  "en": "For a period, I was particularly interested in a certain AI technology and scrolled related forums every day."
+ },
+ {
+  "start": 346.7,
+  "end": 356.23,
+  "text": "结果算法认定这是我深度关注的话题，给我推了连续两周的高强度论文，几乎全是同一个角度和立场。",
+  "en": "As a result, the algorithm determined this was a topic I followed deeply, and pushed me two consecutive weeks of high-intensity papers, almost all from the same angle and stance."
+ },
+ {
+  "start": 356.23,
+  "end": 367.99,
+  "text": "我一度以为自己掌握了事件的”全貌”，在公司的分享会上面侃侃而谈，在会后讨论的时候才发现，我看到的，只是冰山一角，有很多的信息根本没有进入到我的视野中。",
+  "en": "I once thought I had mastered the 'full picture' of the event, talking eloquently at the company's sharing meeting, only to discover in post-meeting discussions that what I saw was just the tip of the iceberg, with a lot of information never entering my field of vision at all."
+ },
+ {
+  "start": 367.99,
+  "end": 371.16,
+  "text": "第三坑：把”听过”当成”懂过”。",
+  "en": "Third pitfall: mistaking 'having heard' for 'having understood'."
+ },
+ {
+  "start": 371.16,
+  "end": 379.56,
+  "text": "算法时代还有一个幻觉：我觉得自己什么都了解了一点，财经、科技、文化、国际，都知道一点。",
+  "en": "There is another illusion in the algorithm era: I feel I understand a bit of everything — finance, technology, culture, international affairs, a bit of all."
+ },
+ {
+  "start": 379.56,
+  "end": 386.76,
+  "text": "但实际上，”知道”和”理解”是两回事。",
+  "en": "But in fact, 'knowing' and 'understanding' are two different things."
+ },
+ {
+  "start": 386.76,
+  "end": 391.56,
+  "text": "前者只需要刷到标题，后者需要系统性的学习和深度的思考。",
+  "en": "The former only requires scrolling to a title; the latter requires systematic learning and deep thinking."
+ },
+ {
+  "start": 391.56,
+  "end": 404.64,
+  "text": "当我尝试把某个话题讲给别人听的时候，才发现我根本讲不清楚——因为我的”了解”只是算法喂给我的碎片化标签，不是真正的认知。",
+  "en": "When I tried to explain a topic to others, I discovered I couldn't explain it clearly at all — because my 'understanding' was just fragmented labels fed to me by algorithms, not real cognition."
+ },
+ {
+  "start": 404.64,
+  "end": 406.75,
+  "text": "四、怎么真的打破茧房？",
+  "en": "IV. How to really break cocoons?"
+ },
+ {
+  "start": 406.75,
+  "end": 409.68,
+  "text": "1. 主动搜索，而不是被动接收",
+  "en": "1. Actively search, rather than passively receive."
+ },
+ {
+  "start": 409.68,
+  "end": 416.81,
+  "text": "每天给自己定一个很小的目标：至少有一次信息获取，是通过主动搜索完成的，而不是刷出来的。",
+  "en": "Set yourself a very small goal every day: at least one information acquisition is completed through active searching, not scrolling."
+ },
+ {
+  "start": 416.81,
+  "end": 417.96,
+  "text": "具体怎么做？",
+  "en": "How specifically?"
+ },
+ {
+  "start": 417.96,
+  "end": 418.8,
+  "text": "很简单。",
+  "en": "Very simple."
+ },
+ {
+  "start": 418.8,
+  "end": 427.2,
+  "text": "你今天在朋友圈看到一篇文章，不要直接转发，而是先打开搜索引擎，输几个关键词，看看其他来源怎么说。",
+  "en": "If you see an article in Moments today, don't forward it directly; instead, first open a search engine, enter a few keywords, and see what other sources say."
+ },
+ {
+  "start": 427.2,
+  "end": 432.89,
+  "text": "你不需要花很多时间，关键是你在建立一种”主动”的信息习惯，而不是被算法安排。",
+  "en": "You don't need to spend much time; the key is that you are building an 'active' information habit, rather than being arranged by algorithms."
+ },
+ {
+  "start": 432.89,
+  "end": 435.7,
+  "text": "这就是在主动打破算法的壁垒。",
+  "en": "This is actively breaking the algorithm's barriers."
+ },
+ {
+  "start": 435.7,
+  "end": 438.38,
+  "text": "2. 刻意关注一个”反对账号”",
+  "en": "2. Deliberately follow an 'opposition account'."
+ },
+ {
+  "start": 438.38,
+  "end": 449.38,
+  "text": "人天生喜欢和自己同一阵营的人站在一起，但是我么你可以刻意找到几个和你观点相左、但内容质量还不错的账号，人后定期看一看。",
+  "en": "People naturally like to stand with those in the same camp, but you can deliberately find a few accounts with views opposite to yours but with decent content quality, and then regularly look at them."
+ },
+ {
+  "start": 449.38,
+  "end": 452.54,
+  "text": "一开始肯定会很不舒服，甚至会生气，这很正常。",
+  "en": "At first it will definitely be uncomfortable, even angering — this is normal."
+ },
+ {
+  "start": 452.54,
+  "end": 461.42,
+  "text": "关键是你要意识到：不舒服不等于对方说的没道理，只是你的认知在受到挑战，这只是在拓宽你的认知边界。",
+  "en": "The key is to realise: discomfort does not mean the other party is unreasonable; it just means your cognition is being challenged, and this is just broadening your cognitive boundaries."
+ },
+ {
+  "start": 461.42,
+  "end": 471.5,
+  "text": "我在工作里也有类似的体验：我们团队做技术方案评审，最怕的就是”一致通过”——那往往意味着没人认真想过问题在哪。",
+  "en": "I have similar experiences at work: when our team reviews technical proposals, what we fear most is 'unanimous approval' — that often means no one seriously thought about where the problems are."
+ },
+ {
+  "start": 471.5,
+  "end": 475.03,
+  "text": "有反对意见，才是接近真相的开始。",
+  "en": "Having opposing opinions is the beginning of approaching truth."
+ },
+ {
+  "start": 475.03,
+  "end": 477.19,
+  "text": "3. 定期清理你的信息源",
+  "en": "3. Regularly clean up your information sources."
+ },
+ {
+  "start": 477.19,
+  "end": 490.56,
+  "text": "每隔一段时间，我会做一次信息源”大扫除”：把过去一段时间在各个平台关注的账号重新过一遍，保留真正有价值的，取关那些只提供情绪共鸣但没有新信息的。",
+  "en": "Every so often, I do a major 'clean-up' of information sources: re-examine the accounts followed on various platforms over the past period, keep those truly valuable, and unfollow those that only provide emotional resonance but no new information."
+ },
+ {
+  "start": 490.56,
+  "end": 494.95,
+  "text": "4. 学会区分”事实层”和”观点层”",
+  "en": "4. Learn to distinguish the 'fact layer' from the 'view layer'."
+ },
+ {
+  "start": 494.95,
+  "end": 500.9,
+  "text": "信息茧房里最大的问题之一，是把观点当事实，把立场当真相。",
+  "en": "One of the biggest problems in information cocoons is treating views as facts, and stances as truth."
+ },
+ {
+  "start": 500.9,
+  "end": 508.34,
+  "text": "遇到任何争议性话题，先问自己一个问题：什么是这件事的硬事实，什么是不同人的解读？",
+  "en": "When encountering any controversial topic, first ask yourself a question: what are the hard facts of this matter, and what are different people's interpretations?"
+ },
+ {
+  "start": 508.34,
+  "end": 512.06,
+  "text": "事实是相对客观的，而解读是可以多元的。",
+  "en": "Facts are relatively objective, while interpretations can be diverse."
+ },
+ {
+  "start": 512.06,
+  "end": 517.3,
+  "text": "不要在观点的层面吵得不可开交，而忘了先去对齐事实。",
+  "en": "Don't quarrel endlessly at the level of views, forgetting to first align on facts."
+ },
+ {
+  "start": 517.3,
+  "end": 521.38,
+  "text": "5. 把你学到的讲给别人听",
+  "en": "5. Tell what you've learned to others."
+ },
+ {
+  "start": 521.38,
+  "end": 529.58,
+  "text": "这是我认为最有效的方法：把一个你刚了解到的观点或信息，用自己的话完整地讲给一个不了解这个话题的人。",
+  "en": "This is what I think is the most effective method: take a view or piece of information you just learned, and completely explain it in your own words to someone unfamiliar with the topic."
+ },
+ {
+  "start": 529.58,
+  "end": 532.9,
+  "text": "在讲的过程中，你会发现自己的理解到底有多深。",
+  "en": "In the process of explaining, you will discover how deep your understanding really is."
+ },
+ {
+  "start": 532.9,
+  "end": 536.57,
+  "text": "很多你以为”懂了”的东西，讲出来才发现漏洞百出。",
+  "en": "Many things you thought you 'understood', when spoken out, turn out to be full of holes."
+ },
+ {
+  "start": 536.57,
+  "end": 540.58,
+  "text": "这不是丢人的事，恰恰是学习的开始。",
+  "en": "This is not shameful; it is precisely the beginning of learning."
+ },
+ {
+  "start": 540.58,
+  "end": 544.13,
+  "text": "五、茧房不会消失，但你可以不被它困住",
+  "en": "V. Cocoons won't disappear, but you can avoid being trapped by them."
+ },
+ {
+  "start": 544.13,
+  "end": 550.06,
+  "text": "必须承认一件事：信息茧房不是任何一个个体能从根本上解决的问题。",
+  "en": "One thing must be admitted: information cocoons are not a problem any individual can fundamentally solve."
+ },
+ {
+  "start": 550.06,
+  "end": 556.18,
+  "text": "算法的逻辑、社交的本能、认知的惯性，这些力量会一直存在，而且会越来越强。",
+  "en": "The logic of algorithms, social instincts, cognitive inertia — these forces will always exist, and will only grow stronger."
+ },
+ {
+  "start": 556.18,
+  "end": 559.73,
+  "text": "AI推荐只会越来越精准，个性化只会越来越极致。",
+  "en": "AI recommendations will only become more precise, and personalisation will only become more extreme."
+ },
+ {
+  "start": 559.73,
+  "end": 562.42,
+  "text": "但这不意味着我们只能束手就擒。",
+  "en": "But this does not mean we can only surrender."
+ },
+ {
+  "start": 562.42,
+  "end": 568.94,
+  "text": "茧房不是一个物理的墙，它更像地心引力——你感觉不到它，但它一直在把你往下拉。",
+  "en": "A cocoon is not a physical wall; it is more like gravity — you cannot feel it, but it is constantly pulling you down."
+ },
+ {
+  "start": 568.94,
+  "end": 580.82,
+  "text": "打破它的方法，不是去对抗整个系统，而是建立一些微小的日常习惯：主动搜索、接触异见、定期清理信息源、区分事实和观点、把你知道的讲出来。",
+  "en": "The way to break it is not to fight the entire system, but to build some small daily habits: actively searching, contacting dissent, regularly cleaning information sources, distinguishing facts from views, and speaking out what you know."
+ },
+ {
+  "start": 580.82,
+  "end": 590.83,
+  "text": "这些习惯不会让你变成一个”全知全能”的人，但至少可以让你在面对一个复杂问题的时候，不只听到一种声音。",
+  "en": "These habits won't make you an 'omniscient' person, but at least they allow you, when facing a complex problem, to hear more than one voice."
+ },
+ {
+  "start": 590.83,
+  "end": 598.94,
+  "text": "最后留一个问题给你：你上一次主动去听一个你不认同、甚至有点讨厌的观点，是在什么时候？",
+  "en": "Finally, a question for you: when was the last time you proactively listened to a view you disagree with, or even somewhat dislike?"
+ },
+ {
+  "start": 598.94,
+  "end": 602.62,
+  "text": "如果你想了很久想不起来，也许答案已经很明显了。",
+  "en": "If you thought for a long time and cannot recall, perhaps the answer is already obvious."
+ },
+ {
+  "start": 602.62,
+  "end": 608.14,
+  "text": "更多职场思考、技术实践分享，欢迎关注同名公众号四点半的理一",
+  "en": "For more workplace thoughts and technical practice sharing, welcome to follow the official account of the same name, Si Dian Ban de Li Yi."
+ }
+]
