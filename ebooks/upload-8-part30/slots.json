@@ -1,0 +1,116 @@
+[
+ {
+  "start": 0.0,
+  "end": 9.36,
+  "text": "你其实已经找到答案了，就是「尝试搜索其他信息」，而要实现这一点最好的办法还是换语言、换平台",
+  "en": "You have actually already found the answer, which is 'trying to search for other information', and the best way to achieve this is to change languages and change platforms."
+ },
+ {
+  "start": 9.36,
+  "end": 20.88,
+  "text": "得知「黑山共和国取消对華免签」，我还是偶然在公众号「地球知识局」上看到的，当时有许多自媒体也纷纷这样表述。",
+  "en": "I learned that 'Montenegro cancelled visa-free access for China' only by chance when I saw it on the official account 'Earth Knowledge Bureau'; at the time, many self-media also expressed it this way."
+ },
+ {
+  "start": 20.88,
+  "end": 40.32,
+  "text": "文章说黑山将自2026年11月1日取消对中国等五国的免签政策，给出了权威出处，并指出黑山之前也从没有真正对華免签，原本的优惠政策，即「持有申根区和英爱美加澳新日韩签证或居留卡的可以免签30天」是否还有效需要进一步核实。",
+  "en": "The article said Montenegro would cancel visa-free policies for China and four other countries from 1 November 2026, gave authoritative sources, and pointed out that Montenegro had never truly given visa-free access to China before, and whether the original preferential policy — 'holders of Schengen Area and UK, Ireland, US, Canada, Australia, New Zealand, Japan and South Korea visas or residence cards can enter visa-free for 30 days' — was still valid needed further verification."
+ },
+ {
+  "start": 40.32,
+  "end": 51.6,
+  "text": "黑山政府虽然明确通告「中国等国公民将需要办理黑山签证」，问AI和自己查资料都说取消了，不论是中国的还是美国的都建议我办理签证。",
+  "en": "Although the Montenegrin government explicitly announced that 'citizens of China and other countries will need to apply for Montenegrin visas', asking AI and checking materials myself both said it was cancelled, and both Chinese and American sources advised me to apply for a visa."
+ },
+ {
+  "start": 51.6,
+  "end": 59.45,
+  "text": "但取消这些政策的目的在加入欧盟，因此我相信了公众号的说法，认为还需要进一步考证",
+  "en": "But the purpose of cancelling these policies was joining the EU, so I believed the official account's statement, thinking further verification was needed."
+ },
+ {
+  "start": 59.45,
+  "end": 70.92,
+  "text": "今天又有知友在我的相关评论区里提到这件事情，我就决定再去查查看，先用英语搜「Montenegrin visa policy for Chinese citizens with valid Schengen residence permits」，",
+  "en": "Today, another Zhihu friend mentioned this matter in my related comment section, so I decided to check again. First I searched in English for 'Montenegrin visa policy for Chinese citizens with valid Schengen residence permits'."
+ },
+ {
+  "start": 70.92,
+  "end": 95.81,
+  "text": "發现这次AI改口了，再点进信息来源，一篇土耳其人用英语写的政策详解，阅读漢语机翻，遇到不明白的就切换看英语原文（这么做是为了省时省力），",
+  "en": "I discovered the AI changed its tune this time. Clicking into the information source, an article in English written by a Turk explaining the policy in detail, I read the Chinese machine translation, switching to the English original when I didn't understand something (this was to save time and effort)."
+ },
+ {
+  "start": 95.81,
+  "end": 110.4,
+  "text": "得出初步结论：确实可以继续凭特定第三国签证或居留卡免签入境黑山共和国30天，但阅读文章给出的黑山政府官网链接（PDF，塞尔维亚-克罗地亚语）没有找到信息来源",
+  "en": "I reached a preliminary conclusion: it is indeed possible to continue entering Montenegro visa-free for 30 days with specific third-country visas or residence cards, but I could not find the information source in the Montenegrin government official website link (PDF, Serbian-Croatian) given by the article."
+ },
+ {
+  "start": 110.4,
+  "end": 130.85,
+  "text": "这时候就该我运用专业能力了，于是用塞尔维亚-克罗地亚语搜索文章给出的法条名字，再进入官网链接阅读原文并逐个翻译生词（可恶的PDF文档无法自动翻译，我也是看完了才想起来其实可以截图机翻先看大概意思），终于找到了需要的权威信息：",
+  "en": "This is where I had to use my professional ability: I searched in Serbian-Croatian for the article names given by the article, then entered the official website link to read the original text and translate unfamiliar words one by one (damn PDF documents cannot be automatically translated; I only remembered after reading it all that I could have screenshotted and machine-translated to get the gist first), and finally found the authoritative information needed:"
+ },
+ {
+  "start": 130.85,
+  "end": 132.41,
+  "text": "Uredbu 法规",
+  "en": "Uredbu — Regulation"
+ },
+ {
+  "start": 132.41,
+  "end": 135.58,
+  "text": "O izmjeni i dopunama uredbe o viznom režimu 关于《签证制度条例》的修订和补充",
+  "en": "O izmjeni i dopunama uredbe o viznom režimu — On Amendments and Supplements to the Visa Regime Regulation"
+ },
+ {
+  "start": 135.58,
+  "end": 137.02,
+  "text": "Član 4 第4条",
+  "en": "Član 4 — Article 4"
+ },
+ {
+  "start": 137.02,
+  "end": 146.66,
+  "text": "在第六条（这里指《签证制度条例》第六条）「他们可以」一词後加上「直到2026年10月31日」",
+  "en": "In Article 6 (here referring to Article 6 of the Visa Regime Regulation), after the words 'they may', add the words 'until 31 October 2026'."
+ },
+ {
+  "start": 146.66,
+  "end": 168.02,
+  "text": "而没有对第7条和第9条做出任何修订，其中第7条是针对申根区签证和居留卡的免签政策，第9条是针对英爱美加澳新日韩的，也就是说这两条仍然有效，持这些证件的中国公民仍然可以免签前往黑山共和国30天，所以国内的信息直到我写文之前都还是错误和不准确的",
+  "en": "But no amendments were made to Articles 7 and 9, of which Article 7 is the visa-free policy for Schengen Area visas and residence cards, and Article 9 is for the UK, Ireland, US, Canada, Australia, New Zealand, Japan and South Korea. In other words, these two articles remain valid, and Chinese citizens holding these documents can still travel to Montenegro visa-free for 30 days. So domestic information was still wrong and inaccurate up until I wrote this article."
+ },
+ {
+  "start": 168.02,
+  "end": 171.1,
+  "text": "Član 6 第六条（基于原文加上修订内容後的版本）",
+  "en": "Član 6 — Article 6 (version based on the original text plus amendments)"
+ },
+ {
+  "start": 171.1,
+  "end": 198.98,
+  "text": "中华人民共和国公民，持有依照该国法规签发的有效旅行证件，可在2026年10月31日之前，作为共同入境、停留并离开黑山的组织旅游团，入境、过境黑山领土并在黑山停留最多30天，前提是持有已支付旅游行程的确认凭证，以及已确保返回原籍国或过境国的证明",
+  "en": "Citizens of the People's Republic of China holding valid travel documents issued in accordance with that country's regulations may, until 31 October 2026, as an organised tourist group entering, staying in and leaving Montenegro together, enter, transit through and stay in Montenegro for up to 30 days, provided they hold confirmation of a paid tourist arrangement and proof of secured return to the country of origin or transit."
+ },
+ {
+  "start": 198.98,
+  "end": 220.54,
+  "text": "中华人民共和国公民，持有依照该国法规签发的有效商务护照，可在2026年10月31日之前，入境、过境黑山领土并在黑山停留最多30天，前提是持有符合短期停留签证（C类签证）签发具体条件法规的邀请函。",
+  "en": "Citizens of the People's Republic of China holding valid business passports issued in accordance with that country's regulations may, until 31 October 2026, enter, transit through and stay in Montenegro for up to 30 days, provided they hold an invitation letter within the meaning of regulations governing detailed conditions for issuing short-stay visas (C visas)."
+ },
+ {
+  "start": 220.54,
+  "end": 237.29,
+  "text": "而如果你留在信息茧房里，那么你对这件事的看法大概率会是「一个不知道在哪的小国（这倒确实）出尔反尔（本来就没给过免签），为了跪舔西方针对我们中国人（不是针对中国人），我们不去了！",
+  "en": "But if you stay in the information cocoon, your view of this matter would most likely be: 'A small country you don't even know where it is (which is indeed true) going back on its word (it never actually gave visa-free access), to kowtow to the West targeting us Chinese (not targeting Chinese people) — we're not going!"
+ },
+ {
+  "start": 237.29,
+  "end": 242.09,
+  "text": "」",
+  "en": "」"
+ }
+]
